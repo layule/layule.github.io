@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `layule`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://layule.github.io`,
   },
   plugins: [],
-}
+};
