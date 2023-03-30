@@ -4,11 +4,10 @@ import "@fontsource/merriweather"
 // normalize CSS across browsers
 import "./src/normalize.css"
 // custom CSS styles
-import "./src/style.css"
-import "./src/font.css"
-import "./src/reset.css"
-import "./src/style.css"
-import "./src/stylem.css"
+import "./src/styles/bestseller/font.css"
+import "./src/styles/bestseller/reset.css"
+import "./src/styles/bestseller/style.css"
+import "./src/styles/bestseller/stylem.css"
 
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"

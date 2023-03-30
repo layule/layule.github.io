@@ -34,8 +34,7 @@ nav #nav .logo a {
   display: block;
   width: 126px;
   height: 32px;
-  background: url("./images/bestseller/bs_logo.svg") no-repeat center
-    center/cover;
+  background: url("../../images/bestseller/bs_logo.svg") no-repeat center center/cover;
   margin-right: 62px;
   color: transparent;
   text-indent: -999px;
@@ -84,8 +83,7 @@ main #main1 {
   height: 100%;
   display: flex;
   align-items: center;
-  background: url("./images/bestseller/bg_main.jpeg") no-repeat center
-    center/cover;
+  background: url("../../images/bestseller/bg_main.jpeg") no-repeat center center/cover;
 }
 
 main #main2 {
@@ -93,8 +91,7 @@ main #main2 {
   height: 100%;
   display: flex;
   align-items: center;
-  background: url("./images/bestseller/bg_main1.jpeg") no-repeat center
-    center/cover;
+  background: url("../../images/bestseller/bg_main1.jpeg") no-repeat center center/cover;
 }
 
 main .main_inner {
@@ -121,7 +118,7 @@ main .main_inner p span::after {
   display: block;
   width: 58px;
   height: 38px;
-  background: url("./images/bestseller/it.png") no-repeat center/cover;
+  background: url("../../images/bestseller/it.png") no-repeat center/cover;
   position: absolute;
   top: 0;
   right: 0;
@@ -161,7 +158,7 @@ main .main_inner .slide_btn:hover {
 }
 
 main #bestseller {
-  background: url("./images/bestseller/bg_gradient.jpeg") no-repeat center/cover;
+  background: url("../../images/bestseller/bg_gradient.jpeg") no-repeat center/cover;
 }
 
 main #bestseller .section_inner {
@@ -206,7 +203,7 @@ main #bestseller .txt_title .text_bold span::after {
   display: block;
   width: 20px;
   height: 20px;
-  background: url("./images/bestseller/ic_it.png") no-repeat center/cover;
+  background: url("../../images/bestseller/ic_it.png") no-repeat center/cover;
   position: absolute;
   top: 2px;
   right: 0;
@@ -243,7 +240,7 @@ main #bestseller .seller_btn span::after {
   display: block;
   width: 8px;
   height: 11px;
-  background: url("./images/bestseller/ic_arrow.png") no-repeat right/cover;
+  background: url("../../images/bestseller/ic_arrow.png") no-repeat right/cover;
   position: absolute;
   top: 0;
   right: 0;
@@ -298,19 +295,19 @@ main #bestseller #seller_swiper .swiper-slide .seller_item_inner .price {
 }
 
 main #bestseller #seller_swiper .slide1 {
-  background: url("./images/bestseller/seller2.jpg") no-repeat center/cover;
+  background: url("../../images/bestseller/seller2.jpg") no-repeat center/cover;
 }
 
 main #bestseller #seller_swiper .slide2 {
-  background: url("./images/bestseller/seller3.jpg") no-repeat center/cover;
+  background: url("../../images/bestseller/seller3.jpg") no-repeat center/cover;
 }
 
 main #bestseller #seller_swiper .slide3 {
-  background: url("./images/bestseller/seller4.jpg") no-repeat center/cover;
+  background: url("../../images/bestseller/seller4.jpg") no-repeat center/cover;
 }
 
 main #bestseller #seller_swiper .slide4 {
-  background: url("./images/bestseller/seller5.jpg") no-repeat center/cover;
+  background: url("../../images/bestseller/seller5.jpg") no-repeat center/cover;
 }
 
 main #bestseller .seller_pager_bar {
@@ -391,19 +388,19 @@ main #review .card-bg {
 }
 
 main #review .card:nth-child(1) .card-bg {
-  background: url("./images/bestseller/bg_review1.jpg") no-repeat center/cover;
+  background: url("../../images/bestseller/bg_review1.jpg") no-repeat center/cover;
 }
 
 main #review .card:nth-child(2) .card-bg {
-  background: url("./images/bestseller/bg_review2.jpeg") no-repeat center/cover;
+  background: url("../../images/bestseller/bg_review2.jpeg") no-repeat center/cover;
 }
 
 main #review .card:nth-child(3) .card-bg {
-  background: url("./images/bestseller/bg_review3.jpg") no-repeat center/cover;
+  background: url("../../images/bestseller/bg_review3.jpg") no-repeat center/cover;
 }
 
 main #review .card:nth-child(4) .card-bg {
-  background: url("./images/bestseller/bg_review4.jpg") no-repeat center/cover;
+  background: url("../../images/bestseller/bg_review4.jpg") no-repeat center/cover;
 }
 
 main #review .card-title {
@@ -418,7 +415,7 @@ main #review .card-title::after {
   display: block;
   width: 33px;
   height: 33px;
-  background: url("./images/bestseller/ic_plus.png") no-repeat center/cover;
+  background: url("../../images/bestseller/ic_plus.png") no-repeat center/cover;
   position: absolute;
   top: 2px;
   right: 2px;
@@ -570,7 +567,7 @@ main #faq .faq-head::after {
   display: block;
   width: 21.5px;
   height: 15px;
-  background: url("./images/bestseller/ic_arrow_faq.png") no-repeat center/100%;
+  background: url("../../images/bestseller/ic_arrow_faq.png") no-repeat center/100%;
   position: absolute;
   top: 12px;
   right: 20px;
@@ -684,14 +681,12 @@ footer .footer-info .sns-group a {
 }
 
 footer .footer-info .sns-group .insta {
-  background: url("./images/bestseller/ic_insta.png") no-repeat center
-    center/cover;
+  background: url("../../images/bestseller/ic_insta.png") no-repeat center center/cover;
   margin-right: 5px;
 }
 
 footer .footer-info .sns-group .blog {
-  background: url("./images/bestseller/ic_blog.png") no-repeat center
-    center/cover;
+  background: url("../../images/bestseller/ic_blog.png") no-repeat center center/cover;
 }
 
 footer .copyright {
