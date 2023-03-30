@@ -13,11 +13,7 @@ const BlogIndex = ({ data, location }) => {
     return (
       <Layout location={location} title={siteTitle}>
         <Bio />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
+        <p>No blog posts found. Add markdown posts to "content/blog" (or the directory you specified for the "gatsby-source-filesystem" plugin in gatsby-config.js).</p>
       </Layout>
     )
   }
@@ -60,6 +56,11 @@ const BlogIndex = ({ data, location }) => {
         <li>
           <Link to={"/Bestseller"} itemProp="url">
             {"베스트셀러"}
+          </Link>
+        </li>
+        <li>
+          <Link to={"/purelife"} itemProp="url">
+            {"퓨어라이프"}
           </Link>
         </li>
       </ol>
