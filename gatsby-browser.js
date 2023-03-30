@@ -5,6 +5,10 @@ import "@fontsource/merriweather"
 import "./src/normalize.css"
 // custom CSS styles
 import "./src/style.css"
+import "./src/font.css"
+import "./src/reset.css"
+import "./src/style.css"
+import "./src/stylem.css"
 
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"
