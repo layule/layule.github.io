@@ -14,6 +14,7 @@ import {
   insta3,
   insta4,
   insta5,
+  logo,
   pr1,
   pr2,
   pr3,
@@ -26,217 +27,53 @@ import {
   top2,
   top3,
   top4,
+  vi1,
 } from "../images/purelife"
+import "/src/styles/purelife/style.css"
+import "/src/styles/purelife/reset.css"
+import { initBxSlider } from "../module/bxSlider"
+import { initClickToGiveClass } from "../module/clickToGiveClass"
 
 export default function Component() {
-  const scrollToGiveClass = () => {
-    /*
-scrollToGiveClass 플러그인 옵션
-baseline :
-  'top'(기본값) - 화면의 위를 기준으로 적용
-  'bottom' - 화면의 아래를 기준으로 적용
-  'middle' - 화면의 가운데를 기준으로 적용
-  정수 - 적용되는 위치값을 직접설정
-
-class : 부여되는 클래스명
-  'scrolled'(기본값)
-
-add : baseline(기준)의 위치를 가감함
-  정수 - 입력된 값만큼(px) 가감됨.
-  실수(1>n>-1) - 입력된 값의 화면비만큼 값이 가감됨.
-
-limit : 클래스를 적용받는 한계값의 기준
-  'fixed' - 화면위에서부터 limitValue만큼 제한
-  'baseline' - 적용받는 기준에서부터 limitValue만큼 제한
-
-limitValue : 한계값
-  정수
-
-addFunction : function(){}
-  - 클래스를 부여받을 때 함수를 호출함.x
-
-removeFunction : function(){}
-  - 클래스가 제거될 때 함수를 호출함.
-
-*/
-    ;(function ($) {
-      $.fn.scrollToGiveClass = function (options) {
-        var defaultOptions = {
-          baseline: "top",
-          class: "scrolled",
-          add: 0,
-          limit: "",
-          limitValue: 0,
-          addFunction: function () {},
-          removeFunction: function () {},
-        }
-
-        var op = $.extend(defaultOptions, options)
-
-        return this.each(function () {
-          var $win = $(window)
-          var $this = $(this)
-          var this_top = $this.offset().top //영역의 위치
-          $win.on("load scroll", scrolled)
-
-          function scrolled() {
-            var win_top = $win.scrollTop() //스크롤된 위치
-            var win_height = $win.outerHeight() //화면의 높이
-
-            if (op.baseline == "bottom") win_top += win_height
-            if (op.baseline == "middle") win_top += win_height / 2
-            if (!isNaN(op.baseline)) this_top = op.baseline
-
-            if (1 > op.add && op.add > -1) {
-              op.add = win_height * op.add
-            }
-
-            win_top += op.add
-
-            var limit = true
-            if (op.limit == "fixed") {
-              limit = win_top < op.limitValue
-            }
-            if (op.limit == "baseline") {
-              limit = win_top < this_top + op.limitValue
-            }
-
-            if (win_top > this_top && limit) {
-              if (!$this.hasClass(op.class)) op.addFunction()
-              $this.addClass(op.class)
-            } else {
-              if ($this.hasClass(op.class)) op.removeFunction()
-              $this.removeClass(op.class)
-            }
-          } //end:scrolled
-        }) //end:each()
-      } //end:scrollClass()
-    })(jQuery)
-  }
-
   const script = () => {
     ;(function ($) {
       $(function () {
-        var mainswiper = new Swiper("#main_slide", {
-          loop: true,
-          autoplay: {
-            delay: 6000,
-            disableOnInteraction: false,
-          },
+        $(".slider").bxSlider({
+          auto: true,
+          controls: false,
         })
 
-        var prductswiper = new Swiper("#seller_swiper", {
-          centeredSlides: true,
-          loop: true,
-          slidesPerView: "auto",
-          spaceBetween: 24,
-          speed: 700,
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-
-          pagination: {
-            el: ".seller_pager_bar",
-            type: "progressbar",
-          },
-
-          breakpoination: {
-            centeredSlides: false,
-            spaceBetween: 33,
-          },
+        $(".instabestitem > ul").bxSlider({
+          auto: true,
+          maxSlides: 5, // 한 번에 보여줄 슬라이드 수 (기본값 1)
+          slideWidth: 426, // 하나의 슬라이드 하나의 너비값
+          moveSlides: 1, // 움직일 슬라이드 갯수
+          speed: 500, // 전환될떄의 시간
+          pause: 3000, // 정지된 슬라이드가 유지되는 시간
+          controls: false, // false : 컨드롤 삭제 / true : 컨트롤 노출 (기본값)
+          pager: false,
         })
 
-        /* faq 아코디언 메뉴 */
-        $(".faq-head").click(function () {
-          var btn = $(this)
-          var sub = btn.siblings(".faq-content")
-
-          $(".faq-content").not(sub).slideUp()
-          sub.slideToggle()
-
-          /* btn 디자인 */
-          var li = btn.parent()
-          $(".fap-list > ul > li").not(li).removeClass()
-          li.toggleClass("arrow_action")
-        })
-
-        /* 스크롤 효과 */
-        $(".txt_title").scrollToGiveClass({
-          class: "scroll",
-          baseline: "middle",
-          add: 300,
-        })
-
-        $(".seller_btn").scrollToGiveClass({
-          class: "scroll",
-          baseline: "middle",
-          add: 300,
-        })
-
-        $(".seller_txt").scrollToGiveClass({
-          class: "scroll",
-          baseline: "middle",
-          add: 300,
-        })
-
-        $("#review").scrollToGiveClass({
-          class: "scroll",
-          baseline: "middle",
-          add: 300,
-        })
-
-        $("#faq").scrollToGiveClass({
-          class: "scroll",
-          baseline: "middle",
-          add: 300,
-        })
-
-        // 메뉴 버튼 class 추가
-        $(".m_menu").click(function () {
-          $(".m_nav").toggleClass("open")
-          $(this).toggleClass("btn_click")
-        })
-
-        /* card-hover class 추가 */
-        $(".card").click(function () {
-          $(this).toggleClass("card-view")
+        $(".iconbtn").clickToGiveClass({
+          class: "topbtn",
         })
       })
     })(jQuery)
   }
-
   React.useEffect(() => {
-    scrollToGiveClass()
+    initClickToGiveClass()
+    initBxSlider()
     script()
   }, [])
 
   return (
     <>
-      <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>purelife</title>
-
-        {/* <!-- css --> */}
-        <link rel="stylesheet" href="../src/style.css" />
-
-        {/* <!-- reset css--> */}
-        <link rel="stylesheet" href="../src/reset.css" />
-        {/* <!-- font --> */}
-        <link rel="stylesheet" href="../src/font.css" />
-
-        {/* <!-- jQuery --> */}
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="js/jquery.scrollToGiveClass.js"></script>
-      </head>
       <body>
         <header>
           <div id="container">
             <div className="inner">
               <div id="logo">
-                <img src="img/logo.png" alt="logo" />
+                <img src={logo} alt="logo" />
               </div>
               <div id="top_menu">
                 <ul>
@@ -316,8 +153,8 @@ removeFunction : function(){}
                             type="search"
                             className="searchBar"
                             placeholder="검색어를 입력해주세요."
-                            onfocus="this.placeholder=''"
-                            onblur="this.placeholder='검색어를 입력해주세요.'"
+                            onFocus={() => (this.placeholder = "")}
+                            onBlur={() => (this.placeholder = "검색어를 입력해주세요.")}
                           />
 
                           <input type="image" className="search_btn" src={top4} />
@@ -381,7 +218,7 @@ removeFunction : function(){}
                 </div>
                 <div className="veiw">
                   <a href="#">
-                    <img src={vil1} alt="vido" />
+                    <img src={vi1} alt="vido" />
                   </a>
                 </div>
               </div>
@@ -612,7 +449,7 @@ removeFunction : function(){}
           </div>
         </main>
 
-        <footer>
+        <footer style={{ paddingTop: 30, paddingBottom: 30 }}>
           <div className="inner">
             <div className="footer_bt">
               <ul>

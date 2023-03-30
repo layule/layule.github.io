@@ -2,6 +2,10 @@ import * as React from "react"
 import * as jQuery from "jquery"
 import Swiper from "swiper"
 import { bsFavicon, sellerProfile1, sellerProfile2, sellerProfile3, sellerProfile4, sellerUi1, sellerUi2, sellerUi3, sellerUi4 } from "../images/bestseller"
+import "/src/styles/bestseller/font.css"
+import "/src/styles/bestseller/reset.css"
+import "/src/styles/bestseller/style.css"
+import "/src/styles/bestseller/stylem.css"
 
 export default function Component() {
   const scrollToGiveClass = () => {
