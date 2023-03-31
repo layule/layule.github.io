@@ -2,7 +2,7 @@ import * as React from "react"
 import * as jQuery from "jquery"
 import Swiper from "swiper"
 import "/src/styles/covernet/reset.css"
-import "/src/styles/covernet/style.css"
+import "/src/styles/covernet/style.scss"
 import "/src/styles/covernet/font.css"
 import {
   bag1,
@@ -126,7 +126,7 @@ export default function Component() {
       <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-      <body>
+      <body className="covernetpage">
         <header>
           <div id="headerInner" className="header_fix">
             <div className="headerArea">
