@@ -1,6 +1,5 @@
 import * as React from "react"
 import * as jQuery from "jquery"
-import Swiper from "swiper"
 import {
   colMain4,
   colMain5,
