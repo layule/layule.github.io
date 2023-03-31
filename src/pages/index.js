@@ -63,6 +63,11 @@ const BlogIndex = ({ data, location }) => {
             {"퓨어라이프"}
           </Link>
         </li>
+        <li>
+          <Link to={"/covernet"} itemProp="url">
+            {"커버낫"}
+          </Link>
+        </li>
       </ol>
     </Layout>
   )
