@@ -130,7 +130,7 @@ export default function Component() {
         <header>
           <div id="headerInner" className="header_fix">
             <div className="headerArea">
-              <div id="logo">
+              <div id="co_logo">
                 <h1>
                   <a href="header">
                     <img src={logo} alt="로고" />
@@ -138,7 +138,7 @@ export default function Component() {
                 </h1>
               </div>
               {/* <!--// #logo --> */}
-              <div id="Top_menu">
+              <div id="top_menu">
                 <ul className="top_menu">
                   <li>
                     <a href="#">SALE</a>
