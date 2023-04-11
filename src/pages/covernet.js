@@ -1579,7 +1579,7 @@ export default function Component() {
                 <li>
                   <div className="snapBox">
                     <a href="#">
-                      <img src={rw2} alt="인플루언서1" />
+                      <img src={rw2} alt="인플루언서2" />
                       <div className="snap_o"></div>
                     </a>
                   </div>
@@ -1588,7 +1588,7 @@ export default function Component() {
                 <li>
                   <div className="snapBox">
                     <a href="#">
-                      <img src={rw3} alt="인플루언서1" />
+                      <img src={rw3} alt="인플루언서3" />
                       <div className="snap_o"></div>
                     </a>
                   </div>
@@ -1597,7 +1597,7 @@ export default function Component() {
                 <li>
                   <div className="snapBox">
                     <a href="#">
-                      <img src={rw4} alt="인플루언서1" />
+                      <img src={rw4} alt="인플루언서4" />
                       <div className="snap_o"></div>
                     </a>
                   </div>
@@ -1606,7 +1606,7 @@ export default function Component() {
                 <li>
                   <div className="snapBox">
                     <a href="#">
-                      <img src={rw5} alt="인플루언서1" />
+                      <img src={rw5} alt="인플루언서5" />
                       <div className="snap_o"></div>
                     </a>
                   </div>
@@ -1615,7 +1615,7 @@ export default function Component() {
                 <li>
                   <div className="snapBox">
                     <a href="#">
-                      <img src={rw6} alt="인플루언서1" />
+                      <img src={rw6} alt="인플루언서6" />
                       <div className="snap_o"></div>
                     </a>
                   </div>
@@ -1624,7 +1624,7 @@ export default function Component() {
                 <li>
                   <div className="snapBox">
                     <a href="#">
-                      <img src={rw7} alt="인플루언서1" />
+                      <img src={rw7} alt="인플루언서7" />
                       <div className="snap_o"></div>
                     </a>
                   </div>
@@ -1633,7 +1633,7 @@ export default function Component() {
                 <li>
                   <div className="snapBox">
                     <a href="#">
-                      <img src={rw8} alt="인플루언서1" />
+                      <img src={rw8} alt="인플루언서8" />
                       <div className="snap_o"></div>
                     </a>
                   </div>
@@ -1642,7 +1642,7 @@ export default function Component() {
                 <li>
                   <div className="snapBox">
                     <a href="#">
-                      <img src={rw9} alt="인플루언서1" />
+                      <img src={rw9} alt="인플루언서9" />
                       <div className="snap_o"></div>
                     </a>
                   </div>
@@ -1651,7 +1651,7 @@ export default function Component() {
                 <li>
                   <div className="snapBox">
                     <a href="#">
-                      <img src={rw10} alt="인플루언서1" />
+                      <img src={rw10} alt="인플루언서10" />
                       <div className="snap_o"></div>
                     </a>
                   </div>
@@ -1660,7 +1660,7 @@ export default function Component() {
                 <li>
                   <div className="snapBox">
                     <a href="#">
-                      <img src={rw11} alt="인플루언서1" />
+                      <img src={rw11} alt="인플루언서11" />
                       <div className="snap_o"></div>
                     </a>
                   </div>
@@ -1669,7 +1669,7 @@ export default function Component() {
                 <li>
                   <div className="snapBox">
                     <a href="#">
-                      <img src={rw12} alt="인플루언서1" />
+                      <img src={rw12} alt="인플루언서12" />
                       <div className="snap_o"></div>
                     </a>
                   </div>
@@ -1709,24 +1709,24 @@ export default function Component() {
             <div className="footerArea">
               <div className="footer_section01">
                 <div className="bt_cscenter">
-                  <div className="bt_cs">02-338-3316</div>
-                  <div className="bt_time">평일 오전 9시~오후 6시 (주말, 공휴일 휴무)</div>
+                  <div className="bt_cs">00-000-0000</div>
+                  <div className="bt_time">평일 오전 0시 ~ 오후 0시 (주말, 공휴일 휴무)</div>
                 </div>
                 {/* <!-- //.bt_cscenter --> */}
                 <div className="bt_info">
-                  (주) 비케이브
+                  (주) Covernat
                   <span></span>
                   대표이사 Covernat
                   <span></span>
-                  사업자등록번호 261-81-17293
+                  사업자등록번호 000-00-000000
                   <span></span>
-                  통신판매업 신고번호 제 2020-서울마포-4143호
+                  통신판매업 신고번호 제 0000-서울성동-0000호
                   <br />
-                  서울특별시 마포구 잔다리로 24, 5층 (서교동) [24, Jandari-ro Mapo-gu Seoul, Republic of Korea]
+                  서울특별시 성동구 송정길 00, 00층 (송정동) [00, Seoul, Republic of Korea]
                   <br />
                   개인정보 보호책임자 Covernat
                   <span></span>
-                  email covernat@bcave.co.kr
+                  email covernat@covernat.co.kr
                 </div>
                 <div className="bt_sns">
                   <a herf="#">
