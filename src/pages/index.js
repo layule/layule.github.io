@@ -53,7 +53,7 @@ const BlogIndex = ({ data, location }) => {
             </li>
           )
         })} */}
-        <h2>Layul Portfolio</h2>
+        <div className="por"></div>
         <li>
           <Link to={"/Bestseller"} itemProp="url">
             {"Best Seller"}
