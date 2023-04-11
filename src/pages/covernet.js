@@ -616,22 +616,6 @@ export default function Component() {
           </div>
           {/* <!-- //.slideWrapper --> */}
 
-          <div className="mainBanner">
-            <h3 className="title">Event</h3>
-            <div className="bannerImg">
-              <a href="#">
-                <img src={banner} alt="banner" />
-                이번주, 주목해야할 특가 아이템
-              </a>
-              <a href="#">
-                <img src={banner2} alt="banner2" />
-                제품 구매시 20% 쿠폰을 드립니다.
-              </a>
-            </div>
-            {/* <!-- //.bannerImg --> */}
-          </div>
-          {/* <!--//.mainBanner  --> */}
-
           <div className="main_section main_stylepick_section">
             <div className="stylepick itemInner">
               <h3 className="title">Collection</h3>
