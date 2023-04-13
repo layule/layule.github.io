@@ -442,7 +442,7 @@ removeFunction : function(){}
           </section>
         </main>
 
-        <footer>
+        <footer className="labo">
           <div className="fot_inr">
             <ul>
               <li>
