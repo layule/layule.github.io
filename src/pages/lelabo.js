@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as jQuery from "jquery"
 import Swiper from "swiper"
-import { newIn, pr10, pr11, pr12, pr13, pr14, pr15, pr16, pr17, pr18, pr19, pr4, pr5, pr6, pr7, pr8, pr9 } from "../images/lelabo"
+import { logoLabo, newIn, pr10, pr11, pr12, pr13, pr14, pr15, pr16, pr17, pr18, pr19, pr4, pr5, pr6, pr7, pr8, pr9 } from "../images/lelabo"
 import "/src/styles/lelabo/font.css"
 import "/src/styles/lelabo/reset.css"
 import "/src/styles/lelabo/style.css"
@@ -183,7 +183,7 @@ removeFunction : function(){}
               <li>
                 <div className="logo">
                   <a href="#">
-                    <img src={logo} alt="logo" />
+                    <img src={logoLabo} alt="logo" />
                   </a>
                 </div>
               </li>
