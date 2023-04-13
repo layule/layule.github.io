@@ -213,7 +213,7 @@ main .Offline .snap_box {
 
 footer {
   width: 100%;
-  height: 80px;
+  height: 90px;
 }
 footer .fot_inr {
   max-width: 1416px;
@@ -244,60 +244,4 @@ footer .fot_inr .cs_notice {
 }
 footer .fot_inr .copyright {
   font-size: 10px;
-}
-@media (max-width: 768px) {
-  header .menu_left {
-    width: 0;
-    font-size: 0;
-  }
-  header .menu_right {
-    width: 0;
-    font-size: 0;
-  }
-  header .logo {
-    width: 142px;
-  }
-  header .m_menu {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 24px;
-  }
-  header .m_menu span {
-    background: #1d1d1d;
-    width: 18px;
-    height: 2px;
-    display: block;
-    margin: 4px;
-    transition: all 0.4s;
-  }
-  main .seller_item_inner img {
-    width: 100%;
-  }
-  main .colec_so {
-    font-size: 12px;
-  }
-  main .giveme_inner .view_btn a {
-    font-size: 14px;
-  }
-  main .giveme_inner .inner_txt {
-    padding-left: 12px;
-  }
-  main .giveme_inner .inner_txt_two {
-    padding-left: 12px;
-  }
-  main .giveme_inner .view_btn a {
-    padding-right: 12px;
-  }
-  main .off_txt {
-    font-size: 14px;
-  }
-  main .Offline .snap_box {
-    padding-top: 65%;
-  }
-  footer .fot_inr .cs_notice {
-    display: flex;
-    flex-direction: column;
-  }
 }
