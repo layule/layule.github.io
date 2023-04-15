@@ -8,6 +8,8 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@babel/helpers": "^7.21.0",
+    "@babel/traverse": "^7.21.4",
     "@fontsource/merriweather": "^4.5.14",
     "@fontsource/montserrat": "^4.5.14",
     "gatsby": "^5.8.0",
