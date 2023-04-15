@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #bbbbbb;
+}
+
+.top_event {
+  width: 100%;
+  height: 30px;
+  background: #1c1c1c;
+  font-size: 8px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 10;
+}
+header .header_menu {
+  width: 100%;
+}
+header .header_menu a {
+  color: #1c1c1c;
+}
+header .header_ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .menu_left {
+  width: 420px;
+  display: flex;
+  padding: 24px;
+}
+header .menu_left li {
+  padding-right: 42px;
+}
+header .menu_right {
+  width: 420px;
+  display: flex;
+  padding: 24px;
+  flex-direction: row-reverse;
+}
+header .menu_right li {
+  padding-left: 42px;
+}
+header .logo {
+  width: 182px;
+  padding-top: 16px;
+}
+header .logo img {
+  width: 100%;
+}
+
+.menu_child li a:hover {
+  font-weight: bold;
+}
+
+.m_nav {
+  display: none;
+}
+
+main #main_slide {
+  width: 100%;
+  height: 100vh;
+}
+main #main1 {
+  width: 100%;
+  height: 100%;
+  background: url("../../images/lelabo/body2.jpg") no-repeat center center/cover;
+}
+main #main2 {
+  width: 100%;
+  height: 100%;
+  background: url("../../images/lelabo/body4.jpg") no-repeat center center/cover;
+}
+main #main3 {
+  width: 100%;
+  height: 100%;
+  background: url("../../images/lelabo/body6.jpg") no-repeat center center/cover;
+}
+main #giveme {
+  width: 100%;
+  height: 100vh;
+}
+main .giveme_inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 76px;
+}
+main .giveme_inner .inner_txt {
+  font-weight: 550;
+  color: #1c1c1c;
+  font-size: 20px;
+}
+main .giveme_inner .inner_txt_two {
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 12px;
+}
+main .giveme_inner img {
+  width: 100%;
+}
+main .giveme_inner .view_btn {
+  float: right;
+  padding-top: 12px;
+  padding-right: 5px;
+  font-weight: 500;
+}
+main .giveme_inner .view_btn a {
+  font-size: 18px;
+  color: #1c1c1c;
+}
+main .view_btn:hover {
+  font-weight: bold;
+}
+main .seller_item_inner {
+  width: 680px;
+  padding-top: 100px;
+}
+main .seller_item_inner img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #product {
+  width: 100%;
+  height: 100vh;
+}
+main .colec_so {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #1c1c1c;
+  padding-top: 100px;
+}
+main #adrass {
+  width: 100%;
+  height: auto;
+}
+main .Offline {
+  width: 100%;
+  height: auto;
+}
+main .off_txt {
+  padding-bottom: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+main .Offline > ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0;
+}
+main .Offline > ul > li {
+  width: 50%;
+  height: 86vh;
+  font-size: 0;
+  overflow: hidden;
+}
+main .Offline a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+main .Offline li:first-child a {
+  background: url("../../images/lelabo/ad2.jpg") no-repeat center center/cover;
+}
+main .Offline li:nth-child(2) a {
+  background: url("../../images/lelabo/ad3.jpg") no-repeat center center/cover;
+}
+main .Offline li:nth-child(3) a {
+  background: url("../../images/lelabo/ad4.jpg") no-repeat center center/cover;
+}
+main .Offline li:nth-child(4) a {
+  background: url("../../images/lelabo/ad5.jpg") no-repeat center center/cover;
+}
+main .Offline li:nth-child(5) a {
+  background: url("../../images/lelabo/ad6.jpg") no-repeat center center/cover;
+}
+main .Offline li:nth-child(6) a {
+  background: url("../../images/lelabo/ba_2.jpg") no-repeat center center/cover;
+}
+main .Offline li a:hover .snap_box {
+  opacity: 1;
+}
+main .Offline .snap_box {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-weight: bold;
+  padding-top: 40%;
+  transition: all 0.8s;
+}
+
+.labo {
+  width: 100%;
+  height: 90px;
+}
+.labo .fot_inr {
+  max-width: 1416px;
+  margin: 0 auto;
+}
+.labo .fot_inr ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+.labo .fot_inr li {
+  float: left;
+}
+.labo .fot_inr a {
+  font-size: 12px;
+  padding-right: 15px;
+  color: #1c1c1c;
+  font-weight: 550;
+}
+.labo .fot_inr .cs_notice {
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  color: #1c1c1c;
+  padding-bottom: 24px;
+}
+.labo .fot_inr .copyright {
+  font-size: 10px;
+}
