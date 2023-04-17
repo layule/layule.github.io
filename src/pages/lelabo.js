@@ -251,7 +251,8 @@ removeFunction : function(){}
           </section>
 
           <section id="product">
-            <p className="colec_so">Check out the ingredients in the perfume.</p>
+            <p className="colec_so">LE LABO FRAGRANCES</p>
+            <p className="colec_se">Le Labo's perfume collection is created in collaboration with talented and inventive perfumers.</p>
             <div id="seller_swiper" className="swiper mySwiper">
               <div className="swiper-wrapper">
                 <div className="swiper-slide slide1">
@@ -393,47 +394,72 @@ removeFunction : function(){}
 
           <section id="adrass" className="section">
             <div className="Offline">
-              <p className="off_txt">Korea, le labo offline store.</p>
+              <p className="off_txt">KOREA, le labo offline store.</p>
+              <p className="colec_se2">Le Labo pays close attention to every step of the process, from creating a perfume to opening a new store.</p>
               <ul>
                 <li>
                   <a href="#">
                     <div clclassNameass="snap_box">
-                      <p>read more</p>
+                      <ul>
+                        <li>LELABO SEONGSU</li>
+                        <li>Yeonmujang-gil, Seongdong-gu, Seoul</li>
+                        <li>02-000-0000</li>
+                      </ul>
                     </div>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <div className="snap_box">
-                      <p>read more</p>
+                      <ul>
+                        <li>LELABO SEONGSU</li>
+                        <li>Yeonmujang-gil, Seongdong-gu, Seoul</li>
+                        <li>02-000-0000</li>
+                      </ul>
                     </div>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <div className="snap_box">
-                      <p>read more</p>
+                      <ul>
+                        <li>LELABO SEONGSU</li>
+                        <li>Yeonmujang-gil, Seongdong-gu, Seoul</li>
+                        <li>02-000-0000</li>
+                      </ul>
                     </div>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <div className="snap_box">
-                      <p>read more</p>
+                      <ul>
+                        <li>LELABO SEONGSU</li>
+                        <li>Yeonmujang-gil, Seongdong-gu, Seoul</li>
+                        <li>02-000-0000</li>
+                      </ul>
                     </div>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <div className="snap_box">
-                      <p>read more</p>
+                      <ul>
+                        <li>LELABO SEONGSU</li>
+                        <li>Yeonmujang-gil, Seongdong-gu, Seoul</li>
+                        <li>02-000-0000</li>
+                      </ul>
                     </div>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <div className="snap_box">
-                      <p>read more</p>
+                      <ul>
+                        <li>LELABO SEONGSU</li>
+                        <li>Yeonmujang-gil, Seongdong-gu, Seoul</li>
+                        <li>02-000-0000</li>
+                      </ul>
                     </div>
                   </a>
                 </li>
@@ -462,7 +488,7 @@ removeFunction : function(){}
               le labo CEO.lelabo 사업자등록번호. 000-00-00000 e-mail. lelabo@oooo.co.kr 주소. 서울특별시 성동구 송정길 00
               <br />
               통신판매업신고번호. 0000-서울성동-0000
-              <br /> <span className="copyright">2022 &copy; Le labo corp. All right reserved.</span>
+              <br /> <span className="copyright">2023 &copy; Le labo corp. All right reserved.</span>
             </p>
           </div>
         </footer>
