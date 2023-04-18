@@ -1556,7 +1556,7 @@ export default function Component() {
           </div>
           {/* <!-- //.main_bestseller_section --> */}
 
-          <div className="main_snap_section">
+          <div className="main_snap_sectiono">
             <h3 className="title">Best review</h3>
             <div className="snapInner main_section">
               <ul>
