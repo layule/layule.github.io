@@ -254,7 +254,7 @@ removeFunction : function(){}
         <main>
           <section id="main_slide" className="section swiper mySwiper">
             <div className="swiper-wrapper">
-              <div id="main1" className="swiper-slide">
+              <div id="main11" className="swiper-slide">
                 <div className="main_inner">
                   <div className="main_txt">
                     <p>소비를</p>
@@ -282,7 +282,7 @@ removeFunction : function(){}
                 {/* <!-- .main_inner--> */}
               </div>
 
-              <div id="main2" className="swiper-slide">
+              <div id="main22" className="swiper-slide">
                 <div className="main_inner">
                   <div className="main_txt">
                     <p>소비를</p>

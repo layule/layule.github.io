@@ -86,12 +86,12 @@ main #main3 {
 }
 main #giveme {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
 }
 main .giveme_inner {
   max-width: 1000px;
   margin: 0 auto;
-  padding-top: 76px;
+  padding-top: 80px;
 }
 main .giveme_inner .inner_txt {
   font-weight: 550;
@@ -121,7 +121,7 @@ main .view_btn:hover {
   font-weight: bold;
 }
 main .seller_item_inner {
-  width: 700px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,7 +132,7 @@ main .seller_item_inner img {
 }
 main #product {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background: #fff;
 }
 main .colec_so {
@@ -142,7 +142,6 @@ main .colec_so {
   align-items: center;
   font-weight: 600;
   color: #1c1c1c;
-  padding-top: 100px;
   padding-bottom: 6px;
 }
 main .colec_se {
