@@ -37,7 +37,7 @@ export default function Component() {
   const script = () => {
     ;(function ($) {
       $(function () {
-        $(".slider").bxSlider({
+        $(".slider1").bxSlider({
           auto: true,
           controls: false,
         })
@@ -168,7 +168,7 @@ export default function Component() {
         </header>
         <main>
           <div className="inner">
-            <ul className="slider">
+            <ul className="slider1">
               <li>
                 <a href="#">
                   <img src={colMain7} />
