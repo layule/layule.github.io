@@ -3,7 +3,6 @@
   box-sizing: border-box;
   font-family: "Noto Sans KR", sans-serif;
 }
-
 body {
   font-family: "Noto Sans KR", sans-serif;
 
@@ -13,13 +12,11 @@ body {
       font-size: 24px;
       color: #1a1a1a;
       font-weight: 600;
-      max-width: 1680px;
       margin: 0 auto;
       padding-bottom: 80px;
       padding-top: 24px;
       text-align: center;
     }
-
     header .header_fix {
       background-color: #fff;
       border-bottom: 1px solid #e5e5e5;
@@ -126,7 +123,7 @@ body {
     }
 
     #top_menu .top_menu_sub_inner {
-      max-width: 1460px;
+      max-width: 1280px;
       margin: 0 auto;
     }
 
@@ -446,16 +443,6 @@ body {
     main .review span {
       font-size: 12px;
     }
-    main .promotion {
-      display: inline-block;
-      position: absolute;
-      bottom: -26px;
-      font-size: 12px;
-      background-color: #000;
-      color: #fff;
-      line-height: 16px;
-      padding: 0 3px;
-    }
     main .wishIcon {
       position: absolute;
       top: 0;
@@ -468,8 +455,7 @@ body {
       display: inline-block;
     }
     main .stylepick .bx-pager {
-      margin-top: 80px;
-      text-align: center;
+      margin: 0;
     }
     main .stylepick .bx-pager a {
       display: inline-block;
@@ -484,36 +470,30 @@ body {
     main .stylepick .bx-wrapper .active {
       background-color: rgba(132, 132, 132, 0.8);
     }
-    main .itemti ul {
-      display: flex;
-    }
-    main .itemti li ~ li {
-      padding-left: 40px;
-    }
-    main .itemti .title {
-      margin-top: 180px;
-    }
     main .itemInner > ul > li {
-      float: left;
       position: relative;
     }
+    main .itemInner > ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
     main .itemInner {
-      max-width: 1680px;
+      max-width: 1280px;
       margin: 0 auto;
     }
     main .stylepick {
       max-width: 1680px;
-      margin: 0 18px;
-      margin-top: 180px;
-      text-align: center;
+      margin: 0 auto;
     }
     main .main_section main .box_inner {
       margin: 0 auto;
     }
     main .thumbBox {
       display: flex;
-      width: 320px;
-      height: 450px;
+      width: 280px;
+      height: 360px;
       font-size: 0;
       overflow: hidden;
     }
@@ -527,8 +507,8 @@ body {
     }
     main .mainBanner {
       width: 50%;
-      max-width: 1680px;
-      margin: 360px auto 0;
+      max-width: 1280px;
+      margin: 160px auto 0;
     }
     main .bannerImg {
       display: flex;
@@ -548,26 +528,20 @@ body {
     main .bannerImg a img:hover {
       transform: scale(102%);
     }
+    main .main_bestseller_section {
+      width: 100%;
+      height: 100vh;
+    }
     main .main_bestseller_inner {
       text-align: center;
-      overflow: hidden;
-      max-width: 1680px;
+      // overflow: hidden;
+      max-width: 1280px;
       margin: 0 auto;
     }
     main .main_bestseller_inner > div {
       width: 100%;
       height: 150px;
       display: none;
-    }
-    main .main_bestseller_section {
-      margin-top: 160px;
-    }
-    main .main_whatnew_section {
-      margin-top: 160px;
-    }
-    main .main_snap_section {
-      margin-top: 100px;
-      margin-bottom: 100px;
     }
     main #tap1:checked ~ .women_box,
     main #tap2:checked ~ .man_box,
@@ -583,7 +557,7 @@ body {
       margin-left: 24px;
       display: inline-block;
       cursor: pointer;
-      max-width: 1980px;
+      max-width: 1280px;
       margin: 0 auto;
       margin-bottom: 64px;
       margin-left: 24px;
@@ -711,6 +685,11 @@ body {
       -webkit-animation-duration: 2.4s;
       animation-duration: 2.4s;
     }
+    main .main_snap_section {
+      width: 100%;
+      height: 150vh;
+      margin-top: 360px;
+    }
     main .snapBox > a {
       display: inline-block;
       position: relative;
@@ -754,7 +733,7 @@ body {
       width: 25%;
     }
     main .snapInner {
-      max-width: 1680px;
+      max-width: 1280px;
       margin: 0 auto;
       font-size: 0px;
     }
@@ -762,78 +741,66 @@ body {
       display: none;
     }
     main .main_snap_section {
-      margin-bottom: 140px;
+      margin-bottom: 120px;
     }
     main .snapBox {
       margin-top: 16px;
     }
     main .snapBox img {
       width: 100%;
-      max-height: 505px;
+      max-height: 380px;
     }
     main .snapInner ul {
       display: flex;
       flex-wrap: wrap;
     }
-
-    /* footer */
     footer {
       width: 100%;
       height: auto;
     }
-
     .footer_inner {
-      max-width: 1680px;
+      max-width: 1280px;
       margin: 0 auto;
     }
-
     .footer_section01 {
       float: left;
       width: 100%;
       border-top: 1px solid #e5e5e5;
       padding-top: 16px;
     }
-
     .bt_cscenter {
       line-height: 20px;
       font-size: 14px;
       margin-bottom: 24px;
     }
-
     .bt_cs {
       font-size: 18px;
       color: #1a1a1a;
       font-weight: 600;
       margin-bottom: 8px;
     }
-
     .bt_time {
       color: #1a1a1a;
       font-size: 12px;
     }
-
     .bt_info {
       font-size: 12px;
       line-height: 24px;
       margin-bottom: 32px;
     }
-
     .bt_info span {
       width: 1px;
-      height: 11px;
+      height: 10px;
       background-color: #909090;
       display: inline-block;
       margin: 0 5px;
     }
-
     .bt_sns {
       margin-bottom: 32px;
     }
-
     .bt_sns a {
       padding-right: 16px;
     }
-
     .footer_section02 {
       font-size: 12px;
       position: relative;

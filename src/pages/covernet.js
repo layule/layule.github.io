@@ -595,7 +595,7 @@ export default function Component() {
         </header>
 
         <main>
-          <div className="slideWrapper">
+          <section className="slideWrapper">
             <ul className="slider">
               <li>
                 <a href="#">
@@ -613,11 +613,20 @@ export default function Component() {
                 </a>
               </li>
             </ul>
-          </div>
+          </section>
           {/* <!-- //.slideWrapper --> */}
-
+          <div className="mainBanner clearfix">
+            <div className="bannerImg"></div>
+            {/* <!-- //.bannerImg --> */}
+            <div className="mainBanner clearfix">
+              <div className="bannerImg"></div>
+              {/* <!-- //.bannerImg --> */}
+            </div>
+            {/* <!--//.mainBanner  --> */}
+          </div>
+          {/* <!--//.mainBanner  --> */}
           <div className="main_section main_stylepick_section">
-            <div className="stylepick itemInner">
+            <div className="stylepick itenInner">
               <h3 className="title">Collection</h3>
               <ul>
                 <li>
