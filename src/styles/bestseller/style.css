@@ -265,7 +265,7 @@ main #bestseller #seller_swiper .swiper-slide {
   overflow: hidden;
 }
 
-main #bestseller #seller_swiper .swiper-slide .seller_item_inner {
+main #bestseller #seller_swiper .swiper-slide .seller_item_inner1 {
   position: absolute;
   bottom: 0;
   background: #fff;
@@ -273,7 +273,7 @@ main #bestseller #seller_swiper .swiper-slide .seller_item_inner {
   padding: 32px;
 }
 
-main #bestseller #seller_swiper .swiper-slide .seller_item_inner .title {
+main #bestseller #seller_swiper .swiper-slide .seller_item_inner1 .title {
   font-size: 19px;
   color: #9d9d9d;
   letter-spacing: -0.02em;
@@ -281,14 +281,14 @@ main #bestseller #seller_swiper .swiper-slide .seller_item_inner .title {
   margin-bottom: 15px;
 }
 
-main #bestseller #seller_swiper .swiper-slide .seller_item_inner .subtitle {
+main #bestseller #seller_swiper .swiper-slide .seller_item_inner1 .subtitle {
   font-size: 16px;
   font-weight: bold;
   color: #ab96fd;
   margin-bottom: 4px;
 }
 
-main #bestseller #seller_swiper .swiper-slide .seller_item_inner .price {
+main #bestseller #seller_swiper .swiper-slide .seller_item_inner1 .price {
   font-size: 32px;
   font-weight: bold;
 }

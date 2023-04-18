@@ -339,7 +339,7 @@ removeFunction : function(){}
                 <div className="swiper-wrapper">
                   {/* <!--슬라이드 영역--> */}
                   <div className="swiper-slide slide1">
-                    <div className="seller_item_inner">
+                    <div className="seller_item_inner1">
                       <p className="title">블로거 ○○○ 셀러</p>
                       <p className="subtitle">판매금액</p>
                       <p className="price">45,320원</p>
@@ -350,7 +350,7 @@ removeFunction : function(){}
 
                   <div className="swiper-slide slide2">
                     {/* <!--슬라이드 영역--> */}
-                    <div className="seller_item_inner">
+                    <div className="seller_item_inner1">
                       <p className="title">블로거 ○○○ 셀러</p>
                       <p className="subtitle">판매금액</p>
                       <p className="price">58,320원</p>
@@ -361,7 +361,7 @@ removeFunction : function(){}
 
                   <div className="swiper-slide slide3">
                     {/* <!--슬라이드 영역--> */}
-                    <div className="seller_item_inner">
+                    <div className="seller_item_inner1">
                       <p className="title">블로거 ○○○ 셀러</p>
                       <p className="subtitle">판매금액</p>
                       <p className="price">75,320원</p>
@@ -372,7 +372,7 @@ removeFunction : function(){}
 
                   <div className="swiper-slide slide4">
                     {/* <!--슬라이드 영역--> */}
-                    <div className="seller_item_inner">
+                    <div className="seller_item_inner1">
                       <p className="title">블로거 ○○○ 셀러</p>
                       <p className="subtitle">판매금액</p>
                       <p className="price">92,320원</p>
