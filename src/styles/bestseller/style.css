@@ -586,7 +586,7 @@ main #faq .faq-list > ul > li.arrow_action .faq-head::after {
   transition: 0.3s;
 }
 
-footer {
+.best {
   font-family: "Spoqa Han Sans Neo";
   background: #262626;
 }

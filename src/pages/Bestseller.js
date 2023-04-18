@@ -641,7 +641,7 @@ removeFunction : function(){}
           {/* <!--//#faq--> */}
         </main>
 
-        <footer>
+        <footer className="best">
           <div className="footer-wrap">
             <div className="footer-head">
               <h1>(주) 베스트셀러</h1>
