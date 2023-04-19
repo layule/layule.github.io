@@ -530,7 +530,6 @@ body {
     }
     main .main_bestseller_section {
       width: 100%;
-      height: 100vh;
     }
     main .main_bestseller_inner {
       text-align: center;
@@ -540,7 +539,6 @@ body {
     }
     main .main_bestseller_inner > div {
       width: 100%;
-      height: 150px;
       display: none;
     }
     main #tap1:checked ~ .women_box,
@@ -687,7 +685,7 @@ body {
     }
     main .main_snap_sectiono {
       width: 100%;
-      margin-top: 430px;
+      margin-top: 100px;
       margin-bottom: 160px;
     }
     main .snapBox > a {
