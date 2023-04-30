@@ -25,14 +25,40 @@
     margin: 4px;
     transition: all 0.4s;
   }
-  main .seller_item_inner img {
-    width: 100%;
+  header .m_nav a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 550;
+  }
+  main .giveme_inner .inner_txt {
+    font-size: 18px;
+    padding-bottom: 6px;
+  }
+  main .giveme_inner .inner_txt_two {
+    font-size: 12px;
+    font-weight: 400;
   }
   main .colec_so {
-    font-size: 12px;
+    font-size: 18px;
   }
-  main .giveme_inner .view_btn a {
+  main #giveme {
+    width: 100%;
+    height: 60vh;
+  }
+  main #product {
+    width: 100%;
+    height: 60vh;
+  }
+  main .colec_se {
+    font-size: 12px;
+    text-align: center;
+  }
+  main .colec_so main .giveme_inner .view_btn a {
     font-size: 14px;
+  }
+  main .colec_se2 {
+    text-align: center;
+    font-size: 12px;
   }
   main .giveme_inner .inner_txt {
     padding-left: 12px;
@@ -44,7 +70,7 @@
     padding-right: 12px;
   }
   main .off_txt {
-    font-size: 14px;
+    font-size: 18px;
   }
   main .Offline .snap_box {
     padding-top: 65%;
@@ -52,5 +78,9 @@
   footer .fot_inr .cs_notice {
     display: flex;
     flex-direction: column;
+  }
+  main .seller.inner {
+    width: 200%;
+    margin-right: 0;
   }
 }

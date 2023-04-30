@@ -1,11 +1,11 @@
-import * as React from "react"
-import * as jQuery from "jquery"
-import Swiper from "swiper"
-import { logoLabo, newIn, pr10, pr11, pr12, pr13, pr14, pr15, pr16, pr17, pr18, pr19, pr1L, pr2L, pr3, pr4, pr5, pr6, pr7, pr8, pr9 } from "../images/lelabo"
-import "/src/styles/lelabo/font.css"
-import "/src/styles/lelabo/reset.css"
-import "/src/styles/lelabo/style.css"
-import "/src/styles/lelabo/stylem.css"
+import * as React from "react";
+import * as jQuery from "jquery";
+import Swiper from "swiper";
+import { logoLabo, newIn, pr10, pr11, pr12, pr13, pr14, pr15, pr16, pr17, pr18, pr19, pr1L, pr2L, pr3, pr4, pr5, pr6, pr7, pr8, pr9 } from "../images/lelabo";
+import "/src/styles/lelabo/font.css";
+import "/src/styles/lelabo/reset.css";
+import "/src/styles/lelabo/style.css";
+import "/src/styles/lelabo/stylem.css";
 
 export default function Component() {
   const scrollToGiveClass = () => {
@@ -38,7 +38,7 @@ removeFunction : function(){}
   - 클래스가 제거될 때 함수를 호출함.
 
 */
-    ;(function ($) {
+    (function ($) {
       $.fn.scrollToGiveClass = function (options) {
         var defaultOptions = {
           baseline: "top",
@@ -48,53 +48,53 @@ removeFunction : function(){}
           limitValue: 0,
           addFunction: function () {},
           removeFunction: function () {},
-        }
+        };
 
-        var op = $.extend(defaultOptions, options)
+        var op = $.extend(defaultOptions, options);
 
         return this.each(function () {
-          var $win = $(window)
-          var $this = $(this)
-          var this_top = $this.offset().top //영역의 위치
-          $win.on("load scroll", scrolled)
+          var $win = $(window);
+          var $this = $(this);
+          var this_top = $this.offset().top; //영역의 위치
+          $win.on("load scroll", scrolled);
 
           function scrolled() {
-            var win_top = $win.scrollTop() //스크롤된 위치
-            var win_height = $win.outerHeight() //화면의 높이
+            var win_top = $win.scrollTop(); //스크롤된 위치
+            var win_height = $win.outerHeight(); //화면의 높이
 
-            if (op.baseline == "bottom") win_top += win_height
-            if (op.baseline == "middle") win_top += win_height / 2
-            if (!isNaN(op.baseline)) this_top = op.baseline
+            if (op.baseline == "bottom") win_top += win_height;
+            if (op.baseline == "middle") win_top += win_height / 2;
+            if (!isNaN(op.baseline)) this_top = op.baseline;
 
             if (1 > op.add && op.add > -1) {
-              op.add = win_height * op.add
+              op.add = win_height * op.add;
             }
 
-            win_top += op.add
+            win_top += op.add;
 
-            var limit = true
+            var limit = true;
             if (op.limit == "fixed") {
-              limit = win_top < op.limitValue
+              limit = win_top < op.limitValue;
             }
             if (op.limit == "baseline") {
-              limit = win_top < this_top + op.limitValue
+              limit = win_top < this_top + op.limitValue;
             }
 
             if (win_top > this_top && limit) {
-              if (!$this.hasClass(op.class)) op.addFunction()
-              $this.addClass(op.class)
+              if (!$this.hasClass(op.class)) op.addFunction();
+              $this.addClass(op.class);
             } else {
-              if ($this.hasClass(op.class)) op.removeFunction()
-              $this.removeClass(op.class)
+              if ($this.hasClass(op.class)) op.removeFunction();
+              $this.removeClass(op.class);
             }
           } //end:scrolled
-        }) //end:each()
-      } //end:scrollClass()
-    })(jQuery)
-  }
+        }); //end:each()
+      }; //end:scrollClass()
+    })(jQuery);
+  };
 
   const script = () => {
-    ;(function ($) {
+    (function ($) {
       $(function () {
         var mainswiper = new Swiper("#main_slide", {
           loop: true, //무한루프(기본값 false)
@@ -102,58 +102,70 @@ removeFunction : function(){}
             delay: 6000,
             disableOnInteraction: false,
           },
-        })
+        });
 
         var prductswiper = new Swiper("#seller_swiper", {
-          spaceBetween: 180,
+          // spaceBetween: 180,
           freeMode: false,
-          centeredSlides: true, // 활성화된 슬라이드 가운데 정렬
+          // centeredSlides: true, // 활성화된 슬라이드 가운데 정렬
           loop: true, //무한루프(기본값 false)
-          slidesPerView: "2", // 한번에 몇장의 슬라이드를 보여줄지 선택
+          slidesPerView: 1, // 한번에 몇장의 슬라이드를 보여줄지 선택
           speed: 600, //슬라이드 움직이는 시간
           autoplay: {
             delay: 3000, //멈췄을 때 보여주는 시간
             disableOnInteraction: false,
           },
-        })
+        });
 
         /* 스크롤 효과 */
-        $(".collec").scrollToGiveClass({
+        $(".inner_txt").scrollToGiveClass({
           className: "scroll",
           baseline: "middle",
           add: 300,
-        })
+        });
+
+        $(".inner_txt_two").scrollToGiveClass({
+          className: "scroll",
+          baseline: "middle",
+          add: 300,
+        });
 
         $(".colec_so").scrollToGiveClass({
           className: "scroll",
           baseline: "middle",
           add: 300,
-        })
+        });
 
-        $(".producttxt").scrollToGiveClass({
+        $(".colec_se").scrollToGiveClass({
           className: "scroll",
           baseline: "middle",
           add: 300,
-        })
+        });
 
-        $(".txt_bo").scrollToGiveClass({
+        $(".off_txt").scrollToGiveClass({
           className: "scroll",
           baseline: "middle",
           add: 300,
-        })
+        });
+
+        $(".colec_se2").scrollToGiveClass({
+          className: "scroll",
+          baseline: "middle",
+          add: 300,
+        });
 
         $(".m_menu").click(function () {
-          $(".m_nav").toggleClass("open")
-          $(this).toggleClass("btn_click")
-        })
-      })
-    })(jQuery)
-  }
+          $(".m_nav").toggleClass("open");
+          $(this).toggleClass("btn_click");
+        });
+      });
+    })(jQuery);
+  };
 
   React.useEffect(() => {
-    scrollToGiveClass()
-    script()
-  }, [])
+    scrollToGiveClass();
+    script();
+  }, []);
 
   return (
     <>
@@ -243,16 +255,19 @@ removeFunction : function(){}
             <div className="giveme_inner">
               <p className="inner_txt">Exclusives</p>
               <p className="inner_txt_two">classic collection / city Exclusives</p>
-              <img src={newIn} alt="pudu" />
-              <p className="view_btn">
-                <a href="#">view more</a>
-              </p>
+              <div className="giveview">
+                <a href="#">
+                  <img src={newIn} alt="pudu" />
+                </a>
+              </div>
             </div>
           </section>
 
           <section id="product">
-            <p className="colec_so">LE LABO FRAGRANCES</p>
-            <p className="colec_se">Le Labo's perfume collection is created in collaboration with talented and inventive perfumers.</p>
+            <div className="pr_p">
+              <p className="colec_so">LE LABO FRAGRANCES</p>
+              <p className="colec_se">Le Labo's perfume collection is created in collaboration with talented and inventive perfumers.</p>
+            </div>
             <div id="seller_swiper" className="swiper mySwiper">
               <div className="swiper-wrapper">
                 <div className="swiper-slide slide1">
@@ -494,5 +509,5 @@ removeFunction : function(){}
         </footer>
       </body>
     </>
-  )
+  );
 }

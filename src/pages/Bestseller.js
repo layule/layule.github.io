@@ -9,35 +9,6 @@ import "/src/styles/bestseller/stylem.css"
 
 export default function Component() {
   const scrollToGiveClass = () => {
-    /*
-scrollToGiveClass 플러그인 옵션
-baseline :
-  'top'(기본값) - 화면의 위를 기준으로 적용
-  'bottom' - 화면의 아래를 기준으로 적용
-  'middle' - 화면의 가운데를 기준으로 적용
-  정수 - 적용되는 위치값을 직접설정
-
-class : 부여되는 클래스명
-  'scrolled'(기본값)
-
-add : baseline(기준)의 위치를 가감함
-  정수 - 입력된 값만큼(px) 가감됨.
-  실수(1>n>-1) - 입력된 값의 화면비만큼 값이 가감됨.
-
-limit : 클래스를 적용받는 한계값의 기준
-  'fixed' - 화면위에서부터 limitValue만큼 제한
-  'baseline' - 적용받는 기준에서부터 limitValue만큼 제한
-
-limitValue : 한계값
-  정수
-
-addFunction : function(){}
-  - 클래스를 부여받을 때 함수를 호출함.
-
-removeFunction : function(){}
-  - 클래스가 제거될 때 함수를 호출함.
-
-*/
     ;(function ($) {
       $.fn.scrollToGiveClass = function (options) {
         var defaultOptions = {

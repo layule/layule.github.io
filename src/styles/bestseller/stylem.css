@@ -51,7 +51,7 @@
   .m_menu.btn_click span:last-child {
     transform: rotate(-135deg);
   }
-  .m_menu.btn_click span:nth-child(2) {
+  #bestseller .m_menu.btn_click span:nth-child(2) {
     opacity: 0;
     visibility: hidden;
   }
