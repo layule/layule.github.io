@@ -77,13 +77,6 @@ export default function Component() {
   const script = () => {
     (function ($) {
       $(function () {
-        // $('.slider').slidy({
-        // 	width:2000,
-        // 	height: 880,
-        // 	children: 'li',
-        // 	Animation: 'fade'
-        // });<---slidy 구문은 지워 안씀!!
-
         $("#headerInner").scrollToGiveClass({
           baseline: 90,
           class: "header_fix",
@@ -112,9 +105,6 @@ export default function Component() {
 
   return (
     <>
-      {/* <!-- favicon--> */}
-      {/* <link rel="shortcut icon" href={bsFavicon} /> */}
-      {/* <!-- 플러그인 연결 --> */}
       <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
