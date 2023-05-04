@@ -1,9 +1,9 @@
-import * as React from "react"
-import * as jQuery from "jquery"
-import Swiper from "swiper"
-import "/src/styles/covernet/reset.css"
-import "/src/styles/covernet/style.scss"
-import "/src/styles/covernet/font.css"
+import * as React from "react";
+import * as jQuery from "jquery";
+import Swiper from "swiper";
+import "/src/styles/covernet/reset.css";
+import "/src/styles/covernet/style.scss";
+import "/src/styles/covernet/font.css";
 import {
   bag1,
   bag2,
@@ -31,7 +31,11 @@ import {
   cl5,
   cl6,
   cl7,
+  like,
   logo,
+  main1,
+  main2,
+  main3,
   mBest1,
   mBest2,
   mBest3,
@@ -45,9 +49,6 @@ import {
   newPr2,
   newPr3,
   newPr4,
-  p22Fall03,
-  p22Fall03a,
-  p22Fall08a,
   rw1,
   rw10,
   rw11,
@@ -60,20 +61,21 @@ import {
   rw7,
   rw8,
   rw9,
-  searchIcon,
+  search,
+  shopping,
   SNS,
   SNS1,
   SNS2,
   SNS3,
   wish,
-} from "../images/covernet"
-import { initClickToGiveClass } from "../module/clickToGiveClass"
-import { initSlideToGiveClass } from "../module/slideToGiveClass"
-import { initBxSlider } from "../module/bxSlider"
+} from "../images/covernet";
+import { initClickToGiveClass } from "../module/clickToGiveClass";
+import { initSlideToGiveClass } from "../module/slideToGiveClass";
+import { initBxSlider } from "../module/bxSlider";
 
 export default function Component() {
   const script = () => {
-    ;(function ($) {
+    (function ($) {
       $(function () {
         // $('.slider').slidy({
         // 	width:2000,
@@ -85,38 +87,28 @@ export default function Component() {
         $("#headerInner").scrollToGiveClass({
           baseline: 90,
           class: "header_fix",
-        })
+        });
 
         $(".slider").bxSlider({
           auto: true, //자동재생
           nextText: "",
           prevText: "", //버튼은 가급적이면 이미지로!!!'<' , '>'  <---쓰지말장
-        })
-
-        $(".stylepick > ul").bxSlider({
-          auto: true,
-          maxSlides: 4, //한 번에 보여줄 슬라이드 수(기본값 1)
-          slideWidth: 480, // 슬라이드 하나의 너비값 (px생략가능)
-          moveSlides: 1, //움직일 슬라이드의 갯수
-          speed: 400, //슬라이드끼리 전환될때 걸리는 시간(0.7초)
-          pause: 4000, //정지된 슬라이드가 유지되는 시간
-          controls: false, //(<prev, next>)false: 컨트롤 삭제 /true: 컨트롤 노출(기본값)
-        })
+        });
 
         $(".click_btn").clickToGiveClass({
           class: "view",
           addTarget: "#headerInner, .layer_shadow",
-        })
-      })
-    })(jQuery)
-  }
+        });
+      });
+    })(jQuery);
+  };
 
   React.useEffect(() => {
-    initSlideToGiveClass()
-    initClickToGiveClass()
-    initBxSlider()
-    script()
-  }, [])
+    initSlideToGiveClass();
+    initClickToGiveClass();
+    initBxSlider();
+    script();
+  }, []);
 
   return (
     <>
@@ -560,7 +552,7 @@ export default function Component() {
                   </li>
                   <li>
                     <a href=".search_inner" className="click_btn">
-                      <img src={searchIcon} alt="검색" />
+                      <img src={search} alt="검색" />
                     </a>
                     {/* <!-- search sub 영역 --> */}
                     <div className="search_inner">
@@ -577,12 +569,12 @@ export default function Component() {
                   </li>
                   <li>
                     <a href="#">
-                      <img src={wish} alt="찜하기" />
+                      <img src={like} alt="찜하기" />
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img src={cartIcon} alt="장바구니" />
+                      <img src={shopping} alt="장바구니" />
                     </a>
                   </li>
                 </ul>
@@ -599,154 +591,21 @@ export default function Component() {
             <ul className="slider">
               <li>
                 <a href="#">
-                  <img src={p22Fall03} alt="메인이미지1" title="1" />
+                  <img src={main1} alt="메인이미지1" title="1" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src={p22Fall03a} alt="메인이미지2" title="2" />
+                  <img src={main2} alt="메인이미지2" title="2" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src={p22Fall08a} alt="메인이미지4" title="4" />
+                  <img src={main3} alt="메인이미지4" title="4" />
                 </a>
               </li>
             </ul>
           </section>
-          {/* <!-- //.slideWrapper --> */}
-          <div className="mainBanner clearfix">
-            <div className="bannerImg"></div>
-            {/* <!-- //.bannerImg --> */}
-            <div className="mainBanner clearfix">
-              <div className="bannerImg"></div>
-              {/* <!-- //.bannerImg --> */}
-            </div>
-            {/* <!--//.mainBanner  --> */}
-          </div>
-          {/* <!--//.mainBanner  --> */}
-          <div className="main_section main_stylepick_section">
-            <div className="stylepick itenInner">
-              <h3 className="title">Collection</h3>
-              <ul>
-                <li>
-                  <div className="box_inner">
-                    <a className="thumbBox" href="#">
-                      <img src={cl1} alt="제품명" />
-                    </a>
-                    {/* <!-- 상품설명  --> */}
-                    <div className="description">
-                      <div className="name">
-                        <a href="#">
-                          <span>2022</span> Colorful Daily Life
-                        </a>
-                      </div>
-                    </div>
-                    {/* <!-- //.name --> */}
-                  </div>
-                </li>
-                <li>
-                  <div className="box_inner">
-                    <a className="thumbBox" href="#">
-                      <img src={cl2} alt="제품명" />
-                    </a>
-                    {/* <!-- 상품설명  --> */}
-                    <div className="description">
-                      <div className="name">
-                        <a href="#">
-                          <span>2022</span> Befriend Covernat{" "}
-                        </a>
-                      </div>
-                      {/* <!-- //.name --> */}
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div className="box_inner">
-                    <a className="thumbBox" href="#">
-                      <img src={cl3} alt="제품명" />
-                    </a>
-                    {/* <!-- 상품설명  --> */}
-                    <div className="description">
-                      <div className="name">
-                        <a href="#">
-                          <span>2022</span> Covernatural
-                        </a>
-                      </div>
-                    </div>
-                    {/* <!-- //.name --> */}
-                  </div>
-                </li>
-                <li>
-                  <div className="box_inner">
-                    <a className="thumbBox" href="#">
-                      <img src={cl4} alt="제품명" />
-                    </a>
-                    {/* <!-- 상품설명  --> */}
-                    <div className="description">
-                      <div className="name">
-                        <a href="#">
-                          <span>2022</span> Covernat Sports Club
-                        </a>
-                      </div>
-                    </div>
-                    {/* <!-- //.name --> */}
-                  </div>
-                </li>
-                <li>
-                  <div className="box_inner">
-                    <a className="thumbBox" href="#">
-                      <img src={cl5} alt="제품명" />
-                    </a>
-                    {/* <!-- 상품설명  --> */}
-                    <div className="description">
-                      <div className="name">
-                        <a href="#">
-                          <span>2022</span> Fleece, Show Yourself
-                        </a>
-                      </div>
-                    </div>
-                    {/* <!-- //.name --> */}
-                  </div>
-                </li>
-                <li>
-                  <div className="box_inner">
-                    <a className="thumbBox" href="#">
-                      <img src={cl6} alt="제품명" />
-                    </a>
-                    {/* <!-- 상품설명  --> */}
-                    <div className="description">
-                      <div className="name">
-                        <a href="#">
-                          <span>2022</span> Rediscover 'C' Lover
-                        </a>
-                      </div>
-                    </div>
-                    {/* <!-- //.name --> */}
-                  </div>
-                </li>
-                <li>
-                  <div className="box_inner">
-                    <a className="thumbBox" href="#">
-                      <img src={cl7} alt="제품명" />
-                    </a>
-                    {/* <!-- 상품설명  --> */}
-                    <div className="description">
-                      <div className="name">
-                        <a href="#">
-                          <span>2022</span> Light Down
-                        </a>
-                      </div>
-                    </div>
-                    {/* <!-- //.name --> */}
-                  </div>
-                </li>
-              </ul>
-            </div>
-            {/* <!-- .itemInner --> */}
-          </div>
-          {/* <!-- //.main_stylepick_section --> */}
 
           <div className="main_whatnew_section clearfix main_section">
             <h3 className="title">New Item</h3>
@@ -821,13 +680,10 @@ export default function Component() {
                       <div className="review">
                         <span>2건</span>
                       </div>
-                      {/* <!-- //.review --> */}
                       <div className="wishIcon">
                         <a href="#"></a>
                       </div>
-                      {/* <!-- wishIcon --> */}
                     </div>
-                    {/* <!-- //.name --> */}
                   </div>
                 </li>
                 <li>
@@ -835,7 +691,6 @@ export default function Component() {
                     <a className="thumbBox" href="#">
                       <img src={newPr4} alt="제품명" />
                     </a>
-                    {/* <!-- 상품설명  --> */}
                     <div className="description">
                       <div className="name">
                         <a href="#">하프 집업 맨투맨 네이비</a>
@@ -843,37 +698,25 @@ export default function Component() {
                       <div className="priceBox">
                         <span className="price">79,000</span>
                       </div>
-                      {/* <!-- //.priceBox --> */}
                       <div className="review">
                         <span>3건</span>
                       </div>
-                      {/* <!-- //.review --> */}
                       <div className="wishIcon">
                         <a href="#"></a>
                       </div>
-                      {/* <!-- wishIcon --> */}
                     </div>
-                    {/* <!-- //.name --> */}
                   </div>
                 </li>
               </ul>
             </div>
-            {/* <!-- //.itemInner --> */}
           </div>
-          {/* <!-- //.main_whatnew_section --> */}
 
           <div className="mainBanner clearfix">
             <div className="bannerImg"></div>
-            {/* <!-- //.bannerImg --> */}
           </div>
-          {/* <!--//.mainBanner  --> */}
-
-          {/* <!--- best item ---> */}
           <div className="main_bestseller_section">
             <h3 className="title">Weekly Best</h3>
-            {/* <!-- 탭 영역 --> */}
             <div className="main_bestseller_inner main_section">
-              {/* <!-- 탭 메뉴 버튼 --> */}
               <input type="radio" name="bestseller" id="tap1" checked />
               <label className="tap1" for="tap1">
                 Women
@@ -888,7 +731,6 @@ export default function Component() {
               <label className="tap3" for="tap3">
                 Brand Bag
               </label>
-              {/* <!-- 탭 상품영역 --> */}
 
               <div className="women_box tapInner itemInner">
                 <ul>
@@ -912,7 +754,6 @@ export default function Component() {
                           <a href="#"></a>
                         </div>
                       </div>
-                      {/* <!--inner--> */}
                     </div>
                   </li>
                   <li>
@@ -921,7 +762,6 @@ export default function Component() {
                         <img src={best2} alt="제품명" />
                       </a>
                       <span className="rank">2</span>
-                      {/* <!-- 상품설명  --> */}
                       <div className="description">
                         <div className="name">
                           <a href="#">(W) 아플리케 아치 로고 후디 그레이</a>
@@ -929,17 +769,13 @@ export default function Component() {
                         <div className="priceBox">
                           <span className="price">85,000</span>
                         </div>
-                        {/* <!-- //.priceBox --> */}
                         <div className="review">
                           <span>리뷰 51건</span>
                         </div>
-                        {/* <!-- //.review --> */}
                         <div className="wishIcon">
                           <a href="#"></a>
                         </div>
-                        {/* <!-- wishIcon --> */}
                       </div>
-                      {/* <!-- //.name --> */}
                     </div>
                   </li>
                   <li>
@@ -1735,17 +1571,17 @@ export default function Component() {
                     <img src={SNS3} alt="네이버" />
                   </a>
                 </div>
-                {/* <!--//.bt_sns  --> */}
+                {/* <!—//.bt_sns  —> */}
               </div>
-              {/* <!-- //footer_section01 --> */}
+              {/* <!— //footer_section01 —> */}
               <div className="footer_section03">Copyright &copy; B.Cave All Right Reserved.</div>
-              {/* <!-- //.footer_section03 --> */}
+              {/* <!— //.footer_section03 —> */}
             </div>
-            {/* <!-- //.footerArea --> */}
+            {/* <!— //.footerArea —> */}
           </div>
-          {/* <!-- //footer_inner --> */}
+          {/* <!— //footer_inner —> */}
         </footer>
       </body>
     </>
-  )
+  );
 }

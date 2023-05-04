@@ -38,8 +38,12 @@
     font-size: 12px;
     font-weight: 400;
   }
+  main .giveme_inner img {
+    border-radius: 0px;
+  }
   main .colec_so {
     font-size: 18px;
+    text-align: center;
   }
   main #giveme {
     width: 100%;
@@ -48,6 +52,12 @@
   main #product {
     width: 100%;
     height: 60vh;
+  }
+  main .product_inner {
+    display: block;
+  }
+  main .seller_item_inner img {
+    border-radius: 0px;
   }
   main .colec_se {
     font-size: 12px;

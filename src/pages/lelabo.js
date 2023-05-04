@@ -9,35 +9,6 @@ import "/src/styles/lelabo/stylem.css";
 
 export default function Component() {
   const scrollToGiveClass = () => {
-    /*
-scrollToGiveClass 플러그인 옵션
-baseline :
-  'top'(기본값) - 화면의 위를 기준으로 적용
-  'bottom' - 화면의 아래를 기준으로 적용
-  'middle' - 화면의 가운데를 기준으로 적용
-  정수 - 적용되는 위치값을 직접설정
-
-class : 부여되는 클래스명
-  'scrolled'(기본값)
-
-add : baseline(기준)의 위치를 가감함
-  정수 - 입력된 값만큼(px) 가감됨.
-  실수(1>n>-1) - 입력된 값의 화면비만큼 값이 가감됨.
-
-limit : 클래스를 적용받는 한계값의 기준
-  'fixed' - 화면위에서부터 limitValue만큼 제한
-  'baseline' - 적용받는 기준에서부터 limitValue만큼 제한
-
-limitValue : 한계값
-  정수
-
-addFunction : function(){}
-  - 클래스를 부여받을 때 함수를 호출함.
-
-removeFunction : function(){}
-  - 클래스가 제거될 때 함수를 호출함.
-
-*/
     (function ($) {
       $.fn.scrollToGiveClass = function (options) {
         var defaultOptions = {
@@ -172,7 +143,7 @@ removeFunction : function(){}
       <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-      <body>
+      <body className="lelabobody">
         <p className="top_event">전 구매 무료배송과 선물포장 혜택을 즐겨보세요.</p>
 
         <header>
@@ -264,143 +235,143 @@ removeFunction : function(){}
           </section>
 
           <section id="product">
-            <div className="pr_p">
+            <div className="product_inner">
               <p className="colec_so">LE LABO FRAGRANCES</p>
               <p className="colec_se">Le Labo's perfume collection is created in collaboration with talented and inventive perfumers.</p>
-            </div>
-            <div id="seller_swiper" className="swiper mySwiper">
-              <div className="swiper-wrapper">
-                <div className="swiper-slide slide1">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr1L} />
-                    </a>
+              <div id="seller_swiper" className="swiper mySwiper">
+                <div className="swiper-wrapper">
+                  <div className="swiper-slide slide1">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr1L} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="swiper-slide slide2">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr2L} />
-                    </a>
+                  <div className="swiper-slide slide2">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr2L} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="swiper-slide slide3">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr3} />
-                    </a>
+                  <div className="swiper-slide slide3">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr3} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="swiper-slide slide4">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr4} />
-                    </a>
+                  <div className="swiper-slide slide4">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr4} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="swiper-slide slide5">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr5} />
-                    </a>
+                  <div className="swiper-slide slide5">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr5} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="swiper-slide slide6">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr6} />
-                    </a>
+                  <div className="swiper-slide slide6">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr6} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="swiper-slide slide7">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr7} />
-                    </a>
+                  <div className="swiper-slide slide7">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr7} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="swiper-slide slide8">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr8} />
-                    </a>
+                  <div className="swiper-slide slide8">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr8} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="swiper-slide slide9">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr9} />
-                    </a>
+                  <div className="swiper-slide slide9">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr9} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="swiper-slide slide10">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr10} />
-                    </a>
+                  <div className="swiper-slide slide10">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr10} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="swiper-slide slide11">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr11} />
-                    </a>
+                  <div className="swiper-slide slide11">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr11} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="swiper-slide slide12">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr12} />
-                    </a>
+                  <div className="swiper-slide slide12">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr12} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="swiper-slide slide13">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr13} />
-                    </a>
+                  <div className="swiper-slide slide13">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr13} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="swiper-slide slide14">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr14} />
-                    </a>
+                  <div className="swiper-slide slide14">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr14} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="swiper-slide slide15">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr15} />
-                    </a>
+                  <div className="swiper-slide slide15">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr15} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="swiper-slide slide16">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr16} />
-                    </a>
+                  <div className="swiper-slide slide16">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr16} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="swiper-slide slide17">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr17} />
-                    </a>
+                  <div className="swiper-slide slide17">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr17} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="swiper-slide slide18">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr18} />
-                    </a>
+                  <div className="swiper-slide slide18">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr18} />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="swiper-slide slide19">
-                  <div className="seller_item_inner">
-                    <a href="#">
-                      <img src={pr19} />
-                    </a>
+                  <div className="swiper-slide slide19">
+                    <div className="seller_item_inner">
+                      <a href="#">
+                        <img src={pr19} />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -482,31 +453,28 @@ removeFunction : function(){}
             </div>
           </section>
         </main>
-
-        <footer className="labo">
-          <div className="fot_inr">
-            <ul>
-              <li>
-                <a href="#">쇼핑가이드</a>
-              </li>
-              <li>
-                <a href="#">이용약관</a>
-              </li>
-              <li>
-                <a href="#">개인정보처리방침</a>
-              </li>
-              <li>
-                <a href="#">사업자정보확인</a>
-              </li>
-            </ul>
-            <p className="cs_notice">
-              le labo CEO.lelabo 사업자등록번호. 000-00-00000 e-mail. lelabo@oooo.co.kr 주소. 서울특별시 성동구 송정길 00
-              <br />
-              통신판매업신고번호. 0000-서울성동-0000
-              <br /> <span className="copyright">2023 &copy; Le labo corp. All right reserved.</span>
-            </p>
-          </div>
-        </footer>
+        <div className="fot_inr">
+          <ul>
+            <li>
+              <a href="#">쇼핑가이드</a>
+            </li>
+            <li>
+              <a href="#">이용약관</a>
+            </li>
+            <li>
+              <a href="#">개인정보처리방침</a>
+            </li>
+            <li>
+              <a href="#">사업자정보확인</a>
+            </li>
+          </ul>
+          <p className="cs_notice">
+            le labo CEO.lelabo 사업자등록번호. 000-00-00000 e-mail. lelabo@oooo.co.kr 주소. 서울특별시 성동구 송정길 00
+            <br />
+            통신판매업신고번호. 0000-서울성동-0000
+            <br /> <span className="copyright">2023 &copy; Le labo corp. All right reserved.</span>
+          </p>
+        </div>
       </body>
     </>
   );

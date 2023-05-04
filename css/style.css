@@ -4,72 +4,69 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
-body {
-  font-family: "Noto Sans KR", sans-serif;
+.covernetpage {
+  *font-family: "Noto Sans KR", sans-serif;
 }
-body.covernetpage {
-  /* footer */
-}
-body.covernetpage .title {
+.covernetpage.covernetpage .title {
   font-family: "Verdana";
   font-size: 24px;
-  color: #1a1a1a;
+  color: #000;
   font-weight: 600;
-  max-width: 1680px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  padding-top: 24px;
+  text-align: center;
 }
-body.covernetpage header .header_fix {
-  background-color: #fff;
-  border-bottom: 1px solid #e5e5e5;
+.covernetpage.covernetpage header .header_fix {
+  background: #fff;
+  border-bottom: 1px solid #dcdcdc;
   position: fixed !important;
   top: 0;
   left: 0;
   z-index: 99 !important;
 }
-body.covernetpage header {
+.covernetpage.covernetpage header {
   position: relative;
   height: 100px;
 }
-body.covernetpage #headerInner {
+.covernetpage.covernetpage #headerInner {
   width: 100%;
   height: 100px;
   z-index: 99;
-  transition: all 0.3s;
+  transition: all 0.35s;
 }
-body.covernetpage #headerInner:hover {
+.covernetpage.covernetpage #headerInner:hover {
   background: #fff;
 }
-body.covernetpage #headerInner:hover ~ .layer_shadow {
+.covernetpage.covernetpage #headerInner:hover ~ .layer_shadow {
   opacity: 1;
   visibility: visible;
 }
-body.covernetpage .headerArea {
+.covernetpage.covernetpage .headerArea {
   margin: 0 auto;
 }
-body.covernetpage #co_logo {
+.covernetpage.covernetpage #co_logo {
   width: 160px;
   position: absolute;
   top: 28px;
   left: 46px;
 }
-body.covernetpage #co_logo img {
+.covernetpage.covernetpage #co_logo img {
   width: 160px;
 }
-body.covernetpage #top_menu .top_menu {
+.covernetpage.covernetpage #top_menu .top_menu {
   width: 720px;
   position: absolute;
   top: 0px;
   left: 400px;
 }
-body.covernetpage #top_menu .top_menu ul {
+.covernetpage.covernetpage #top_menu .top_menu ul {
   display: flex;
 }
-body.covernetpage #top_menu .top_menu > li a {
+.covernetpage.covernetpage #top_menu .top_menu > li a {
   color: #000;
 }
-body.covernetpage #top_menu .top_menu > li > a {
+.covernetpage.covernetpage #top_menu .top_menu > li > a {
   line-height: 94px;
   padding: 0 32px;
   padding-top: 6px;
@@ -78,7 +75,7 @@ body.covernetpage #top_menu .top_menu > li > a {
   position: relative;
   display: inline-block;
 }
-body.covernetpage #top_menu .top_menu > li > a::after {
+.covernetpage.covernetpage #top_menu .top_menu > li > a::after {
   content: "";
   display: block;
   width: 100%;
@@ -90,70 +87,67 @@ body.covernetpage #top_menu .top_menu > li > a::after {
   transform: scaleX(0);
   transition: all 0.4s;
 }
-body.covernetpage .top_menu > li > a:hover::after {
+.covernetpage.covernetpage .top_menu > li > a:hover::after {
   transform: scaleX(0.6);
 }
-body.covernetpage #top_menu .top_menu li:first-child a {
-  color: #cc0000;
-}
-body.covernetpage .top_menu_sub {
+.covernetpage.covernetpage .top_menu_sub {
   display: none;
   width: 100%;
-  height: 38vh;
   max-height: 400px;
   background: #fff;
   position: fixed;
   top: 90px;
   left: 0;
+  padding-bottom: 20px;
   border-top: 1px solid rgb(230, 230, 230);
 }
-body.covernetpage #top_menu .top_menu li:hover .top_menu_sub {
+.covernetpage.covernetpage #top_menu .top_menu li:hover .top_menu_sub {
   display: block;
 }
-body.covernetpage #top_menu .top_menu_sub_inner {
-  max-width: 1460px;
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner {
+  max-width: 1280px;
   margin: 0 auto;
 }
-body.covernetpage #top_menu .dep1,
-body.covernetpage #top_menu .dep2 {
+.covernetpage.covernetpage #top_menu .dep1,
+.covernetpage.covernetpage #top_menu .dep2 {
   float: left;
   flex-direction: column;
 }
-body.covernetpage #top_menu .dep1 {
+.covernetpage.covernetpage #top_menu .dep1 {
   width: 200px;
   padding-top: 16px;
 }
-body.covernetpage #top_menu .dep2 {
+.covernetpage.covernetpage #top_menu .dep2 {
   width: 200px;
   padding-left: 42px;
   border-left: 1px solid #aaa;
   color: gray;
   padding-top: 16px;
 }
-body.covernetpage #top_menu .dep1 > li > a,
-body.covernetpage #top_menu .dep2 > li > a {
+.covernetpage.covernetpage #top_menu .dep1 > li > a,
+.covernetpage.covernetpage #top_menu .dep2 > li > a {
   font-size: 12px;
   color: #1a1a1a;
   line-height: 28px;
 }
-body.covernetpage #top_menu .dep2 > li > a {
+.covernetpage.covernetpage #top_menu .dep2 > li > a {
   color: gray;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb ul {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb ul {
   display: flex;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb a {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb a {
   display: block;
   height: 320px;
   width: 250px;
   background: gray;
   padding-top: 30px;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb img {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb img {
   width: 100%;
   height: 100%;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb a::after {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb a::after {
   content: "";
   display: block;
   background: rgba(49, 49, 49, 0.4);
@@ -162,61 +156,61 @@ body.covernetpage #top_menu .top_menu_sub_inner_thumb a::after {
   opacity: 0;
   transition: all 0.4s;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb a:hover::after {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb a:hover::after {
   opacity: 1;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb li:first-child a {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb li:first-child a {
   background: url("../../images/covernet/pr_1.jpg") no-repeat;
   background-size: cover;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb li:nth-child(2) a {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb li:nth-child(2) a {
   background: url("../../images/covernet/pr_2.jpg") no-repeat;
   background-size: cover;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb li:last-child a {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb li:last-child a {
   background: url("../../images/covernet/pr_3.jpg") no-repeat;
   background-size: cover;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb li:first-child .best {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb li:first-child .best {
   background: url("../../images/covernet/b_pr_1.jpg") no-repeat;
   background-size: cover;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb li:nth-child(2) .best {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb li:nth-child(2) .best {
   background: url("../../images/covernet/bb_pr.jpg") no-repeat;
   background-size: cover;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb li:last-child .best {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb li:last-child .best {
   background: url("../../images/covernet/b_pr_3.jpg") no-repeat;
   background-size: cover;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb li:first-child .women {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb li:first-child .women {
   background: url("../../images/covernet/w_pr_1.jpg") no-repeat;
   background-size: cover;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb li:nth-child(2) .women {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb li:nth-child(2) .women {
   background: url("../../images/covernet/w_pr_2.jpg") no-repeat;
   background-size: cover;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb li:last-child .women {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb li:last-child .women {
   background: url("../../images/covernet/w_pr_3.jpg") no-repeat;
   background-size: cover;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb li:first-child .men {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb li:first-child .men {
   background: url("../../images/covernet/m_pr_4.jpg") no-repeat;
   background-size: cover;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb li:nth-child(2) .men {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb li:nth-child(2) .men {
   background: url("../../images/covernet/m_pr_1.jpg") no-repeat;
   background-size: cover;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb li:last-child .men {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb li:last-child .men {
   background: url("../../images/covernet/m_pr_2.jpg") no-repeat;
   background-size: cover;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb li:hover .MenuSubInner {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb li:hover .MenuSubInner {
   display: block;
 }
-body.covernetpage #top_menu .top_menu_sub_inner_thumb .MenuSubInner {
+.covernetpage.covernetpage #top_menu .top_menu_sub_inner_thumb .MenuSubInner {
   display: none;
   color: #fff;
   text-align: center;
@@ -225,21 +219,21 @@ body.covernetpage #top_menu .top_menu_sub_inner_thumb .MenuSubInner {
   transform: translateY(-50%);
   align-items: center;
 }
-body.covernetpage #top_menu .MenuSubInner > p {
+.covernetpage.covernetpage #top_menu .MenuSubInner > p {
   font-size: 10px;
   font-weight: 400;
   line-height: 16px;
   width: 250px;
 }
-body.covernetpage .MenuSubInner > span {
+.covernetpage.covernetpage .MenuSubInner > span {
   font-size: 16px;
   font-weight: bold;
 }
-body.covernetpage .MenuSubInner > span > strong {
+.covernetpage.covernetpage .MenuSubInner > span > strong {
   font-weight: 400;
   font-size: 12px;
 }
-body.covernetpage #top_member ul {
+.covernetpage.covernetpage #top_member ul {
   width: 150px;
   display: flex;
   justify-content: flex-end;
@@ -247,10 +241,10 @@ body.covernetpage #top_member ul {
   right: 40px;
   top: 38px;
 }
-body.covernetpage #top_member ul li ~ li {
+.covernetpage.covernetpage #top_member ul li ~ li {
   padding-left: 20px;
 }
-body.covernetpage .layer_shadow {
+.covernetpage.covernetpage .layer_shadow {
   opacity: 0;
   visibility: hidden;
   width: 100%;
@@ -263,7 +257,7 @@ body.covernetpage .layer_shadow {
   margin-top: 40px;
   transition: all 0.3s;
 }
-body.covernetpage .search_inner {
+.covernetpage.covernetpage .search_inner {
   position: absolute;
   top: 90px;
   right: 0;
@@ -275,26 +269,26 @@ body.covernetpage .search_inner {
   background-color: #fff;
   transition: all 0.4s;
 }
-body.covernetpage .search_inner.view {
+.covernetpage.covernetpage .search_inner.view {
   height: 500px;
 }
-body.covernetpage #headerInner.view {
+.covernetpage.covernetpage #headerInner.view {
   background-color: #fff;
 }
-body.covernetpage .layer_shadow.view {
+.covernetpage.covernetpage .layer_shadow.view {
   opacity: 1;
   visibility: visible;
 }
-body.covernetpage .searchWrapper {
+.covernetpage.covernetpage .searchWrapper {
   max-width: 1060px;
   margin: 50px auto 60px;
 }
-body.covernetpage .searchWrapper > form {
+.covernetpage.covernetpage .searchWrapper > form {
   height: 80px;
   border-bottom: 3px solid #1a1a1a;
   vertical-align: bottom;
 }
-body.covernetpage .searchWrapper .searchBar {
+.covernetpage.covernetpage .searchWrapper .searchBar {
   float: left;
   font-size: 18px;
   height: 70px;
@@ -306,50 +300,55 @@ body.covernetpage .searchWrapper .searchBar {
   border: none;
   font-family: "Noto Sans KR";
 }
-body.covernetpage .searchWrapper .searchBar:focus {
+.covernetpage.covernetpage .searchWrapper .searchBar:focus {
   outline: none;
 }
-body.covernetpage .searchWrapper .search_btn {
+.covernetpage.covernetpage .searchWrapper .search_btn {
   float: right;
 }
-body.covernetpage main .slideWrapper {
-  width: 100%;
-  height: 100vh;
+.covernetpage.covernetpage main .slideWrappercover {
+  width: 100;
+  height: 70vh;
 }
-body.covernetpage main .slideWrapper img {
+.covernetpage.covernetpage main .slideWrappercover a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.covernetpage.covernetpage main .slideWrappercover .slider {
+  display: flex;
   width: 100%;
   height: 100%;
 }
-body.covernetpage main .slideWrapper a {
-  display: block;
-  width: 100%;
-  overflow: hidden;
-}
-body.covernetpage main .description {
+.covernetpage.covernetpage main .description {
   margin-top: 12px;
+  position: relative;
 }
-body.covernetpage main .name a {
+.covernetpage.covernetpage main .name {
+  width: 280px;
+}
+.covernetpage.covernetpage main .name a {
   font-size: 12px;
   color: #000;
-  display: flex;
 }
-body.covernetpage main .priceBox {
+.covernetpage.covernetpage main .priceBox {
   font-family: "Verdana";
 }
-body.covernetpage main .price {
+.covernetpage.covernetpage main .price {
   font-size: 16px;
 }
-body.covernetpage main .slideWrapper .bx-pager {
+.covernetpage.covernetpage main .slideWrapper .bx-pager {
   position: absolute;
   left: 50%;
   bottom: -305px;
   text-align: center;
   transform: translateX(-50%);
 }
-body.covernetpage main .bx-pager-item {
+.covernetpage.covernetpage main .bx-pager-item {
   display: inline-block;
 }
-body.covernetpage main .slideWrapper .bx-pager-item a {
+.covernetpage.covernetpage main .slideWrappercover .bx-pager-item a {
   display: flex;
   width: 12px;
   height: 12px;
@@ -357,64 +356,53 @@ body.covernetpage main .slideWrapper .bx-pager-item a {
   border-radius: 50%;
   font-size: 0;
 }
-body.covernetpage main .slideWrapper .active {
+.covernetpage.covernetpage main .slideWrappercover .active {
   transform: scale(102%);
   background-color: rgba(94, 94, 94, 0.7490196078) !important;
 }
-body.covernetpage main .slideWrapper {
+.covernetpage.covernetpage main .slideWrappercover {
   position: relative;
 }
-body.covernetpage main .description {
+.covernetpage.covernetpage main .description {
   margin-top: 18px;
   position: relative;
 }
-body.covernetpage main .name a {
+.covernetpage.covernetpage main .name a {
   font-size: 14px;
   padding-top: 4px;
 }
-body.covernetpage main .name a span {
+.covernetpage.covernetpage main .name a span {
   font-weight: bold;
 }
-body.covernetpage main .priceBox {
+.covernetpage.covernetpage main .priceBox {
   font-family: "Verdana";
   margin-bottom: 12px;
   margin-top: 12px;
 }
-body.covernetpage main .price {
+.covernetpage.covernetpage main .price {
   font-size: 12px;
 }
-body.covernetpage main .review {
+.covernetpage.covernetpage main .review {
   color: #5e5e5e;
 }
-body.covernetpage main .review span {
+.covernetpage.covernetpage main .review span {
   font-size: 12px;
 }
-body.covernetpage main .promotion {
-  display: inline-block;
-  position: absolute;
-  bottom: -26px;
-  font-size: 12px;
-  background-color: #000;
-  color: #fff;
-  line-height: 16px;
-  padding: 0 3px;
-}
-body.covernetpage main .wishIcon {
+.covernetpage.covernetpage main .wishIcon {
   position: absolute;
   top: 0;
   right: 18px;
 }
-body.covernetpage main .main_whatnew_section .itemInner > ul > li {
+.covernetpage.covernetpage main .main_whatnew_section .itemInner > ul > li {
   width: 25%;
 }
-body.covernetpage main .stylepick .bx-pager-item {
+.covernetpage.covernetpage main .stylepick .bx-pager-item {
   display: inline-block;
 }
-body.covernetpage main .stylepick .bx-pager {
-  margin-top: 80px;
-  text-align: center;
+.covernetpage.covernetpage main .stylepick .bx-pager {
+  margin: 0;
 }
-body.covernetpage main .stylepick .bx-pager a {
+.covernetpage.covernetpage main .stylepick .bx-pager a {
   display: inline-block;
   width: 12px;
   height: 12px;
@@ -424,110 +412,100 @@ body.covernetpage main .stylepick .bx-pager a {
   border-radius: 50%;
   text-align: center;
 }
-body.covernetpage main .stylepick .bx-wrapper .active {
+.covernetpage.covernetpage main .stylepick .bx-wrapper .active {
   background-color: rgba(132, 132, 132, 0.8);
 }
-body.covernetpage main .itemti ul {
-  display: flex;
-}
-body.covernetpage main .itemti li ~ li {
-  padding-left: 40px;
-}
-body.covernetpage main .itemInner > ul > li {
-  float: left;
+.covernetpage.covernetpage main .itemInner > ul > li {
   position: relative;
 }
-body.covernetpage main .itemInner {
+.covernetpage.covernetpage main .itemInner > ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.covernetpage.covernetpage main .itemInner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.covernetpage.covernetpage main .stylepick {
   max-width: 1680px;
   margin: 0 auto;
 }
-body.covernetpage main .stylepick {
-  max-width: 1680px;
-  margin: 0 18px;
-  margin-top: 180px;
-  text-align: center;
+.covernetpage.covernetpage main .main_section main .box_inner {
+  margin: 0 auto;
 }
-body.covernetpage main .box_inner {
-  width: 360px;
-  height: 450px;
-}
-body.covernetpage main .thumbBox {
+.covernetpage.covernetpage main .thumbBox {
+  display: flex;
+  width: 280px;
+  height: 360px;
   font-size: 0;
   overflow: hidden;
 }
-body.covernetpage main .thumbBox img {
+.covernetpage.covernetpage main .thumbBox img {
   width: 100%;
   height: 100%;
   transition: all 0.3s;
 }
-body.covernetpage main .thumbBox img:hover {
+.covernetpage.covernetpage main .thumbBox img:hover {
   transform: scale(102%);
 }
-body.covernetpage main .mainBanner {
+.covernetpage.covernetpage main .mainBanner {
   width: 50%;
-  max-width: 1680px;
-  margin: 360px auto 0;
+  max-width: 1280px;
+  margin: 160px auto 0;
 }
-body.covernetpage main .bannerImg {
+.covernetpage.covernetpage main .bannerImg {
   display: flex;
   width: 100%;
 }
-body.covernetpage main .bannerImg a img {
+.covernetpage.covernetpage main .bannerImg a img {
   width: 100%;
   height: 100%;
   transition: all, 0.3s;
 }
-body.covernetpage main .bannerImg a {
+.covernetpage.covernetpage main .bannerImg a {
   padding-right: 42px;
   line-height: 36px;
   font-size: 18px;
   color: #000;
 }
-body.covernetpage main .bannerImg a img:hover {
+.covernetpage.covernetpage main .bannerImg a img:hover {
   transform: scale(102%);
 }
-body.covernetpage main .main_bestseller_inner {
+.covernetpage.covernetpage main .main_bestseller_section {
+  width: 100%;
+}
+.covernetpage.covernetpage main .main_bestseller_inner {
   text-align: center;
-  overflow: hidden;
-  max-width: 1680px;
+  max-width: 1280px;
   margin: 0 auto;
 }
-body.covernetpage main .main_bestseller_inner > div {
+.covernetpage.covernetpage main .main_bestseller_inner > div {
   width: 100%;
-  height: 150px;
   display: none;
 }
-body.covernetpage main .main_bestseller_section {
-  margin-top: 160px;
-}
-body.covernetpage main .main_whatnew_section {
-  margin-top: 160px;
-}
-body.covernetpage main .main_snap_section {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-body.covernetpage main #tap1:checked ~ .women_box,
-body.covernetpage main #tap2:checked ~ .man_box,
-body.covernetpage main #tap3:checked ~ .Brand_Bag_box {
+.covernetpage.covernetpage main #tap1:checked ~ .women_box,
+.covernetpage.covernetpage main #tap2:checked ~ .man_box,
+.covernetpage.covernetpage main #tap3:checked ~ .Brand_Bag_box {
   display: block;
 }
-body.covernetpage main .main_bestseller_inner input {
+.covernetpage.covernetpage main .main_bestseller_inner input {
   display: none;
 }
-body.covernetpage main .main_bestseller_inner label {
+.covernetpage.covernetpage main .main_bestseller_inner label {
   font-family: Verdana;
   font-size: 16px;
   margin-left: 24px;
   display: inline-block;
   cursor: pointer;
-  max-width: 1980px;
+  max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 64px;
   margin-left: 24px;
   margin-right: 24px;
 }
-body.covernetpage main .main_bestseller_inner label::after {
+.covernetpage.covernetpage main .main_bestseller_inner label::after {
   content: "";
   display: block;
   width: 0;
@@ -535,32 +513,32 @@ body.covernetpage main .main_bestseller_inner label::after {
   background: #1a1a1a;
   transition: all, 0.6s;
 }
-body.covernetpage main #tap1:checked ~ .tap1::after,
-body.covernetpage main #tap2:checked ~ .tap2::after,
-body.covernetpage main #tap3:checked ~ .tap3::after {
+.covernetpage.covernetpage main #tap1:checked ~ .tap1::after,
+.covernetpage.covernetpage main #tap2:checked ~ .tap2::after,
+.covernetpage.covernetpage main #tap3:checked ~ .tap3::after {
   width: 100%;
 }
-body.covernetpage main #tap1:checked ~ .tap1,
-body.covernetpage main #tap2:checked ~ .tap2,
-body.covernetpage main #tap3:checked ~ .tap3 {
+.covernetpage.covernetpage main #tap1:checked ~ .tap1,
+.covernetpage.covernetpage main #tap2:checked ~ .tap2,
+.covernetpage.covernetpage main #tap3:checked ~ .tap3 {
   font-weight: bold;
   letter-spacing: -0.09em;
 }
-body.covernetpage main .tapInner {
+.covernetpage.covernetpage main .tapInner {
   text-align: center;
 }
-body.covernetpage main .tapInner > ul > li:nth-child(5) .rank,
-body.covernetpage main .tapInner > ul > li:nth-child(6) .rank,
-body.covernetpage main .tapInner > ul > li:nth-child(7) .rank,
-body.covernetpage main .tapInner > ul > li:nth-child(8) .rank {
+.covernetpage.covernetpage main .tapInner > ul > li:nth-child(5) .rank,
+.covernetpage.covernetpage main .tapInner > ul > li:nth-child(6) .rank,
+.covernetpage.covernetpage main .tapInner > ul > li:nth-child(7) .rank,
+.covernetpage.covernetpage main .tapInner > ul > li:nth-child(8) .rank {
   background-color: #b5b5b5;
 }
-body.covernetpage main .tapInner .description {
+.covernetpage.covernetpage main .tapInner .description {
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
 }
-body.covernetpage main .rank {
+.covernetpage.covernetpage main .rank {
   background-color: #000;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
@@ -573,14 +551,14 @@ body.covernetpage main .rank {
   left: 0;
   margin-left: 4px;
 }
-body.covernetpage main .tapInner > ul > li {
+.covernetpage.covernetpage main .tapInner > ul > li {
   width: 25%;
   margin-bottom: 60px;
 }
-body.covernetpage main .tapInner > ul > li:nth-child(5) {
+.covernetpage.covernetpage main .tapInner > ul > li:nth-child(5) {
   clear: both;
 }
-body.covernetpage main .stylepick .thumbBox {
+.covernetpage.covernetpage main .stylepick .thumbBox {
   max-height: 818px;
 }
 @keyframes tapAni {
@@ -592,51 +570,56 @@ body.covernetpage main .stylepick .thumbBox {
     opacity: 1;
   }
 }
-body.covernetpage main .tapInner > ul > li:nth-child(1) {
+.covernetpage.covernetpage main .tapInner > ul > li:nth-child(1) {
   animation-name: tapAni;
   animation-duration: 0.4s;
 }
-body.covernetpage main .tapInner > ul > li:nth-child(2) {
+.covernetpage.covernetpage main .tapInner > ul > li:nth-child(2) {
   animation-name: tapAni;
   animation-duration: 0.7s;
 }
-body.covernetpage main .tapInner > ul > li:nth-child(3) {
+.covernetpage.covernetpage main .tapInner > ul > li:nth-child(3) {
   animation-name: tapAni;
   animation-duration: 1s;
 }
-body.covernetpage main .tapInner > ul > li:nth-child(4) {
+.covernetpage.covernetpage main .tapInner > ul > li:nth-child(4) {
   animation-name: tapAni;
   animation-duration: 1.3s;
 }
-body.covernetpage main .tapInner > ul > li:nth-child(5) {
+.covernetpage.covernetpage main .tapInner > ul > li:nth-child(5) {
   animation-name: tapAni;
   animation-duration: 1.6s;
 }
-body.covernetpage main .tapInner > ul > li:nth-child(6) {
+.covernetpage.covernetpage main .tapInner > ul > li:nth-child(6) {
   animation-name: tapAni;
   animation-duration: 1.9s;
 }
-body.covernetpage main .tapInner > ul > li:nth-child(7) {
+.covernetpage.covernetpage main .tapInner > ul > li:nth-child(7) {
   animation-name: tapAni;
   animation-duration: 2.1s;
 }
-body.covernetpage main .tapInner > ul > li:nth-child(8) {
+.covernetpage.covernetpage main .tapInner > ul > li:nth-child(8) {
   animation-name: tapAni;
   animation-duration: 2.4s;
 }
-body.covernetpage main .snapBox > a {
+.covernetpage.covernetpage main .main_snap_sectiono {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 160px;
+}
+.covernetpage.covernetpage main .snapBox > a {
   display: inline-block;
   position: relative;
   font-size: 0;
   transition: all 0.3s;
 }
-body.covernetpage .snapBox li ~ li {
+.covernetpage.covernetpage .snapBox li ~ li {
   padding-left: 10px;
 }
-body.covernetpage main .snapBox > a:hover .snap_o {
+.covernetpage.covernetpage main .snapBox > a:hover .snap_o {
   display: block;
 }
-body.covernetpage main .snapBox .snap_o {
+.covernetpage.covernetpage main .snapBox .snap_o {
   display: none;
   color: #fff;
   background: rgba(26, 26, 26, 0.65);
@@ -650,109 +633,106 @@ body.covernetpage main .snapBox .snap_o {
   text-align: center;
   transition: all, 0.3s;
 }
-body.covernetpage main .snap_o > span {
+.covernetpage.covernetpage main .snap_o > span {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   white-space: nowrap;
 }
-body.covernetpage main .snap_o > p {
+.covernetpage.covernetpage main .snap_o > p {
   position: absolute;
   bottom: 20px;
   right: 20px;
 }
-body.covernetpage main .snapInner ul > li {
+.covernetpage.covernetpage main .snapInner ul > li {
   float: left;
   width: 25%;
 }
-body.covernetpage main .snapInner {
-  max-width: 1680px;
+.covernetpage.covernetpage main .snapInner {
+  max-width: 1280px;
   margin: 0 auto;
   font-size: 0px;
 }
-body.covernetpage main .bx-pager {
+.covernetpage.covernetpage main .bx-pager {
   display: none;
 }
-body.covernetpage main .main_snap_section {
-  margin-bottom: 140px;
-}
-body.covernetpage main .snapBox {
+.covernetpage.covernetpage main .snapBox {
   margin-top: 16px;
 }
-body.covernetpage main .snapBox img {
+.covernetpage.covernetpage main .snapBox img {
   width: 100%;
-  max-height: 505px;
+  max-height: 380px;
 }
-body.covernetpage main .snapInner ul {
+.covernetpage.covernetpage main .snapInner ul {
   display: flex;
   flex-wrap: wrap;
 }
-body.covernetpage footer {
+.covernetpage.covernetpage footer {
   width: 100%;
   height: auto;
 }
-body.covernetpage .footer_inner {
-  max-width: 1680px;
+.covernetpage.covernetpage .footer_inner {
+  max-width: 1280px;
   margin: 0 auto;
 }
-body.covernetpage .footer_section01 {
+.covernetpage.covernetpage .footer_section01 {
   float: left;
   width: 100%;
   border-top: 1px solid #e5e5e5;
   padding-top: 16px;
 }
-body.covernetpage .bt_cscenter {
+.covernetpage.covernetpage .bt_cscenter {
   line-height: 20px;
   font-size: 14px;
   margin-bottom: 24px;
 }
-body.covernetpage .bt_cs {
+.covernetpage.covernetpage .bt_cs {
   font-size: 18px;
   color: #1a1a1a;
   font-weight: 600;
   margin-bottom: 8px;
 }
-body.covernetpage .bt_time {
+.covernetpage.covernetpage .bt_time {
   color: #1a1a1a;
   font-size: 12px;
 }
-body.covernetpage .bt_info {
+.covernetpage.covernetpage .bt_info {
   font-size: 12px;
   line-height: 24px;
   margin-bottom: 32px;
 }
-body.covernetpage .bt_info span {
+.covernetpage.covernetpage .bt_info span {
   width: 1px;
-  height: 11px;
+  height: 10px;
   background-color: #909090;
   display: inline-block;
   margin: 0 5px;
 }
-body.covernetpage .bt_sns {
+.covernetpage.covernetpage .bt_sns {
   margin-bottom: 32px;
 }
-body.covernetpage .bt_sns a {
+.covernetpage.covernetpage .bt_sns a {
   padding-right: 16px;
 }
-body.covernetpage .footer_section02 {
+.covernetpage.covernetpage .footer_section02 {
   font-size: 12px;
   position: relative;
   top: -16px;
 }
-body.covernetpage .footer_section02 ul {
+.covernetpage.covernetpage .footer_section02 ul {
   display: flex;
 }
-body.covernetpage .footer_section02 li {
+.covernetpage.covernetpage .footer_section02 li {
   margin-right: 16px;
 }
-body.covernetpage .footer_section02 a {
+.covernetpage.covernetpage .footer_section02 a {
   color: #909090;
 }
-body.covernetpage .footer_section02 ul li a:hover {
+.covernetpage.covernetpage .footer_section02 ul li a:hover {
   color: #000;
 }
-body.covernetpage .footer_section03 {
+.covernetpage.covernetpage .footer_section03 {
   width: 100%;
   float: left;
   border-top: 1px solid #e5e5e5;
