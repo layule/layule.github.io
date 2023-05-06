@@ -13,6 +13,16 @@
   height: 100%;
   object-fit: cover;
 }
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+  border-radius: 12px;
+  background: #11111182;
+  padding: 35px 39px;
+}
+.mySwiper .swiper-button-prev::after,
+.mySwiper .swiper-button-next::after {
+  color: #fff;
+}
 .covernatHeader {
   position: relative;
   height: 100px;
