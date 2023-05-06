@@ -2,7 +2,7 @@
 
 .mySwiper {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
 }
 .mySwiper a {
   width: 100%;
@@ -11,4 +11,65 @@
 .mySwiper img {
   width: 100%;
   height: 100%;
+}
+.covernatHeader {
+  position: relative;
+  height: 100px;
+}
+#covernatHeaderInner {
+  width: 100%;
+  height: 100px;
+  z-index: 99;
+  transition: all 0.35s;
+}
+.covernatPointInner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 2.5%;
+}
+.covernatTopMenu {
+  width: 100%;
+}
+.TopMenu {
+  display: flex;
+}
+.TopMenu li {
+  padding-left: 6.5%;
+}
+.submenu {
+  display: none;
+  width: 100%;
+  height: 300px;
+  background: #fff;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  border-top: 1px solid rgb(230, 230, 230);
+}
+.submenuinner {
+  max-width: 1000px;
+  padding-left: 6%;
+}
+.TopMenu li:hover .submenu {
+  display: block;
+}
+.dep1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.TopMenu .dep1 li {
+  width: 100%;
+  padding: 0;
+}
+.dep1 > li > a {
+  font-size: 12px;
+  line-height: 56px;
+}
+.product_cover > li > a {
+  font-size: 12px;
+  line-height: 28px;
+}
+.product_cover a {
+  color: #bdbdbd;
 }

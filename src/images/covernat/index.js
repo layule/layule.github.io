@@ -62,4 +62,4 @@ export { default as search } from "./search.svg";
 export { default as shopping } from "./shopping-bag.svg";
 export { default as main1 } from "./p_main1.jpeg";
 export { default as main2 } from "./main2.jpeg";
-export { default as main3 } from "./main3.svg";
+export { default as main3 } from "./main3.jpg";
