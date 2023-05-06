@@ -4,7 +4,13 @@ import "swiper/css";
 import "/src/styles/covernat/reset.css";
 import "/src/styles/covernat/style.css";
 import "/src/styles/covernat/font.css";
-import { logo, main1, main2, main3 } from "../images/covernat";
+import { like, logo, main1, main2, main3, search, shopping } from "../images/covernat";
+import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
+
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
 export default function App() {
   return (
     <>
@@ -282,11 +288,39 @@ export default function App() {
                   </div>
                 </li>
               </ul>
+              <ul className="covernatIcon">
+                <li>
+                  <a href="#">
+                    <img src={like}></img>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src={shopping}></img>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src={search}></img>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </header>
-      <Swiper className="mySwiper">
+      <Swiper
+        className="mySwiper"
+        loop={true}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        onSwiper={swiper => console.log("끼에에엑?")}
+        onSlideChange={() => console.log("뿌에에에엑?????")}
+      >
         <SwiperSlide>
           <a href="#">
             <img src={main1}></img>
