@@ -23,6 +23,9 @@
 .mySwiper .swiper-button-next::after {
   color: #fff;
 }
+.mySwiper .swiper-pagination-bullet {
+  background: #fff;
+}
 .covernatHeader {
   position: relative;
   height: 100px;
