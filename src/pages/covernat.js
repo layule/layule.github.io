@@ -336,48 +336,71 @@ export default function App() {
         </SwiperSlide>
       </Swiper>
       <footer className="covernat_footer">
-        <nav className="covernat_fot_inner">
-          <ul className="covernat_cs">
+        <ul className="covernat_cs">
+          <li>
+            <a href="#">고객 지원</a>
+          </li>
+          <li>
+            <a href="#">문의하기</a>
+          </li>
+          <li>
+            <a href="#">배송 안내</a>
+          </li>
+          <li>
+            <a href="#">반품 안내</a>
+          </li>
+          <li>
+            <a href="#">나의 계정</a>
+          </li>
+          <li>
+            <a href="#">자주하는 질문</a>
+          </li>
+        </ul>
+        <ul className="covernat_about">
+          <li>
+            <a href="#">기업정보</a>
+          </li>
+          <li>
+            <a href="#">커버낫에 대하여</a>
+          </li>
+          <li>
+            <a href="#">커버낫 라디오</a>
+          </li>
+          <li>
+            <a href="#">기업의 사회적 책임</a>
+          </li>
+          <li>
+            <a href="#">채용 안내</a>
+          </li>
+          <li>
+            <a href="#">일반적합인증</a>
+          </li>
+        </ul>
+        <div className="covernat_ad">
+          <h1>주식회사 비케이프</h1>
+          <p>
+            사업자등록번호 000-00-00000<span></span>
+            대표:아무개<br></br>
+            전자우편주소:covernat@covernat.co.kr<span></span>
+            대표전화:00-000-0000<br></br>
+            주소:서울시 마포구 월드컵북로00길 00<br></br>
+            통신판매업신고:0000-서울마포-0000
+          </p>
+          <ul className="covernat_footer_nav">
             <li>
-              <a href="#">고객 지원</a>
+              <a href="#">커버낫 코리아 2023</a>
             </li>
             <li>
-              <a href="#">문의하기</a>
+              <a href="#">이용약관</a>
             </li>
             <li>
-              <a href="#">배송 안내</a>
+              <a href="#">개인정보취급 방침</a>
             </li>
             <li>
-              <a href="#">반품 안내</a>
-            </li>
-            <li>
-              <a href="#">나의 계정</a>
-            </li>
-            <li>
-              <a href="#">자주하는 질문</a>
+              <a href="#">구매안전 (에스크로) 서비스 가입사실 확인</a>
             </li>
           </ul>
-          <ul className="covernat_about">
-            <li>
-              <a href="#">기업정보</a>
-            </li>
-            <li>
-              <a href="#">커버낫에 대하여</a>
-            </li>
-            <li>
-              <a href="#">커버낫 라디오</a>
-            </li>
-            <li>
-              <a href="#">기업의 사회적 책임</a>
-            </li>
-            <li>
-              <a href="#">채용 안내</a>
-            </li>
-            <li>
-              <a href="#">일반적합인증</a>
-            </li>
-          </ul>
-        </nav>
+        </div>
       </footer>
     </>
   );

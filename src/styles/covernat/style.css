@@ -108,3 +108,19 @@
   gap: 12px;
   padding-right: 2.5%;
 }
+.covernat_footer {
+  width: 100%;
+  height: 280px;
+}
+.covernat_cs,
+.covernat_about {
+  display: flex;
+}
+.covernat_cs,
+.covernat_about a {
+  font-size: 12px;
+}
+.covernat_ad {
+  display: flex;
+  font-size: 12px;
+}
