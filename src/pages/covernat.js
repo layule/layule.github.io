@@ -335,6 +335,12 @@ export default function App() {
           </a>
         </SwiperSlide>
       </Swiper>
+      <section className="covernat_main">
+        <div className="main_img_inner">
+          <img src={}></img>
+
+        </div>
+      </section>
       <footer className="covernat_footer">
         <ul className="covernat_inner">
           <li>

@@ -29,6 +29,9 @@
 .mySwiper .swiper-scrollbar-drag {
   display: none;
 }
+.swiper-scrollbar {
+  display: none;
+}
 .covernatHeader {
   width: 100%;
   height: 60px;
@@ -114,15 +117,18 @@
 }
 .covernat_inner {
   display: flex;
+  justify-content: space-between;
   line-height: 34px;
   padding: 2.5%;
 }
 .covernat_cs,
 .covernat_about a {
+  width: 110px;
   font-size: 12px;
 }
-.covernat_cs {
-  padding-right: 45px;
+.covernat_cs,
+.covernat_about li {
+  width: 110px;
 }
 .covernat_ad {
   display: flex;
