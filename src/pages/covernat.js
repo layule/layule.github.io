@@ -335,6 +335,50 @@ export default function App() {
           </a>
         </SwiperSlide>
       </Swiper>
+      <footer className="covernat_footer">
+        <nav className="covernat_fot_inner">
+          <ul className="covernat_cs">
+            <li>
+              <a href="#">고객 지원</a>
+            </li>
+            <li>
+              <a href="#">문의하기</a>
+            </li>
+            <li>
+              <a href="#">배송 안내</a>
+            </li>
+            <li>
+              <a href="#">반품 안내</a>
+            </li>
+            <li>
+              <a href="#">나의 계정</a>
+            </li>
+            <li>
+              <a href="#">자주하는 질문</a>
+            </li>
+          </ul>
+          <ul className="covernat_about">
+            <li>
+              <a href="#">기업정보</a>
+            </li>
+            <li>
+              <a href="#">커버낫에 대하여</a>
+            </li>
+            <li>
+              <a href="#">커버낫 라디오</a>
+            </li>
+            <li>
+              <a href="#">기업의 사회적 책임</a>
+            </li>
+            <li>
+              <a href="#">채용 안내</a>
+            </li>
+            <li>
+              <a href="#">일반적합인증</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
     </>
   );
 }
