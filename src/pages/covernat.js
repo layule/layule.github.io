@@ -4,7 +4,7 @@ import "swiper/css";
 import "/src/styles/covernat/reset.css";
 import "/src/styles/covernat/style.css";
 import "/src/styles/covernat/font.css";
-import { like, logo, main1, main2, main3, search, shopping } from "../images/covernat";
+import { colletion, like, logo, main1, main2, main3, search, shopping } from "../images/covernat";
 import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
 
 import "swiper/css/navigation";
@@ -337,8 +337,27 @@ export default function App() {
       </Swiper>
       <section className="covernat_main">
         <div className="main_img_inner">
-          <img src={}></img>
-
+          <a href="#">
+            <img src={colletion}></img>
+            <p>팬츠 신상품</p>
+            <span>
+              <a href="#">보러가기</a>
+            </span>
+          </a>
+          <a href="#">
+            <img src={colletion}></img>
+            <p>남성 신상품</p>
+            <span>
+              <a href="#">보러가기</a>
+            </span>
+          </a>
+          <a href="#">
+            <img src={colletion}></img>
+            <p>여성 신상품</p>
+            <span>
+              <a href="#">보러가기</a>
+            </span>
+          </a>
         </div>
       </section>
       <footer className="covernat_footer">
