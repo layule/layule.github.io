@@ -337,27 +337,32 @@ export default function App() {
       </Swiper>
       <section className="covernat_main">
         <div className="main_img_inner">
-          <a href="#">
-            <img src={colletion}></img>
-            <p>팬츠 신상품</p>
-            <span>
-              <a href="#">보러가기</a>
-            </span>
-          </a>
-          <a href="#">
-            <img src={colletion}></img>
-            <p>남성 신상품</p>
-            <span>
-              <a href="#">보러가기</a>
-            </span>
-          </a>
-          <a href="#">
-            <img src={colletion}></img>
-            <p>여성 신상품</p>
-            <span>
-              <a href="#">보러가기</a>
-            </span>
-          </a>
+          <ul className="covernat_snap">
+            <li>
+              <a href="#">
+                <div className="snap_txt">
+                  <p>팬츠신상품</p>
+                  <span>보러가기</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div className="snap_txt">
+                  <p>남성신상품</p>
+                  <span>보러가기</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div className="snap_txt">
+                  <p>여성신상품</p>
+                  <span>보러가기</span>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
       <footer className="covernat_footer">
