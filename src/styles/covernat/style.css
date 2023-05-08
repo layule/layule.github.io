@@ -111,6 +111,36 @@
   gap: 12px;
   padding-right: 2.5%;
 }
+.covernat_main {
+  width: 100%;
+  height: auto;
+}
+.main_img_inner {
+  width: 100%;
+  height: auto;
+}
+.main_img_inner li {
+  display: flex;
+}
+.main_img_inner a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  line-height: 28px;
+}
+.main_img_inner li:first-child a {
+  background: url("../../images/covernat/colletion.jpeg") no-repeat center center/cover;
+}
+.main_img_inner li:nth-child(2) a {
+  background: url("../../images/covernat/colletion.jpeg") no-repeat center center/cover;
+}
+.main_img_inner li:nth-child(3) a {
+  background: url("../../images/covernat/colletion.jpeg") no-repeat center center/cover;
+}
 .covernat_footer {
   width: 100%;
   height: 280px;

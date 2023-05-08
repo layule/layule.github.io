@@ -337,7 +337,7 @@ export default function App() {
       </Swiper>
       <section className="covernat_main">
         <div className="main_img_inner">
-          <ul className="covernat_snap">
+          <ul>
             <li>
               <a href="#">
                 <div className="snap_txt">
