@@ -15,9 +15,7 @@
 }
 .mySwiper .swiper-button-prev,
 .mySwiper .swiper-button-next {
-  border-radius: 12px;
-  background: #11111182;
-  padding: 35px 39px;
+  display: none;
 }
 .mySwiper .swiper-button-prev::after,
 .mySwiper .swiper-button-next::after {
@@ -117,29 +115,33 @@
 }
 .main_img_inner {
   width: 100%;
-  height: auto;
+}
+.main_img_inner ul {
+  display: flex;
 }
 .main_img_inner li {
-  display: flex;
+  width: calc(100% / 3);
 }
-.main_img_inner a {
+.main_img_inner img {
   width: 100%;
   height: 100%;
+}
+.covernat_sub {
+  width: 100%;
+  height: auto;
+}
+.main_sub_inner {
+  width: 100%;
+}
+.main_sub_inner ul {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 12px;
-  line-height: 28px;
 }
-.main_img_inner li:first-child a {
-  background: url("../../images/covernat/colletion.jpeg") no-repeat center center/cover;
+.main_sub_inner li {
+  width: calc(100% / 4);
 }
-.main_img_inner li:nth-child(2) a {
-  background: url("../../images/covernat/colletion.jpeg") no-repeat center center/cover;
-}
-.main_img_inner li:nth-child(3) a {
-  background: url("../../images/covernat/colletion.jpeg") no-repeat center center/cover;
+.main_sub_inner img {
+  width: 100%;
+  height: 100%;
 }
 .covernat_footer {
   width: 100%;

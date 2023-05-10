@@ -4,7 +4,7 @@ import "swiper/css";
 import "/src/styles/covernat/reset.css";
 import "/src/styles/covernat/style.css";
 import "/src/styles/covernat/font.css";
-import { colletion, like, logo, main1, main2, main3, search, shopping } from "../images/covernat";
+import { colletion, colletionMen, colletionWomen, like, logo, main1, main2, main3, search, shopping, sub1, sub2, sub3, sub4 } from "../images/covernat";
 import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
 
 import "swiper/css/navigation";
@@ -340,26 +340,43 @@ export default function App() {
           <ul>
             <li>
               <a href="#">
-                <div className="snap_txt">
-                  <p>팬츠신상품</p>
-                  <span>보러가기</span>
-                </div>
+                <img src={colletion} />
               </a>
             </li>
             <li>
               <a href="#">
-                <div className="snap_txt">
-                  <p>남성신상품</p>
-                  <span>보러가기</span>
-                </div>
+                <img src={colletionMen} />
               </a>
             </li>
             <li>
               <a href="#">
-                <div className="snap_txt">
-                  <p>여성신상품</p>
-                  <span>보러가기</span>
-                </div>
+                <img src={colletionWomen} />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section className="covernat_sub">
+        <div className="main_sub_inner">
+          <ul>
+            <li>
+              <a href="#">
+                <img src={sub1} />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src={sub2} />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src={sub3} />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src={sub4} />
               </a>
             </li>
           </ul>
