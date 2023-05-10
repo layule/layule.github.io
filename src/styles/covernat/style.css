@@ -126,6 +126,7 @@
   width: 100%;
   height: 100%;
 }
+
 .covernat_sub {
   width: 100%;
   height: auto;
@@ -194,4 +195,7 @@
 }
 .covernat_footer_nav li {
   padding-left: 2.5%;
+}
+.covernat_inner {
+  background: #fff;
 }
