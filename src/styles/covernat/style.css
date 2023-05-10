@@ -143,6 +143,23 @@
   width: 100%;
   height: 100%;
 }
+.covernat_look {
+  width: 100%;
+  height: auto;
+}
+.main_look_inner {
+  width: 100%;
+}
+.main_look_inner ul {
+  display: flex;
+}
+.main_look_inner li {
+  width: calc(100% / 2);
+}
+.main_look_inner img {
+  width: 100%;
+  height: 100%;
+}
 .covernat_footer {
   width: 100%;
   height: 280px;

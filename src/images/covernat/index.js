@@ -70,3 +70,5 @@ export { default as sub1 } from "./sub1.jpeg";
 export { default as sub2 } from "./sub2.jpeg";
 export { default as sub3 } from "./sub3.jpeg";
 export { default as sub4 } from "./sud4.jpeg";
+export { default as womenLook } from "./womenlook.jpeg";
+export { default as menLook } from "./menlook.jpeg";

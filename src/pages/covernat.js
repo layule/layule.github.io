@@ -4,7 +4,7 @@ import "swiper/css";
 import "/src/styles/covernat/reset.css";
 import "/src/styles/covernat/style.css";
 import "/src/styles/covernat/font.css";
-import { colletion, colletionMen, colletionWomen, like, logo, main1, main2, main3, search, shopping, sub1, sub2, sub3, sub4 } from "../images/covernat";
+import { colletion, colletionMen, colletionWomen, like, logo, main1, main2, main3, menLook, search, shopping, sub1, sub2, sub3, sub4, womenLook } from "../images/covernat";
 import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
 
 import "swiper/css/navigation";
@@ -377,6 +377,22 @@ export default function App() {
             <li>
               <a href="#">
                 <img src={sub4} />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section className="covernat_look">
+        <div className="main_look_inner">
+          <ul>
+            <li>
+              <a href="#">
+                <img src={menLook} />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src={womenLook} />
               </a>
             </li>
           </ul>
