@@ -217,6 +217,7 @@
   height: 320px;
   font-size: 12px;
   line-height: 32px;
+  background: #fff;
 }
 .covernat_cs {
   display: flex;
