@@ -341,16 +341,27 @@ export default function App() {
             <li>
               <a href="#">
                 <img src={colletion} />
+                <div className="img_txt">
+                  <p>팬츠 신상품</p>
+                  <span>바로가기</span>
+                </div>
               </a>
             </li>
             <li>
               <a href="#">
                 <img src={colletionMen} />
+                <div className="img_txt">
+                  <p>남성 신상품</p>
+                  <span>바로가기</span>
+                </div>
               </a>
             </li>
             <li>
               <a href="#">
                 <img src={colletionWomen} />
+                <div className="img_txt">
+                  <p>여성 신상품</p> <span>바로가기</span>
+                </div>
               </a>
             </li>
           </ul>
@@ -362,21 +373,36 @@ export default function App() {
             <li>
               <a href="#">
                 <img src={sub1} />
+                <div className="img_txt">
+                  <p>C 로고 시어서커 스트라이프 하프 셔츠</p> <span>바로가기</span>
+                </div>
               </a>
             </li>
             <li>
               <a href="#">
                 <img src={sub2} />
+                <div className="img_txt">
+                  <p>그로서리 그래픽 티셔츠</p>
+                  <span>바로가기</span>
+                </div>
               </a>
             </li>
             <li>
               <a href="#">
                 <img src={sub3} />
+                <div className="img_txt">
+                  <p>테이퍼드 데님 팬츠</p>
+                  <span>바로가기</span>
+                </div>
               </a>
             </li>
             <li>
               <a href="#">
                 <img src={sub4} />
+                <div className="img_txt">
+                  <p>C 로고 B 캡</p>
+                  <span>바로가기</span>
+                </div>
               </a>
             </li>
           </ul>
