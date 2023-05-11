@@ -414,11 +414,17 @@ export default function App() {
             <li>
               <a href="#">
                 <img src={menLook} />
+                <div className="look_txt">
+                  <p>남성 컬렉션</p>
+                </div>
               </a>
             </li>
             <li>
               <a href="#">
                 <img src={womenLook} />
+                <div className="look_txt">
+                  <p>여성 컬렉션</p>
+                </div>
               </a>
             </li>
           </ul>
