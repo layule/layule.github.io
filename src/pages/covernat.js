@@ -343,7 +343,7 @@ export default function App() {
                 <img src={colletion} />
                 <div className="img_txt">
                   <p>팬츠 신상품</p>
-                  <span>바로가기</span>
+                  <span>보러 가기</span>
                 </div>
               </a>
             </li>
@@ -352,7 +352,7 @@ export default function App() {
                 <img src={colletionMen} />
                 <div className="img_txt">
                   <p>남성 신상품</p>
-                  <span>바로가기</span>
+                  <span>보러 가기</span>
                 </div>
               </a>
             </li>
@@ -383,7 +383,7 @@ export default function App() {
                 <img src={sub2} />
                 <div className="img_txt">
                   <p>그로서리 그래픽 티셔츠</p>
-                  <span>바로가기</span>
+                  <span>보러 가기</span>
                 </div>
               </a>
             </li>
@@ -392,7 +392,7 @@ export default function App() {
                 <img src={sub3} />
                 <div className="img_txt">
                   <p>테이퍼드 데님 팬츠</p>
-                  <span>바로가기</span>
+                  <span>보러 가기</span>
                 </div>
               </a>
             </li>
@@ -401,7 +401,7 @@ export default function App() {
                 <img src={sub4} />
                 <div className="img_txt">
                   <p>C 로고 B 캡</p>
-                  <span>바로가기</span>
+                  <span>보러 가기</span>
                 </div>
               </a>
             </li>
@@ -431,77 +431,69 @@ export default function App() {
         </div>
       </section>
       <footer className="covernat_footer">
-        <ul className="covernat_inner">
-          <li>
-            <ul className="covernat_cs">
-              <li>
-                <a href="#">고객 지원</a>
-              </li>
-              <li>
-                <a href="#">문의하기</a>
-              </li>
-              <li>
-                <a href="#">배송 안내</a>
-              </li>
-              <li>
-                <a href="#">반품 안내</a>
-              </li>
-              <li>
-                <a href="#">나의 계정</a>
-              </li>
-              <li>
-                <a href="#">자주하는 질문</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul className="covernat_about">
-              <li>
-                <a href="#">기업정보</a>
-              </li>
-              <li>
-                <a href="#">커버낫에 대하여</a>
-              </li>
-              <li>
-                <a href="#">커버낫 라디오</a>
-              </li>
-              <li>
-                <a href="#">기업의 사회적 책임</a>
-              </li>
-              <li>
-                <a href="#">채용 안내</a>
-              </li>
-              <li>
-                <a href="#">일반적합인증</a>
-              </li>
-            </ul>
-          </li>
-          <div className="covernat_ad">
-            <h1>주식회사 비케이프</h1>
-            <p>
-              사업자등록번호 000-00-00000<span></span>
-              대표:아무개<br></br>
-              전자우편주소:covernat@covernat.co.kr<span></span>
-              대표전화:00-000-0000<br></br>
-              주소:서울시 마포구 월드컵북로00길 00<br></br>
-              통신판매업신고:0000-서울마포-0000
-            </p>
-          </div>
-        </ul>
-        <ul className="covernat_footer_nav">
-          <li>
+        <div className="covernat_cs">
+          <p>
+            <a href="#">고객 지원</a>
+          </p>
+          <p>
+            <a href="#">문의하기</a>
+          </p>
+          <p>
+            <a href="#">배송 안내</a>
+          </p>
+          <p>
+            <a href="#">반품 안내</a>
+          </p>
+          <p>
+            <a href="#">나의 계정</a>
+          </p>
+          <p>
+            <a href="#">자주하는 질문</a>
+          </p>
+          <p>
+            <a href="#">기업정보</a>
+          </p>
+          <p>
+            <a href="#">커버낫에 대하여</a>
+          </p>
+          <p>
+            <a href="#">커버낫 라디오</a>
+          </p>
+          <p>
+            <a href="#">기업의 사회적 책임</a>
+          </p>
+          <p>
+            <a href="#">채용 안내</a>
+          </p>
+          <p>
+            <a href="#">일반적합인증</a>
+          </p>
+        </div>
+        <div className="covernat_co">
+          <p>
             <a href="#">커버낫 코리아 2023</a>
-          </li>
-          <li>
+          </p>
+          <p>
             <a href="#">이용약관</a>
-          </li>
-          <li>
+          </p>
+          <p>
             <a href="#">개인정보취급 방침</a>
-          </li>
-          <li>
+          </p>
+          <p>
             <a href="#">구매안전 (에스크로) 서비스 가입사실 확인</a>
-          </li>
-        </ul>
+          </p>
+        </div>
+        <div className="covernat_ad">
+          <p>
+            <h1>주식회사 비케이프</h1>
+            사업자등록번호: 000-00-00000<span></span>
+            대표: 아무개<br></br>
+            전자우편주소: covernat@covernat.co.kr<span></span>
+            대표전화: 00-000-0000<br></br>
+            주소: 서울시 마포구 월드컵북로00길 00<br></br>
+            통신판매업신고: 0000-서울마포-0000
+          </p>
+        </div>
       </footer>
     </>
   );
