@@ -1,0 +1,105 @@
+.page-container.lelabo {
+  * {
+    box-sizing: border-box;
+    font-family: "Changa", sans-serif;
+  }
+
+  .topevent {
+    width: 100%;
+    height: 40px;
+    background: #333;
+    position: relative;
+  }
+  .topevent p {
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lelabomemu {
+    width: 100%;
+    height: calc(80px - 1px);
+    border-bottom: 1px solid #ebebeb;
+    position: relative;
+    top: 80;
+    left: 0;
+  }
+  .lelabomemu a {
+    font-size: 14px;
+  }
+  .lelabomemuflx {
+    width: 620px;
+    height: calc(80px - 1px);
+    display: flex;
+    align-items: center;
+    transform: translateX(25px);
+  }
+  .lelabomemuflx li {
+    padding: 4px;
+    margin-right: 1.3vw;
+  }
+  .lelaborig {
+    height: calc(80px - 1px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transform: translateX(-5px);
+  }
+  .lelaborig li {
+    padding: 4px;
+    margin-right: 1.3vw;
+  }
+  .lelabomainimg {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+  }
+  .lelabomainimg img {
+    width: 100%;
+    height: 100%;
+  }
+  .lelabo_main_txt {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+    font-size: 12px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50vh;
+    height: 64px;
+  }
+  .lelabo_main_txt label {
+    min-width: 90px;
+    display: block;
+    text-align: center;
+  }
+  .lelabofooter {
+    padding: 20px 30px;
+    font-size: 13px;
+    color: #6c6c6c;
+    line-height: 20px;
+    letter-spacing: 0.02px;
+  }
+  .colletion_txt {
+    display: none;
+  }
+  .innerA {
+    position: absolute;
+    top: calc(100% + 42px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  label::after {
+    content: "";
+    display: block;
+  }
+  .innerA img {
+    width: 100%;
+  }
+}
