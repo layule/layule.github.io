@@ -1,9 +1,9 @@
 import * as React from "react";
 import * as jQuery from "jquery";
 import Swiper from "swiper";
-import "/src/styles/covernet/reset.css";
+import "/src/styles/covernet/reset.scss";
 import "/src/styles/covernet/style.scss";
-import "/src/styles/covernet/font.css";
+import "/src/styles/covernet/font.scss";
 import {
   bag1,
   bag2,
@@ -104,7 +104,7 @@ export default function Component() {
   }, []);
 
   return (
-    <>
+    <div className="page-container covernet">
       <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
@@ -1572,6 +1572,6 @@ export default function Component() {
           {/* <!— //footer_inner —> */}
         </footer>
       </body>
-    </>
+    </div>
   );
 }

@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "/src/styles/covernat/reset.css";
-import "/src/styles/covernat/style.css";
-import "/src/styles/covernat/font.css";
+import "/src/styles/covernat/reset.scss";
+import "/src/styles/covernat/style.scss";
+import "/src/styles/covernat/font.scss";
 import { colletion, colletionMen, colletionWomen, like, logo, main1, main2, main3, menLook, search, shopping, sub1, sub2, sub3, sub4, womenLook } from "../images/covernat";
 import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
 
@@ -13,7 +13,7 @@ import "swiper/css/scrollbar";
 
 export default function App() {
   return (
-    <>
+    <div className="page-container covernat">
       <header className="covernatHeader">
         <div className="covernatPointInner">
           <a href="#">
@@ -495,6 +495,6 @@ export default function App() {
           </p>
         </div>
       </footer>
-    </>
+    </div>
   );
 }

@@ -1,5 +1,5 @@
-import * as React from "react"
-import * as jQuery from "jquery"
+import * as React from "react";
+import * as jQuery from "jquery";
 import {
   colMain4,
   colMain5,
@@ -27,20 +27,20 @@ import {
   top3,
   top4,
   vi1,
-} from "../images/purelife"
-import "/src/styles/purelife/style.css"
-import "/src/styles/purelife/reset.css"
-import { initBxSlider } from "../module/bxSlider"
-import { initClickToGiveClass } from "../module/clickToGiveClass"
+} from "../images/purelife";
+import "/src/styles/purelife/style.scss";
+import "/src/styles/purelife/reset.scss";
+import { initBxSlider } from "../module/bxSlider";
+import { initClickToGiveClass } from "../module/clickToGiveClass";
 
 export default function Component() {
   const script = () => {
-    ;(function ($) {
+    (function ($) {
       $(function () {
         $(".slider1").bxSlider({
           auto: true,
           controls: false,
-        })
+        });
 
         $(".instabestitem > ul").bxSlider({
           auto: true,
@@ -51,22 +51,22 @@ export default function Component() {
           pause: 3000, // 정지된 슬라이드가 유지되는 시간
           controls: false, // false : 컨드롤 삭제 / true : 컨트롤 노출 (기본값)
           pager: false,
-        })
+        });
 
         $(".iconbtn").clickToGiveClass({
           class: "topbtn",
-        })
-      })
-    })(jQuery)
-  }
+        });
+      });
+    })(jQuery);
+  };
   React.useEffect(() => {
-    initClickToGiveClass()
-    initBxSlider()
-    script()
-  }, [])
+    initClickToGiveClass();
+    initBxSlider();
+    script();
+  }, []);
 
   return (
-    <>
+    <div className="page-container purelife">
       <body>
         <header>
           <div id="container">
@@ -478,6 +478,6 @@ export default function Component() {
           </div>
         </footer>
       </body>
-    </>
-  )
+    </div>
+  );
 }
