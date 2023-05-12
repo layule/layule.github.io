@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+.page-container.bestseller {
+  /* width 1440px 이하 */
+  @media (max-width: 1440px) {
+    nav #nav {
+      max-width: 1250px;
+      padding: 42px 54px;
+    }
+    main .main_inner {
+      max-width: 1250px;
+      padding: 22px 54px;
+    }
+    main .main_inner p {
+      font-size: 32px;
+    }
+    main .main_inner .slide_btn {
+      font-size: 14px;
+      font-weight: 500;
+      display: inline-block;
+      background: #000;
+      color: #fff;
+      line-height: 1;
+      padding: 14px 18px 14px;
+      border-radius: 48px;
+      margin-right: 6px;
+      transition: all 0.3s;
+    }
+    #review .title {
+      margin-top: 24px;
+    }
+    main #review .card {
+      width: 100%;
+      height: 350px;
+    }
+    main #bestseller .txt_title p {
+      font-size: 32px;
+    }
+    main #review {
+      max-width: 1250px;
+      padding: 42px 54px;
+    }
+    main #faq {
+      max-width: 1250px;
+      padding: 100px 54px 150px 54px;
+    }
+    footer .footer-wrap {
+      max-width: 1250px;
+      padding: 36px 20px;
+    }
+    main #review .card-hover .card-subtitle span {
+      font-size: 14px;
+    }
+    main #review .card-hover .comment {
+      font-size: 10px;
+    }
+    main #review .card-hover .content {
+      font-size: 12px;
+    }
+    main #review .card-hover .card-subtitle span:nth-child(2) {
+      margin-left: 0;
+    }
+    footer .footer-info .info-txt {
+      font-size: 10px;
+    }
+  }
+  /* 1340px 이하 */
+  @media (max-width: 1340px) {
+    main #bestseller .section_inner {
+      padding-left: 42px;
+    }
+  }
+  /* 768px 이하 (mobile) */
+  @media (max-width: 768px) {
+    nav #nav li:not(:first-child) {
+      display: none;
+    }
+    .m_menu.btn_click span {
+      background: #fff;
+      position: absolute;
+      top: 39px;
+      right: 22px;
+      width: 22px;
+      margin: 0;
+      padding: 0;
+    }
+    .m_menu.btn_click span:first-child {
+      transform: rotate(135deg);
+    }
+    .m_menu.btn_click span:last-child {
+      transform: rotate(-135deg);
+    }
+    #bestseller .m_menu.btn_click span:nth-child(2) {
+      opacity: 0;
+      visibility: hidden;
+    }
+    .m_menu {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 32px 24px;
+      z-index: 99;
+    }
+    .m_menu span {
+      background: #1d3220;
+      width: 18px;
+      height: 3px;
+      display: block;
+      margin-bottom: 5px;
+      transition: all 0.4s;
+    }
+    .m_nav.open {
+      display: block;
+    }
+    .m_nav {
+      display: none;
+      width: 100%;
+      height: 100vh;
+      background: rgba(38, 38, 38, 0.9);
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    .m_nav ul {
+      margin-top: 130px;
+    }
+    .m_nav li {
+      width: 100%;
+      text-align: center;
+    }
+    .m_nav a {
+      color: #fff;
+      display: inline-block;
+      padding: 14px;
+      font-size: 1.5rem; /* rem - 최상위 요소의 font-size에 대한 비율*/
+      font-weight: bold;
+    }
+    nav #nav .logo a {
+      width: 110px;
+      height: 28px;
+    }
+    /* bestseller 영역*/
+    .txt_group {
+      text-align: center;
+    }
+    main #bestseller {
+      height: auto;
+      padding-bottom: 100px;
+    }
+    main #bestseller .section_inner {
+      padding-left: 0;
+      padding: 55px 0 0;
+      flex-direction: column;
+    }
+    main #bestseller .txt_title {
+      margin: 113px auto 22px;
+    }
+    main #bestseller .txt_title p {
+      font-size: 2rem;
+    }
+    main #bestseller #seller_swiper {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 54px;
+      padding-bottom: 116px;
+    }
+    main #bestseller .section_pager_bar {
+      width: 40%;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+    main .title {
+      font-size: 2rem;
+    }
+    main #review .card {
+      width: 100%;
+    }
+    main #review .card:nth-child(2n) {
+      margin-left: 0;
+    }
+    main #review .card-title {
+      position: static;
+      font-size: 14px;
+    }
+    main #review .card-title::after {
+      bottom: 40px;
+      top: auto;
+      right: 40px;
+    }
+    main #review .card-profile p {
+      font-size: 12px;
+    }
+    main #review .card-profile img {
+      width: 32px;
+    }
+    .card-view.card .card-bg {
+      filter: blur(20px);
+      transition: 0.5s;
+    }
+    .card-view.card .card-head {
+      opacity: 0;
+      height: 0;
+      transition: 0.2s;
+    }
+    .card-view.card .card-hover {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+      transition: all 0.5s;
+    }
+    main #faq .faq-list ul {
+      width: 100%;
+    }
+    main #faq .faq-head span {
+      font-size: 16px;
+      margin: 0;
+      margin-right: 14px;
+    }
+    main #faq .faq-head {
+      font-size: 14px;
+      line-height: 1.25;
+    }
+    main #faq .faq-content {
+      font-size: 12px;
+      padding: 15px 28px;
+    }
+    main #faq .faq-head::after {
+      width: 14.5px;
+      position: absolute;
+      top: 0;
+    }
+    main #faq .faq-list li {
+      padding: 32px 0;
+    }
+    footer .footer-wrap .footer-head h1 {
+      font-size: 18px;
+    }
+    main #bestseller #seller_swiper .swiper-slide .seller_item_inner1 .title {
+      font-size: 14px;
+    }
+    main #bestseller #seller_swiper .swiper-slide .seller_item_inner1 .subtitle {
+      font-size: 12px;
+    }
+    main #bestseller #seller_swiper .swiper-slide .seller_item_inner1 .price {
+      font-size: 16px;
+    }
+    main #bestseller #seller_swiper .swiper-slide {
+      width: 215px;
+      height: 400px;
+    }
+    footer .footer-menu a {
+      font-size: 12px;
+    }
+  }
+
+  /* 769px 이상 */
+  @media (min-width: 769px) {
+    .m_nav {
+      display: none;
+    }
+    #rewiew .review_items .card:hover .card-head {
+      opacity: 0;
+      height: 0;
+      transition: 0.2s;
+    }
+    #rewiew .review_items .card:hover .card-bg {
+      filter: blur(20px);
+      transition: 0.5s;
+    }
+    #rewiew .review_items .card:hover .card-hover {
+      opacity: 1;
+      transform: translateY(0) !important;
+      transition: all 0.5s;
+    }
+  }
+}

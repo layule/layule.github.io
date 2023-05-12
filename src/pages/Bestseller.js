@@ -1,15 +1,15 @@
-import * as React from "react"
-import * as jQuery from "jquery"
-import Swiper from "swiper"
-import { bsFavicon, sellerProfile1, sellerProfile2, sellerProfile3, sellerProfile4, sellerUi1, sellerUi2, sellerUi3, sellerUi4 } from "../images/bestseller"
-import "/src/styles/bestseller/font.css"
-import "/src/styles/bestseller/reset.css"
-import "/src/styles/bestseller/style.css"
-import "/src/styles/bestseller/stylem.css"
+import * as React from "react";
+import * as jQuery from "jquery";
+import Swiper from "swiper";
+import { bsFavicon, sellerProfile1, sellerProfile2, sellerProfile3, sellerProfile4, sellerUi1, sellerUi2, sellerUi3, sellerUi4 } from "../images/bestseller";
+import "/src/styles/bestseller/font.scss";
+import "/src/styles/bestseller/reset.scss";
+import "/src/styles/bestseller/style.scss";
+import "/src/styles/bestseller/stylem.scss";
 
 export default function Component() {
   const scrollToGiveClass = () => {
-    ;(function ($) {
+    (function ($) {
       $.fn.scrollToGiveClass = function (options) {
         var defaultOptions = {
           baseline: "top",
@@ -19,53 +19,53 @@ export default function Component() {
           limitValue: 0,
           addFunction: function () {},
           removeFunction: function () {},
-        }
+        };
 
-        var op = $.extend(defaultOptions, options)
+        var op = $.extend(defaultOptions, options);
 
         return this.each(function () {
-          var $win = $(window)
-          var $this = $(this)
-          var this_top = $this.offset().top //영역의 위치
-          $win.on("load scroll", scrolled)
+          var $win = $(window);
+          var $this = $(this);
+          var this_top = $this.offset().top; //영역의 위치
+          $win.on("load scroll", scrolled);
 
           function scrolled() {
-            var win_top = $win.scrollTop() //스크롤된 위치
-            var win_height = $win.outerHeight() //화면의 높이
+            var win_top = $win.scrollTop(); //스크롤된 위치
+            var win_height = $win.outerHeight(); //화면의 높이
 
-            if (op.baseline == "bottom") win_top += win_height
-            if (op.baseline == "middle") win_top += win_height / 2
-            if (!isNaN(op.baseline)) this_top = op.baseline
+            if (op.baseline == "bottom") win_top += win_height;
+            if (op.baseline == "middle") win_top += win_height / 2;
+            if (!isNaN(op.baseline)) this_top = op.baseline;
 
             if (1 > op.add && op.add > -1) {
-              op.add = win_height * op.add
+              op.add = win_height * op.add;
             }
 
-            win_top += op.add
+            win_top += op.add;
 
-            var limit = true
+            var limit = true;
             if (op.limit == "fixed") {
-              limit = win_top < op.limitValue
+              limit = win_top < op.limitValue;
             }
             if (op.limit == "baseline") {
-              limit = win_top < this_top + op.limitValue
+              limit = win_top < this_top + op.limitValue;
             }
 
             if (win_top > this_top && limit) {
-              if (!$this.hasClass(op.class)) op.addFunction()
-              $this.addClass(op.class)
+              if (!$this.hasClass(op.class)) op.addFunction();
+              $this.addClass(op.class);
             } else {
-              if ($this.hasClass(op.class)) op.removeFunction()
-              $this.removeClass(op.class)
+              if ($this.hasClass(op.class)) op.removeFunction();
+              $this.removeClass(op.class);
             }
           } //end:scrolled
-        }) //end:each()
-      } //end:scrollClass()
-    })(jQuery)
-  }
+        }); //end:each()
+      }; //end:scrollClass()
+    })(jQuery);
+  };
 
   const script = () => {
-    ;(function ($) {
+    (function ($) {
       $(function () {
         var mainswiper = new Swiper("#main_slide", {
           loop: true,
@@ -73,7 +73,7 @@ export default function Component() {
             delay: 6000,
             disableOnInteraction: false,
           },
-        })
+        });
 
         var prductswiper = new Swiper("#seller_swiper", {
           centeredSlides: true,
@@ -95,71 +95,71 @@ export default function Component() {
             centeredSlides: false,
             spaceBetween: 33,
           },
-        })
+        });
 
         /* faq 아코디언 메뉴 */
         $(".faq-head").click(function () {
-          var btn = $(this)
-          var sub = btn.siblings(".faq-content")
+          var btn = $(this);
+          var sub = btn.siblings(".faq-content");
 
-          $(".faq-content").not(sub).slideUp()
-          sub.slideToggle()
+          $(".faq-content").not(sub).slideUp();
+          sub.slideToggle();
 
           /* btn 디자인 */
-          var li = btn.parent()
-          $(".fap-list > ul > li").not(li).removeClass()
-          li.toggleClass("arrow_action")
-        })
+          var li = btn.parent();
+          $(".fap-list > ul > li").not(li).removeClass();
+          li.toggleClass("arrow_action");
+        });
 
         /* 스크롤 효과 */
         $(".txt_title").scrollToGiveClass({
           class: "scroll",
           baseline: "middle",
           add: 300,
-        })
+        });
 
         $(".seller_btn").scrollToGiveClass({
           class: "scroll",
           baseline: "middle",
           add: 300,
-        })
+        });
 
         $(".seller_txt").scrollToGiveClass({
           class: "scroll",
           baseline: "middle",
           add: 300,
-        })
+        });
 
         $("#review").scrollToGiveClass({
           class: "scroll",
           baseline: "middle",
           add: 300,
-        })
+        });
 
         $("#faq").scrollToGiveClass({
           class: "scroll",
           baseline: "middle",
           add: 300,
-        })
+        });
 
         // 메뉴 버튼 class 추가
         $(".m_menu").click(function () {
-          $(".m_nav").toggleClass("open")
-          $(this).toggleClass("btn_click")
-        })
+          $(".m_nav").toggleClass("open");
+          $(this).toggleClass("btn_click");
+        });
 
         /* card-hover class 추가 */
         $(".card").click(function () {
-          $(this).toggleClass("card-view")
-        })
-      })
-    })(jQuery)
-  }
+          $(this).toggleClass("card-view");
+        });
+      });
+    })(jQuery);
+  };
 
   React.useEffect(() => {
-    scrollToGiveClass()
-    script()
-  }, [])
+    scrollToGiveClass();
+    script();
+  }, []);
 
   return (
     <>
@@ -663,5 +663,5 @@ export default function Component() {
         </footer>
       </body>
     </>
-  )
+  );
 }
