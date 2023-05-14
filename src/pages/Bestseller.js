@@ -80,7 +80,7 @@ export default function Component() {
           loop: true,
           slidesPerView: "auto",
           spaceBetween: 24,
-          speed: 700,
+          speed: 500,
           autoplay: {
             delay: 3000,
             disableOnInteraction: false,
@@ -162,14 +162,14 @@ export default function Component() {
   }, []);
 
   return (
-    <>
+    <div className="page-container bestseller">
       {/* <!-- favicon--> */}
       {/* <link rel="shortcut icon" href={bsFavicon} /> */}
       {/* <!-- 플러그인 연결 --> */}
       <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-      <body>
+      <body className="bestsellerbody">
         <nav>
           <ul id="nav">
             <li className="logo">
@@ -223,7 +223,7 @@ export default function Component() {
         </nav>
 
         <main>
-          <section id="main_slide" className="section swiper mySwiper">
+          <section id="main_slide" className="section swiper">
             <div className="swiper-wrapper">
               <div id="main11" className="swiper-slide">
                 <div className="main_inner">
@@ -261,9 +261,6 @@ export default function Component() {
                       가치로 <span>잇</span>다
                     </p>
                   </div>
-                  {/* <!-- .main_txt --> */}
-
-                  {/* <!--button 영역 --> */}
                   <div className="btn_area">
                     <a href="#" className="slide_btn">
                       셀러 시작하기
@@ -278,12 +275,10 @@ export default function Component() {
                     </p>
                   </div>
                 </div>
-                {/* <!-- .main_inner--> */}
               </div>
             </div>
-            {/* <!-- #main1 --> */}
           </section>
-          {/* <!--// #main_slide --> */}
+
           <section id="bestseller" className="section">
             <div className="section_inner">
               <div className="txt_group">
@@ -294,7 +289,6 @@ export default function Component() {
                     <span>잇</span> 마켓을 운영해요
                   </p>
                 </div>
-                {/* <!-- .txt_title --> */}
 
                 <a href="#" className="seller_btn">
                   <span>1분컷 사용법</span>
@@ -302,64 +296,70 @@ export default function Component() {
                 <p className="seller_txt">*it-마켓 : 베스트셀러만의 특가 판매 혜택</p>
                 <p className="seller_txthighlight">실제 셀러의 판매 금액입니다.</p>
               </div>
-              {/* <!-- .txt_group --> */}
-
-              {/* <!-- swiper silde --> */}
-
-              <div id="seller_swiper" className="swiper mySwiper">
+              <div id="seller_swiper" className="swiper">
                 <div className="swiper-wrapper">
-                  {/* <!--슬라이드 영역--> */}
                   <div className="swiper-slide slide1">
                     <div className="seller_item_inner1">
                       <p className="title">블로거 ○○○ 셀러</p>
                       <p className="subtitle">판매금액</p>
                       <p className="price">45,320원</p>
                     </div>
-                    {/* <!--seller_item_inner --> */}
                   </div>
-                  {/* <!-- .slide1--> */}
-
                   <div className="swiper-slide slide2">
-                    {/* <!--슬라이드 영역--> */}
                     <div className="seller_item_inner1">
                       <p className="title">블로거 ○○○ 셀러</p>
                       <p className="subtitle">판매금액</p>
                       <p className="price">58,320원</p>
                     </div>
-                    {/* <!--seller_item_inner --> */}
                   </div>
-                  {/* <!-- .slide1--> */}
-
                   <div className="swiper-slide slide3">
-                    {/* <!--슬라이드 영역--> */}
                     <div className="seller_item_inner1">
                       <p className="title">블로거 ○○○ 셀러</p>
                       <p className="subtitle">판매금액</p>
                       <p className="price">75,320원</p>
                     </div>
-                    {/* <!--seller_item_inner --> */}
                   </div>
-                  {/* <!-- .slide1--> */}
-
                   <div className="swiper-slide slide4">
-                    {/* <!--슬라이드 영역--> */}
                     <div className="seller_item_inner1">
                       <p className="title">블로거 ○○○ 셀러</p>
                       <p className="subtitle">판매금액</p>
                       <p className="price">92,320원</p>
                     </div>
-                    {/* <!--seller_item_inner --> */}
                   </div>
-                  {/* <!-- .slide1--> */}
+                  <div className="swiper-slide slide1">
+                    <div className="seller_item_inner1">
+                      <p className="title">블로거 ○○○ 셀러</p>
+                      <p className="subtitle">판매금액</p>
+                      <p className="price">45,320원</p>
+                    </div>
+                  </div>
+                  <div className="swiper-slide slide2">
+                    <div className="seller_item_inner1">
+                      <p className="title">블로거 ○○○ 셀러</p>
+                      <p className="subtitle">판매금액</p>
+                      <p className="price">58,320원</p>
+                    </div>
+                  </div>
+                  <div className="swiper-slide slide3">
+                    <div className="seller_item_inner1">
+                      <p className="title">블로거 ○○○ 셀러</p>
+                      <p className="subtitle">판매금액</p>
+                      <p className="price">75,320원</p>
+                    </div>
+                  </div>
+                  <div className="swiper-slide slide4">
+                    <div className="seller_item_inner1">
+                      <p className="title">블로거 ○○○ 셀러</p>
+                      <p className="subtitle">판매금액</p>
+                      <p className="price">92,320원</p>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="seller_pager_bar"></div>
               </div>
-              {/* <!-- #seller_swiper--> */}
             </div>
-            {/* <!-- .section_inner--> */}
           </section>
-          {/* <!--// #bestseller --> */}
 
           <section id="review">
             <p className="title">
@@ -637,12 +637,12 @@ export default function Component() {
             {/* <!-- .footer-menu--> */}
             <div className="footer-info">
               <p className="info-txt">
-                <span>사업자등록번호:123-45-67890</span>
-                <span>통신판매업신고:제2022-서울서초-4251호</span>
-                <span>대표:김라율</span>
-                <span>주소:서울특별시 서초구 강남대로 25길 33 남경빌딩 4층</span>
+                <span>사업자등록번호:000-00-00000</span>
+                <span>통신판매업신고:제0000-서울서초-0000호</span>
+                <span>대표:bestseller</span>
+                <span>주소:서울특별시 서초구 강남대로 00길 00 0층</span>
                 <br />
-                <span>E-MAIL:dbf6655@naver.com</span>
+                <span>E-MAIL:bestseller@co.kr</span>
               </p>
               {/* <!-- info-txt --> */}
 
@@ -655,13 +655,13 @@ export default function Component() {
                 </a>
               </div>
 
-              <p className="copyright">2022 &copy; bestseller corp. All right reserved.</p>
+              <p className="copyright">2023 &copy; bestseller corp. All right reserved.</p>
             </div>
             {/* <!-- .footer-info --> */}
           </div>
           {/* <!-- //.footer-wrap--> */}
         </footer>
       </body>
-    </>
+    </div>
   );
 }
