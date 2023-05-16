@@ -69,6 +69,7 @@
   .TopMenu li a {
     font-size: 12px;
     font-weight: 600;
+    color: #000;
   }
   .submenu {
     display: none;
@@ -229,11 +230,17 @@
     flex-wrap: wrap;
     padding-top: 28px;
     padding-left: 28px;
+    a {
+      color: #000;
+    }
   }
   .covernat_co {
     display: flex;
     padding-left: 28px;
     padding-top: 28px;
+    a {
+      color: #000;
+    }
   }
   .covernat_co p ~ p {
     padding-left: 24px;

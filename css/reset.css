@@ -1,0 +1,146 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+.page-container.covernat {
+  /* HTML5 display-role reset for older browsers */
+}
+.page-container.covernat html,
+.page-container.covernat body,
+.page-container.covernat div,
+.page-container.covernat span,
+.page-container.covernat applet,
+.page-container.covernat object,
+.page-container.covernat iframe,
+.page-container.covernat h1,
+.page-container.covernat h2,
+.page-container.covernat h3,
+.page-container.covernat h4,
+.page-container.covernat h5,
+.page-container.covernat h6,
+.page-container.covernat p,
+.page-container.covernat blockquote,
+.page-container.covernat pre,
+.page-container.covernat a,
+.page-container.covernat abbr,
+.page-container.covernat acronym,
+.page-container.covernat address,
+.page-container.covernat big,
+.page-container.covernat cite,
+.page-container.covernat code,
+.page-container.covernat del,
+.page-container.covernat dfn,
+.page-container.covernat em,
+.page-container.covernat img,
+.page-container.covernat ins,
+.page-container.covernat kbd,
+.page-container.covernat q,
+.page-container.covernat s,
+.page-container.covernat samp,
+.page-container.covernat small,
+.page-container.covernat strike,
+.page-container.covernat strong,
+.page-container.covernat sub,
+.page-container.covernat sup,
+.page-container.covernat tt,
+.page-container.covernat var,
+.page-container.covernat b,
+.page-container.covernat u,
+.page-container.covernat i,
+.page-container.covernat center,
+.page-container.covernat dl,
+.page-container.covernat dt,
+.page-container.covernat dd,
+.page-container.covernat ol,
+.page-container.covernat ul,
+.page-container.covernat li,
+.page-container.covernat fieldset,
+.page-container.covernat form,
+.page-container.covernat label,
+.page-container.covernat legend,
+.page-container.covernat table,
+.page-container.covernat caption,
+.page-container.covernat tbody,
+.page-container.covernat tfoot,
+.page-container.covernat thead,
+.page-container.covernat tr,
+.page-container.covernat th,
+.page-container.covernat td,
+.page-container.covernat article,
+.page-container.covernat aside,
+.page-container.covernat canvas,
+.page-container.covernat details,
+.page-container.covernat embed,
+.page-container.covernat figure,
+.page-container.covernat figcaption,
+.page-container.covernat footer,
+.page-container.covernat header,
+.page-container.covernat hgroup,
+.page-container.covernat menu,
+.page-container.covernat nav,
+.page-container.covernat output,
+.page-container.covernat ruby,
+.page-container.covernat section,
+.page-container.covernat summary,
+.page-container.covernat time,
+.page-container.covernat mark,
+.page-container.covernat audio,
+.page-container.covernat video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.page-container.covernat article,
+.page-container.covernat aside,
+.page-container.covernat details,
+.page-container.covernat figcaption,
+.page-container.covernat figure,
+.page-container.covernat footer,
+.page-container.covernat header,
+.page-container.covernat hgroup,
+.page-container.covernat menu,
+.page-container.covernat nav,
+.page-container.covernat section {
+  display: block;
+}
+.page-container.covernat body {
+  line-height: 1;
+}
+.page-container.covernat ol,
+.page-container.covernat ul {
+  list-style: none;
+}
+.page-container.covernat blockquote,
+.page-container.covernat q {
+  quotes: none;
+}
+.page-container.covernat blockquote:before,
+.page-container.covernat blockquote:after,
+.page-container.covernat q:before,
+.page-container.covernat q:after {
+  content: "";
+  content: none;
+}
+.page-container.covernat table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.page-container.covernat a {
+  text-decoration: none;
+}
+.page-container.covernat li {
+  list-style: none;
+}ntent: "";
+  content: none;
+}
+.page-container.bestseller table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.page-container.bestseller a {
+  text-decoration: none;
+  color: inherit; /* 부모 요소의 값 상속*/
+}
