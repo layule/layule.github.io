@@ -245,16 +245,18 @@ export default function Component() {
             </nav>
           </section>
         </div>
-        ELCA Korea Representative: Teng, Hsiao-Hua (Catherine), Meritz Tower, 382 Gangnam-daero (Yeoksam-dong), Gangnam-gu, Seoul, 06232
-        <br />
-        Business registration number: 211-81-71889
-        <br />
-        Mail-order business report number: Gangnam-15737
-        <br />
-        Customer Care Support Team: 1544-1345 conciergekr@lelabofragrances.com
-        <br />
-        hosting provider: Amazon Web Services
-        <br />
+        <div className="footer_end">
+          ELCA Korea Representative: Teng, Hsiao-Hua (Catherine), Meritz Tower, 382 Gangnam-daero (Yeoksam-dong), Gangnam-gu, Seoul, 06232
+          <br />
+          Business registration number: 211-81-71889
+          <br />
+          Mail-order business report number: Gangnam-15737
+          <br />
+          Customer Care Support Team: 1544-1345 conciergekr@lelabofragrances.com
+          <br />
+          hosting provider: Amazon Web Services
+          <br />
+        </div>
       </footer>
     </div>
   );
