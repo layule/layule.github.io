@@ -187,6 +187,7 @@
     padding-bottom: 10px;
     padding-top: 10px;
     display: flex;
+    align-items: center;
     p {
       color: #ebebeb;
     }
@@ -198,9 +199,43 @@
     padding-top: 16px;
     padding-bottom: 80px;
   }
-  .certification input {
-    padding-left: 12px;
+  .certification_box input {
     background: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 15px;
+    height: 15px;
+    -webkit-box-flex: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 1px solid #bcbbb4;
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    color: #fffef2;
+  }
+  .certification_box input:checked::before {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    -webkit-clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    content: "";
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: background-color 100ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: background-color 100ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-color: currentcolor;
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
   .marketing_bn {
     padding-top: 12px;
@@ -210,5 +245,8 @@
   }
   .footer_end {
     color: #ebebeb;
+  }
+  input .certification1 {
+    background: transparent;
   }
 }
