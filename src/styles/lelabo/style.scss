@@ -66,13 +66,13 @@
   .lelabo_main_txt {
     position: relative;
     width: 100%;
+    margin-bottom: 45%;
     border-bottom: 1px solid #ebebeb;
     font-size: 12px;
     display: flex;
     gap: 16px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50vh;
     height: 64px;
   }
   .lelabo_main_txt label {
@@ -95,8 +95,10 @@
     display: none;
   }
   .innerA {
+    width: 80%;
+    height: 100%;
     position: absolute;
-    top: calc(100% + 36px);
+    top: calc(100% + 48px);
     left: 50%;
     transform: translateX(-50%);
   }
@@ -106,6 +108,7 @@
   }
   .innerA img {
     width: 100%;
+    border-radius: 3px;
   }
   .footer_gather {
     display: flex;
