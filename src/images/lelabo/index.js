@@ -35,3 +35,6 @@ export { default as classic } from "./classic.jpeg";
 export { default as gift } from "./git.jpeg";
 export { default as candles } from "./candles.jpeg";
 export { default as bar } from "./bar.jpeg";
+export { default as btnmenu } from "./btnmenu.png";
+export { default as ico } from "./ico.png";
+export { default as bag } from "./bag.png";

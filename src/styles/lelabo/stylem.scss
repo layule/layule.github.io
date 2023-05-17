@@ -1,98 +1,44 @@
 .page-container.lelabo {
   @media (max-width: 768px) {
-    header .menu_left {
-      width: 0;
-      font-size: 0;
-    }
-    header .menu_right {
-      width: 0;
-      font-size: 0;
-    }
-    header .logo {
-      width: 142px;
-    }
-    header .m_menu {
-      display: inline-block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      padding: 24px;
-    }
-    header .m_menu span {
-      background: #1d1d1d;
-      width: 18px;
-      height: 2px;
-      display: block;
-      margin: 4px;
-      transition: all 0.4s;
-    }
-    header .m_nav a {
-      color: #fff;
-      font-size: 14px;
-      font-weight: 550;
-    }
-    main .giveme_inner .inner_txt {
-      font-size: 18px;
-      padding-bottom: 6px;
-    }
-    main .giveme_inner .inner_txt_two {
-      font-size: 12px;
-      font-weight: 400;
-    }
-    main .giveme_inner img {
-      border-radius: 0px;
-    }
-    main .colec_so {
-      font-size: 18px;
+    .topevent {
       text-align: center;
     }
-    main #giveme {
-      width: 100%;
-      height: 60vh;
+    .lelabomemu {
+      height: 60px;
     }
-    main #product {
-      width: 100%;
-      height: 60vh;
+    .lelabomemu nav {
+      display: none;
     }
-    main .product_inner {
-      display: block;
+    .lelaborig {
+      height: 60px;
     }
-    main .seller_item_inner img {
-      border-radius: 0px;
-    }
-    main .colec_se {
-      font-size: 12px;
-      text-align: center;
-    }
-    main .colec_so main .giveme_inner .view_btn a {
-      font-size: 14px;
-    }
-    main .colec_se2 {
-      text-align: center;
-      font-size: 12px;
-    }
-    main .giveme_inner .inner_txt {
-      padding-left: 12px;
-    }
-    main .giveme_inner .inner_txt_two {
-      padding-left: 12px;
-    }
-    main .giveme_inner .view_btn a {
-      padding-right: 12px;
-    }
-    main .off_txt {
-      font-size: 18px;
-    }
-    main .Offline .snap_box {
-      padding-top: 65%;
-    }
-    footer .fot_inr .cs_notice {
+    .ph_me {
       display: flex;
-      flex-direction: column;
+      align-items: center;
+      padding: 18px;
+      height: 60px;
+
+      img {
+        width: 30px;
+      }
     }
-    main .seller.inner {
-      width: 200%;
-      margin-right: 0;
+    .lelabo_main_txt {
+      gap: 0px;
+      font-size: 10px;
+      margin-bottom: 60vw;
+      label {
+        min-width: 75px;
+      }
+    }
+    .footer_gather {
+      display: grid;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
+    }
+    .footer_gather .footer_section ~ .footer_section {
+      padding-left: 0px;
     }
   }
 }
