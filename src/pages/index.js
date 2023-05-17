@@ -74,6 +74,11 @@ const BlogIndex = ({ data, location }) => {
             {"covernat"}
           </Link>
         </li>
+        <li>
+          <Link to={"/maran"} itemProp="url">
+            {"maran"}
+          </Link>
+        </li>
       </ol>
     </Layout>
   );

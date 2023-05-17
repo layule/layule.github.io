@@ -1,91 +1,87 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-.page-container.covernat {
+.page-container.maran {
   /* HTML5 display-role reset for older browsers */
 }
-.page-container.covernat html,
-.page-container.covernat body,
-.page-container.covernat div,
-.page-container.covernat span,
-.page-container.covernat applet,
-.page-container.covernat object,
-.page-container.covernat iframe,
-.page-container.covernat h1,
-.page-container.covernat h2,
-.page-container.covernat h3,
-.page-container.covernat h4,
-.page-container.covernat h5,
-.page-container.covernat h6,
-.page-container.covernat p,
-.page-container.covernat blockquote,
-.page-container.covernat pre,
-.page-container.covernat a,
-.page-container.covernat abbr,
-.page-container.covernat acronym,
-.page-container.covernat address,
-.page-container.covernat big,
-.page-container.covernat cite,
-.page-container.covernat code,
-.page-container.covernat del,
-.page-container.covernat dfn,
-.page-container.covernat em,
-.page-container.covernat img,
-.page-container.covernat ins,
-.page-container.covernat kbd,
-.page-container.covernat q,
-.page-container.covernat s,
-.page-container.covernat samp,
-.page-container.covernat small,
-.page-container.covernat strike,
-.page-container.covernat strong,
-.page-container.covernat sub,
-.page-container.covernat sup,
-.page-container.covernat tt,
-.page-container.covernat var,
-.page-container.covernat b,
-.page-container.covernat u,
-.page-container.covernat i,
-.page-container.covernat center,
-.page-container.covernat dl,
-.page-container.covernat dt,
-.page-container.covernat dd,
-.page-container.covernat ol,
-.page-container.covernat ul,
-.page-container.covernat li,
-.page-container.covernat fieldset,
-.page-container.covernat form,
-.page-container.covernat label,
-.page-container.covernat legend,
-.page-container.covernat table,
-.page-container.covernat caption,
-.page-container.covernat tbody,
-.page-container.covernat tfoot,
-.page-container.covernat thead,
-.page-container.covernat tr,
-.page-container.covernat th,
-.page-container.covernat td,
-.page-container.covernat article,
-.page-container.covernat aside,
-.page-container.covernat canvas,
-.page-container.covernat details,
-.page-container.covernat embed,
-.page-container.covernat figure,
-.page-container.covernat figcaption,
-.page-container.covernat footer,
-.page-container.covernat header,
-.page-container.covernat hgroup,
-.page-container.covernat menu,
-.page-container.covernat nav,
-.page-container.covernat output,
-.page-container.covernat ruby,
-.page-container.covernat section,
-.page-container.covernat summary,
-.page-container.covernat time,
-.page-container.covernat mark,
-.page-container.covernat audio,
-.page-container.covernat video {
+.page-container.maran html,
+.page-container.maran body,
+.page-container.maran div,
+.page-container.maran span,
+.page-container.maran applet,
+.page-container.maran object,
+.page-container.maran iframe,
+.page-container.maran h1,
+.page-container.maran h2,
+.page-container.maran h3,
+.page-container.maran h4,
+.page-container.maran h5,
+.page-container.maran h6,
+.page-container.maran p,
+.page-container.maran blockquote,
+.page-container.maran pre,
+.page-container.maran a,
+.page-container.maran abbr,
+.page-container.maran acronym,
+.page-container.maran address,
+.page-container.maran big,
+.page-container.maran cite,
+.page-container.maran code,
+.page-container.maran del,
+.page-container.maran dfn,
+.page-container.maran em,
+.page-container.maran img,
+.page-container.maran ins,
+.page-container.maran kbd,
+.page-container.maran q,
+.page-container.maran s,
+.page-container.maran samp,
+.page-container.maran small,
+.page-container.maran strike,
+.page-container.maran strong,
+.page-container.maran sub,
+.page-container.maran sup,
+.page-container.maran tt,
+.page-container.maran var,
+.page-container.maran b,
+.page-container.maran u,
+.page-container.maran i,
+.page-container.maran center,
+.page-container.maran dl,
+.page-container.maran dt,
+.page-container.maran dd,
+.page-container.maran ol,
+.page-container.maran ul,
+.page-container.maran li,
+.page-container.maran fieldset,
+.page-container.maran form,
+.page-container.maran label,
+.page-container.maran legend,
+.page-container.maran table,
+.page-container.maran caption,
+.page-container.maran tbody,
+.page-container.maran tfoot,
+.page-container.maran thead,
+.page-container.maran tr,
+.page-container.maran th,
+.page-container.maran td,
+.page-container.maran article,
+.page-container.maran aside,
+.page-container.maran canvas,
+.page-container.maran details,
+.page-container.maran embed,
+.page-container.maran figure,
+.page-container.maran figcaption,
+.page-container.maran footer,
+.page-container.maran header,
+.page-container.maran hgroup,
+.page-container.maran menu,
+.page-container.maran nav,
+.page-container.maran output,
+.page-container.maran ruby,
+.page-container.maran section,
+.page-container.maran summary,
+.page-container.maran time,
+.page-container.maran mark,
+.page-container.maran audio,
+.page-container.maran video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -93,54 +89,44 @@
   font: inherit;
   vertical-align: baseline;
 }
-.page-container.covernat article,
-.page-container.covernat aside,
-.page-container.covernat details,
-.page-container.covernat figcaption,
-.page-container.covernat figure,
-.page-container.covernat footer,
-.page-container.covernat header,
-.page-container.covernat hgroup,
-.page-container.covernat menu,
-.page-container.covernat nav,
-.page-container.covernat section {
+.page-container.maran article,
+.page-container.maran aside,
+.page-container.maran details,
+.page-container.maran figcaption,
+.page-container.maran figure,
+.page-container.maran footer,
+.page-container.maran header,
+.page-container.maran hgroup,
+.page-container.maran menu,
+.page-container.maran nav,
+.page-container.maran section {
   display: block;
 }
-.page-container.covernat body {
+.page-container.maran body {
   line-height: 1;
 }
-.page-container.covernat ol,
-.page-container.covernat ul {
+.page-container.maran ol,
+.page-container.maran ul {
   list-style: none;
 }
-.page-container.covernat blockquote,
-.page-container.covernat q {
+.page-container.maran blockquote,
+.page-container.maran q {
   quotes: none;
 }
-.page-container.covernat blockquote:before,
-.page-container.covernat blockquote:after,
-.page-container.covernat q:before,
-.page-container.covernat q:after {
+.page-container.maran blockquote:before,
+.page-container.maran blockquote:after,
+.page-container.maran q:before,
+.page-container.maran q:after {
   content: "";
   content: none;
 }
-.page-container.covernat table {
+.page-container.maran table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.page-container.covernat a {
+.page-container.maran a {
   text-decoration: none;
 }
-.page-container.covernat li {
+.page-container.maran li {
   list-style: none;
-}ntent: "";
-  content: none;
-}
-.page-container.bestseller table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-.page-container.bestseller a {
-  text-decoration: none;
-  color: inherit; /* 부모 요소의 값 상속*/
 }

@@ -1,262 +1,98 @@
-.page-container.lelabo * {
-  box-sizing: border-box;
-  font-family: "Changa", sans-serif;
-}
-.page-container.lelabo .topevent {
+.page-container.maran .maranSwiper {
   width: 100%;
-  height: 40px;
-  background: #333;
-  position: relative;
+  height: 100vh;
 }
-.page-container.lelabo .topevent p {
+.page-container.maran .maranSwiper img {
   width: 100%;
-  height: 40px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
 }
-.page-container.lelabo .ph_me {
+.page-container.maran .maranSwiper .swiper-pagination,
+.page-container.maran .maranSwiper .swiper-button-next:after,
+.page-container.maran .maranSwiper .swiper-button-prev:after,
+.page-container.maran .maranSwiper .swiper-scrollbar-drag,
+.page-container.maran .maranSwiper .swiper-horizontal > .swiper-scrollbar,
+.page-container.maran .maranSwiper .swiper-scrollbar.swiper-scrollbar-horizontal {
   display: none;
 }
-.page-container.lelabo .lelabomemu {
+.page-container.maran .mav_size {
   width: 100%;
-  height: 79px;
-  border-bottom: 1px solid #ebebeb;
-  position: relative;
-  top: 80;
-  left: 0;
-}
-.page-container.lelabo .lelabomemu a {
-  font-size: 14px;
-  color: #333;
-  font-weight: 600;
-}
-.page-container.lelabo .lelabomemuflx {
-  width: 620px;
-  height: 79px;
-  display: flex;
-  align-items: center;
-  transform: translateX(25px);
-}
-.page-container.lelabo .lelabomemuflx li {
-  padding: 4px;
-  margin-right: 1.3vw;
-}
-.page-container.lelabo .lelaborig {
-  width: 150px;
-  height: 79px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  transform: translateX(-5px);
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
+  z-index: 10;
+  padding: 48px 0;
 }
-.page-container.lelabo .lelaborig .icon_u img {
-  width: 14px;
+.page-container.maran .mav_size a {
+  color: #030303;
+  font-size: 14px;
+  font-weight: 500;
 }
-.page-container.lelabo .lelaborig .bag img {
-  width: 18px;
-}
-.page-container.lelabo .lelaborig .se img {
-  width: 16px;
-}
-.page-container.lelabo .lelaborig li {
-  padding: 4px;
-  margin-right: 1.3vw;
-}
-.page-container.lelabo .lelabomainimg {
-  width: 100%;
-  height: 25vw;
-  position: relative;
-}
-.page-container.lelabo .lelabomainimg img {
-  width: 100%;
-  height: 100%;
-}
-.page-container.lelabo .lelabo_main_txt {
-  position: relative;
-  width: 100%;
-  margin-bottom: 45vw;
-  border-bottom: 1px solid #ebebeb;
-  font-size: 12px;
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  align-items: center;
-  height: 64px;
-}
-.page-container.lelabo .lelabo_main_txt label {
-  min-width: 90px;
-  display: block;
-  text-align: center;
-  color: #333;
-}
-.page-container.lelabo .lelabofooter {
-  width: 100%;
-  border-top: 1px solid #ebebeb;
-  padding: 20px 30px;
-  font-size: 12px;
-  color: #6c6c6c;
-  line-height: 20px;
-  letter-spacing: 0.02px;
-  background: #333;
-}
-.page-container.lelabo .colletion_txt {
-  display: none;
-}
-.page-container.lelabo .innerA {
-  width: 80%;
-  height: 100%;
+.page-container.maran .bot_me {
   position: absolute;
-  top: calc(100% + 48px);
-  left: 50%;
-  transform: translateX(-50%);
-}
-.page-container.lelabo label::after {
-  content: "";
-  display: block;
-}
-.page-container.lelabo .innerA img {
+  top: 12%;
+  z-index: 10;
   width: 100%;
-  border-radius: 3px;
 }
-.page-container.lelabo .footer_gather {
+.page-container.maran .bot_me ul {
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 80px;
-}
-.page-container.lelabo .footer_gather .footer_section {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-}
-.page-container.lelabo .footer_gather .footer_section ~ .footer_section {
-  padding-left: 24px;
-}
-.page-container.lelabo .footer_gather h3 {
-  line-height: 2.5;
-  font-weight: 400;
-  color: #ebebeb;
-}
-.page-container.lelabo .footer_gather h2 {
-  line-height: 2.5;
-  font-weight: 400;
-  color: #ebebeb;
-}
-.page-container.lelabo .footer_gather .fooer_row {
-  border-bottom: 1px solid #ebebeb;
-  margin: 16px 0;
-}
-.page-container.lelabo .footer_gather .fooer_col {
-  padding-left: 0;
-  margin: 0;
-  color: #ebebeb;
-}
-.page-container.lelabo .footer_gather a {
-  color: #ebebeb;
-}
-.page-container.lelabo .letter_input input {
-  width: 50%;
-  box-sizing: border-box;
-  border-radius: 3px;
-  line-height: 1.85;
-  border: 1px solid #ebebeb;
-  border-radius: 3px 0 0 3px;
-  border-right: 0px;
-  background: transparent;
-}
-.page-container.lelabo .letter_input button {
-  background: transparent;
-  border: 1px solid #ebebeb;
-  color: #ebebeb;
-  line-height: 1.85;
-  border-radius: 0px 3px 3px 0px;
-}
-.page-container.lelabo .blook {
-  margin: 0 0 16px 0;
-  border-bottom: 1px solid #ebebeb;
-}
-.page-container.lelabo .letter_box {
-  width: 80%;
-  border: 1px solid #ebebeb;
-  padding: 10px 20px 10px 10px;
-  line-height: 1.8;
-  border-radius: 3px;
-  color: #ebebeb;
-}
-.page-container.lelabo .letter {
-  padding-top: 16px;
-}
-.page-container.lelabo .blck_line {
-  padding: 10px 0 0 16px;
-}
-.page-container.lelabo .copy_item p {
-  padding-bottom: 10px;
-  color: #ebebeb;
-}
-.page-container.lelabo .certification_box {
-  line-height: 2.5;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  display: flex;
-  align-items: center;
-}
-.page-container.lelabo .certification_box p {
-  color: #ebebeb;
-}
-.page-container.lelabo .certification_box p {
-  padding-left: 12px;
-}
-.page-container.lelabo .letter_input {
-  padding-top: 16px;
-  padding-bottom: 80px;
-}
-.page-container.lelabo .certification_box input {
-  background: transparent;
-  display: flex;
-  width: 15px;
-  height: 15px;
-  -webkit-box-flex: 0;
-  align-items: center;
   justify-content: center;
-  border: 1px solid #bcbbb4;
-  margin: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  color: #fffef2;
+  gap: 48px;
 }
-.page-container.lelabo .certification_box input:checked::before {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: transparent;
-  -webkit-clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-  content: "";
-  transform: scale(0);
-  transition: background-color 100ms cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-color: currentcolor;
-  transform: scale(1);
+.page-container.maran .bot_me a {
+  color: #030303;
 }
-.page-container.lelabo .marketing_bn {
-  padding-top: 12px;
+.page-container.maran .lag_line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  vertical-align: baseline;
+  justify-content: space-around;
 }
-.page-container.lelabo .marketing_bn h2 {
-  color: #ebebeb;
+.page-container.maran .lag_line img {
+  width: 200px;
 }
-.page-container.lelabo .footer_end {
-  color: #ebebeb;
+.page-container.maran .lag_line li {
+  min-width: 120px;
 }
-.page-container.lelabo input .certification1 {
+.page-container.maran .style_input {
   background: transparent;
 }
-.page-container.lelabo label {
-  cursor: pointer;
+.page-container.maran footer {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 48px;
+  z-index: 1;
+}
+.page-container.maran footer .for_txt_po {
+  margin-left: 48px;
+  display: flex;
+  align-items: baseline;
+}
+.page-container.maran footer ul {
+  margin-left: 24px;
+}
+.page-container.maran footer li {
+  color: #030303;
+  font-size: 12px;
+  font-weight: 450;
+  line-height: 1.4;
+}
+.page-container.maran footer a {
+  color: #030303;
+}
+.page-container.maran footer p {
+  color: #000;
+  font-size: 12px;
+  font-weight: 450;
+  margin-left: 24px;
+  line-height: 1.4;
+}
+
+.MuiPaper-root.MuiMenu-paper.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper {
+  background: transparent;
+  box-shadow: unset;
+}
+.MuiPaper-root.MuiMenu-paper.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper li {
+  font-size: 12px;
 }
