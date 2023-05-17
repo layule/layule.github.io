@@ -1,40 +1,66 @@
+@media (max-width: 1440px) {
+  .page-container.maran .mav_size {
+    max-width: 1250px;
+  }
+}
 @media (max-width: 768px) {
-  .page-container.lelabo .topevent {
-    text-align: center;
+  .page-container.maran .mav_size {
+    width: 100%;
   }
-  .page-container.lelabo .lelabomemu {
-    height: 60px;
-  }
-  .page-container.lelabo .lelabomemu nav {
-    display: none;
-  }
-  .page-container.lelabo .lelaborig {
-    height: 60px;
-  }
-  .page-container.lelabo .ph_me {
+  .page-container.maran .lag_line {
+    width: 100%;
     display: flex;
     align-items: center;
-    padding: 18px;
-    height: 60px;
+    vertical-align: baseline;
+    justify-content: space-around;
   }
-  .page-container.lelabo .ph_me img {
-    width: 30px;
+  .page-container.maran .lag_line img {
+    width: 80px;
   }
-  .page-container.lelabo .lelabo_main_txt {
-    gap: 0px;
+  .page-container.maran .lag_line li {
+    min-width: 80px;
     font-size: 10px;
-    margin-bottom: 60vw;
   }
-  .page-container.lelabo .lelabo_main_txt label {
-    min-width: 75px;
+  .page-container.maran .bot_me {
+    position: absolute;
+    top: 12%;
+    z-index: 10;
+    width: 100%;
   }
-  .page-container.lelabo .footer_gather {
-    display: grid;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    grid-template-rows: auto 1fr;
+  .page-container.maran .bot_me ul {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    font-size: 10px;
   }
-  .page-container.lelabo .footer_gather .footer_section ~ .footer_section {
-    padding-left: 0px;
+  .page-container.maran .bot_me a {
+    color: #030303;
+  }
+  .page-container.maran footer {
+    max-width: 650px;
+    position: absolute;
+    bottom: 70px;
+  }
+  .page-container.maran footer .for_txt_po {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .page-container.maran footer li {
+    font-size: 6px;
+    padding: 12px;
+  }
+  .page-container.maran footer p {
+    font-size: 6px;
+    margin: 0;
+  }
+  .page-container.maran .MuiFormControl-root {
+    width: 80px;
+    min-width: unset;
+  }
+}
+
+@media (max-width: 768px) {
+  .MuiInputBase-root.MuiInput-root.MuiInput-underline.MuiInputBase-colorPrimary.MuiInputBase-formControl {
+    width: 80px;
   }
 }

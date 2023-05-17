@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "/src/styles/maran/reset.scss";
 import "/src/styles/maran/style.scss";
+import "/src/styles/maran/stylem.scss";
 import "/src/styles/maran/font.scss";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -93,36 +94,38 @@ export default function App() {
           <ul>
             <li>
               <a href="#">Company</a>
-            </li>
-            <li>
+              <br />
+
               <a href="#">Agreemen</a>
-            </li>
-            <li>
+              <br />
+
               <a href="#">Privacy</a>
-            </li>
-            <li>
+              <br />
+
               <a href="#">Guide</a>
             </li>
+
+            <li>
+              1500 - 0000 <br />
+              10AM - 5PM <br />
+              MON - FRI <br />
+              SAT, SUN, HOLIDDAY
+            </li>
+            <li>
+              <p>
+                Ctdots Corp | MARAN | 00000 서울특별시 중구 신당동
+                <br />
+                Business License 000-00-00000
+                <br />
+                Mail Order License No. 제2021-서울-00000
+                <br />
+                maran.kr@gmail.com
+              </p>
+            </li>
+            <li>
+              <p class="copyright">2023 &copy; MARAN Corp. All Right Reserved.</p>
+            </li>
           </ul>
-          <ul>
-            <li>1500 - 0000</li>
-            <li>10AM - 5PM</li>
-            <li>MON - FRI</li>
-            <li>SAT, SUN, HOLIDDAY</li>
-          </ul>
-          <ul>
-            <p>
-              Ctdots Corp | MARAN | 00000 서울특별시 중구 신당동
-              <br />
-              Business License 000-00-00000
-              <br />
-              Mail Order License No. 제2021-서울-00000
-              <br />
-              maran.kr@gmail.com
-            </p>
-          </ul>
-          <br />
-          <p class="copyright">2023 &copy; MARAN Corp. All Right Reserved.</p>
         </div>
       </footer>
     </div>
