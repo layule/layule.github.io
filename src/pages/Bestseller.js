@@ -70,7 +70,7 @@ export default function Component() {
         var mainswiper = new Swiper("#main_slide", {
           loop: true,
           autoplay: {
-            delay: 6000,
+            delay: 3000,
             disableOnInteraction: false,
           },
         });
@@ -80,9 +80,9 @@ export default function Component() {
           loop: true,
           slidesPerView: "auto",
           spaceBetween: 24,
-          speed: 500,
+          speed: 1,
           autoplay: {
-            delay: 3000,
+            delay: 1,
             disableOnInteraction: false,
           },
 

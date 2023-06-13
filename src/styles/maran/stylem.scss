@@ -1,11 +1,6 @@
 @charset "UTF-8";
 
 .page-container.maran {
-  @media (max-width: 1440px) {
-    .mav_size {
-      max-width: 1250px;
-    }
-  }
   @media (max-width: 768px) {
     .mav_size {
       width: 100%;
