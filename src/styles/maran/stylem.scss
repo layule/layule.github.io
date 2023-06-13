@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 .page-container.maran {
+  *font-family: "Noto Sans KR", sans-serif;
   @media (max-width: 768px) {
     .mav_size {
       width: 100%;

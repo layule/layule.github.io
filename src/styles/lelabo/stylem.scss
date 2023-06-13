@@ -1,4 +1,8 @@
 .page-container.lelabo {
+  * {
+    box-sizing: border-box;
+    font-family: "Changa", sans-serif;
+  }
   @media (max-width: 768px) {
     .topevent {
       text-align: center;
