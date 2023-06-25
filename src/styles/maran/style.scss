@@ -17,7 +17,30 @@
       display: none;
     }
   }
+  .about_explanation {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 330px;
+  }
+  .continer {
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 180px;
+  }
+  .thumbnail {
+    width: 30%;
 
+    padding-top: 42px;
+    img {
+      width: 100%;
+    }
+  }
+  .tham_tall {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+  }
   .mav_size {
     width: 100%;
     position: absolute;
@@ -62,13 +85,56 @@
   .style_input {
     background: transparent;
   }
+  .login {
+    margin: 0 auto;
+    width: 354px;
+    display: flex;
+    justify-content: center;
+    padding-top: 280px;
+    fieldset {
+      position: relative;
+    }
+  }
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    a {
+      color: #000;
+    }
+  }
+  .login_form {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 10px;
+    color: #000;
+    li {
+      margin-bottom: 10px;
+    }
+    label {
+      font-size: 11px;
+      line-height: 40px;
+      height: 40px;
+      text-indent: 8px;
+      color: #000;
+    }
+    input {
+      width: 342px;
+      line-height: 32px;
+      height: 32px;
+      border: 1px solid #000;
+      font-size: 11px;
+      padding-left: 10px;
+      color: #000;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+    }
+  }
   footer {
     width: 100%;
+    margin: 0 auto;
     height: 70px;
-    position: absolute;
-    bottom: 48px;
+    margin-bottom: 48px;
     z-index: 1;
-
     .for_txt_po {
       max-width: 1280px;
       margin: 0 auto;
@@ -91,6 +157,10 @@
       font-weight: 450;
       margin-left: 24px;
       line-height: 1.4;
+    }
+    .number {
+      padding-left: 24px;
+      padding-right: 24px;
     }
   }
 }
