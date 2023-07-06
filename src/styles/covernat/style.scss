@@ -2,17 +2,26 @@
 
 .page-container.covernat {
   .mySwiper {
-    width: 100%;
-    height: 40vw;
-  }
-  .mySwiper a {
-    width: 100%;
+    flex-shrink: 0;
     height: 100%;
+    position: relative;
+  }
+  .mySwiper .swiper-slide a {
+    display: flex;
+  }
+  .mySwiper .swiper-slide:hover {
+    display: flex;
   }
   .mySwiper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  .mySwiper a:hover {
+    .swiperfont {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
   }
   .mySwiper .swiper-button-prev,
   .mySwiper .swiper-button-next {
@@ -28,19 +37,41 @@
   .mySwiper .swiper-scrollbar-drag {
     display: none;
   }
+  .swiperfont {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+  }
+  .swiperfont p {
+    color: #000;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiperfont .font-sub {
+    width: 100px;
+    height: 40px;
+    background: #fff;
+    border-radius: 6px;
+  }
   .swiper-scrollbar {
     display: none;
   }
   .covernatHeader {
     width: 100%;
     height: 60px;
-    position: relative;
-    top: 0;
+    background: #2f2f2f;
   }
   #covernatHeaderInner {
     width: 100%;
     height: 60px;
-    z-index: 99;
     transition: all 0.35s;
   }
   .covernatPointInner {
@@ -52,7 +83,7 @@
     align-items: center;
   }
   .covernatPointInner .logo_cover {
-    width: 110px;
+    width: 100px;
   }
   .covernatTopMenu {
     max-width: calc(100% - 42px);
@@ -73,7 +104,11 @@
     font-weight: 600;
     color: #000;
   }
+  .TopMenu .TopMenu--font--color a {
+    color: #fff;
+  }
   .submenu {
+    z-index: 2;
     display: none;
     width: 100%;
     height: 300px;
@@ -85,29 +120,38 @@
   }
   .submenuinner {
     max-width: calc(100% - 42px);
-    padding-left: 6%;
   }
   .TopMenu li:hover .submenu {
     display: block;
   }
   .dep1 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    padding-left: 32px;
   }
   .TopMenu .dep1 li {
-    width: 100%;
     padding: 0;
   }
   .dep1 > li > a {
     font-size: 12px;
     line-height: 56px;
+    color: #000;
+  }
+  .TopMenu .dep1 li {
+    padding-right: 32px;
   }
   .product_cover > li > a {
     font-size: 12px;
     line-height: 28px;
+    color: #2f2f2f;
+    font-weight: 350;
   }
   .product_cover a {
-    color: #bdbdbd;
+    color: #000;
+  }
+  .product_cover {
+    display: flex;
+    flex-direction: column;
   }
   .covernatIcon {
     display: flex;
@@ -215,55 +259,99 @@
     width: 100%;
     height: 100%;
   }
-  .covernat_footer {
+  footer {
     width: 100%;
-    max-width: calc(100% - 42px);
-    margin: 0 auto;
-    height: 320px;
-    font-size: 12px;
-    line-height: 32px;
-    background: #fff;
-  }
-  .covernat_cs {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 224px;
-    flex-wrap: wrap;
-    padding-top: 28px;
-    a {
-      color: #000;
-    }
-  }
-  .covernat_co {
-    display: flex;
-    padding-top: 28px;
-    a {
-      color: #000;
-    }
-  }
-  .covernat_co p ~ p {
-    padding-left: 24px;
-  }
-  .covernat_ad {
-    display: flex;
-    text-align: right;
-    justify-content: flex-end;
-    position: relative;
-    top: -250px;
-  }
-  .covernat_ad h1 {
-    font-weight: 800;
-  }
-  .covernat_ad span {
-    width: 1px;
-    height: 10px;
-    background-color: #000;
-    display: inline-block;
-    margin: 0 5px;
-  }
-  .look_txt p {
     color: #000;
-    padding: 24px;
+    font-size: 0.2rem;
+    padding: 2rem 0;
+  }
+  .footer-bottom {
+    line-height: 1.8;
+  }
+  .layout-row {
+    width: 100%;
+    padding: 0 var(--layout-row-gap);
+    zoom: 1;
+  }
+  .footer-inside {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 32px;
+  }
+  #footer-accordion {
+    display: flex;
+    gap: 66px;
+    a {
+      color: #000;
+    }
+    .fbox {
+      line-height: 2;
+      padding-right: 25px;
+    }
+    .mobile-content-hide {
+      display: block !important;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+  }
+  .footer-top,
+  .footer-bottom {
+    width: 50%;
+  }
+  .footer-top {
+    display: flex;
+  }
+  .footer-bottom {
+    text-align: right;
+  }
+  .info-name {
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  //covernetmen site
+  .hidden {
+    display: flex;
+    padding: 0.75rem;
+  }
+  .covernetmen-button {
+    display: flex;
+    align-items: center;
+    width: 16.666667%;
+    margin-left: 12px;
+  }
+  .text-13 {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+  }
+  .py-2 {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  .px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .bg-brand-2 {
+    background-color: rgb(248 248 248);
+    border: 0px;
+  }
+  .rounded-md {
+    border-radius: 0.375rem;
+  }
+  .whitespace-nowrap {
+    white-space: nowrap;
+  }
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .max-w-screen-xl {
+    max-width: 1280px;
   }
 }
