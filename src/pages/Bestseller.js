@@ -6,6 +6,8 @@ import "/src/styles/bestseller/font.scss";
 import "/src/styles/bestseller/reset.scss";
 import "/src/styles/bestseller/style.scss";
 import "/src/styles/bestseller/stylem.scss";
+import BestsellerNav from "../components/Bestseller/BestsellerNav";
+import BestsellerFooter from "../components/Bestseller/BestsellerFooter";
 
 export default function Component() {
   const scrollToGiveClass = () => {
@@ -169,59 +171,8 @@ export default function Component() {
       <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      <BestsellerNav></BestsellerNav>
       <body className="bestsellerbody">
-        <nav>
-          <ul id="nav">
-            <li className="logo">
-              <a href="#">Best seller</a>
-            </li>
-            <li>
-              <a href="#">베스트셀러</a>
-            </li>
-            <li>
-              <a href="#">베스트링크</a>
-            </li>
-            <li>
-              <a href="#">회사 소개</a>
-            </li>
-            <li>
-              <a href="#">입점 문의</a>
-            </li>
-            <li>
-              <a href="#">라이브 커머스 신청</a>
-            </li>
-          </ul>
-
-          {/* <!----mobile------> */}
-          <div className="m_menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          {/* <!--m_menu--> */}
-
-          <div className="m_nav">
-            <ul>
-              <li>
-                <a href="#">베스트셀러</a>
-              </li>
-              <li>
-                <a href="#">베스트링크</a>
-              </li>
-              <li>
-                <a href="#">회사 소개</a>
-              </li>
-              <li>
-                <a href="#">입점 문의</a>
-              </li>
-              <li>
-                <a href="#">라이브 커머스 신청</a>
-              </li>
-            </ul>
-          </div>
-          {/* <!--m_nav--> */}
-        </nav>
-
         <main>
           <section id="main_slide" className="section swiper">
             <div className="swiper-wrapper">
@@ -611,56 +562,7 @@ export default function Component() {
           </section>
           {/* <!--//#faq--> */}
         </main>
-
-        <footer className="best">
-          <div className="footer-wrap">
-            <div className="footer-head">
-              <h1>(주) 베스트셀러</h1>
-            </div>
-
-            <div className="footer-menu">
-              <ul>
-                <li>
-                  <a href="#">이용약관</a>
-                </li>
-                <li>
-                  <a href="#">개인정보처리방침</a>
-                </li>
-                <li>
-                  <a href="#">사업자정보확인</a>
-                </li>
-                <li>
-                  <a href="#">입점문의</a>
-                </li>
-              </ul>
-            </div>
-            {/* <!-- .footer-menu--> */}
-            <div className="footer-info">
-              <p className="info-txt">
-                <span>사업자등록번호:000-00-00000</span>
-                <span>통신판매업신고:제0000-서울서초-0000호</span>
-                <span>대표:bestseller</span>
-                <span>주소:서울특별시 서초구 강남대로 00길 00 0층</span>
-                <br />
-                <span>E-MAIL:bestseller@co.kr</span>
-              </p>
-              {/* <!-- info-txt --> */}
-
-              <div className="sns-group">
-                <a className="insta" href="#">
-                  instagram
-                </a>
-                <a className="blog" href="#">
-                  Blog
-                </a>
-              </div>
-
-              <p className="copyright">2023 &copy; bestseller corp. All right reserved.</p>
-            </div>
-            {/* <!-- .footer-info --> */}
-          </div>
-          {/* <!-- //.footer-wrap--> */}
-        </footer>
+        <BestsellerFooter></BestsellerFooter>
       </body>
     </div>
   );
