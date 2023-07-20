@@ -48,57 +48,6 @@ export default function BestsellerBest() {
                           <a href="" onClick={() => setActiveTab(activeTab => 1)} className="link_upper">
                             자주하는 질문
                           </a>
-                          {activeTab === 1 && (
-                            <div className="detail_helpcs">
-                              <strong className="screen_out">도움말 목록</strong>
-                              <ul className="list_helpcs">
-                                <li id="help_0" className="">
-                                  <div className="ask_help">
-                                    <span className="ico_commercecs ico_ask">질문</span>
-                                    <a className="link_ask" aria-expanded="false">
-                                      베스트셀러에 입점하려면 어떻게 해야 하나요?
-                                    </a>
-                                  </div>
-                                  <div className="answer_help">
-                                    <span className="ico_commercecs ico_answer">답변</span>
-                                    <p>베스트셀러 입점은 아래와 같은 순서대로 진행되며, 자세한 내용은 '바로가기' 화면 하단의 '유의사항'을 확인해 주세요.</p>
-                                    <p>
-                                      <br />
-                                    </p>
-                                    <p>
-                                      <b>입점 신청 및 진행 절차</b>
-                                    </p>
-                                    <p>- 업체 등록 &gt; 베스트셀러 담당자가 여부를 검토 &gt; 검토 후 베스트셀러와 커머스 협의 &gt; 계약 진행 &gt; 판매 시작</p>
-                                    <div>
-                                      <br />
-                                    </div>
-                                    <p>
-                                      <span>
-                                        ☞ '
-                                        <a href="" target="_blank">
-                                          업체등록' 바로가기
-                                        </a>
-                                      </span>
-                                      <b>
-                                        <br />
-                                      </b>
-                                    </p>
-                                    <p>
-                                      <b>
-                                        ☞ '
-                                        <a href="" target="_blank">
-                                          라이브 커머스 신청' 바로가기
-                                        </a>
-                                      </b>
-                                    </p>
-                                    <p>
-                                      <br />
-                                    </p>
-                                  </div>
-                                </li>
-                              </ul>
-                            </div>
-                          )}
                         </li>
 
                         <li>

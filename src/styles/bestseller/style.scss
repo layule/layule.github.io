@@ -825,4 +825,33 @@
       border: 1px solid #000;
     }
   }
+  .detail_helpcs {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Apple SD Gothic Neo’,’Malgun Gothic", sans-serif;
+    color: #333;
+  }
+  .notice_helpcs {
+    margin: -7px 0 30px;
+    border-top: 0 none;
+    border-radius: 30px;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #fafafa;
+  }
+  .screen_out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+  }
+  .list_helpcs {
+    border-bottom: 1px solid #efefef;
+  }
+  .list_helpcs li {
+    padding: 27px 40px 23px;
+    border-top-color: #e0e0e0;
+  }
 }
