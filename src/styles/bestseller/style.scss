@@ -691,4 +691,138 @@
     color: #fff;
     font-weight: 500;
   }
+  .bestsellerWrap {
+    position: relative;
+    min-height: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Apple SD Gothic Neo’,’Malgun Gothic", sans-serif;
+    color: #333;
+  }
+  .bestsellerhead {
+    position: relative;
+    padding: 0 50px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  }
+  .seach-help {
+    padding-top: 15px;
+    padding: 41px 0 50px;
+    background: #262626;
+  }
+  .sereen-seach h2 {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+  }
+  .sereen-seach {
+    display: block;
+    padding-bottom: 19px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: -0.06em;
+  }
+  .box_search {
+    width: 670px;
+    height: 66px;
+    padding: 20px 80px 20px 26px;
+    margin: 0 auto;
+    border: 0 none;
+    border-radius: 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  .screen_out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+  }
+  .tf_search {
+    display: flex;
+    height: 40px;
+    font-size: 24px;
+    line-height: 41px;
+    letter-spacing: -0.08em;
+    border: 0 none;
+    width: 564px;
+  }
+  fieldset {
+    display: flex;
+    align-items: center;
+  }
+  .btn_search {
+    padding: 15px 22px 15px 22px;
+  }
+  .upper_sort {
+    position: static;
+    height: auto;
+    border-bottom: 1px solid #d8d8d8;
+    box-shadow: none;
+  }
+  .sort_helpcs .list_upper {
+    display: flex;
+    justify-content: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    text-align: center;
+    white-space: nowrap;
+    li {
+      margin: 0 30px;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  .screen_out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+  }
+  .sort_helpcs .list_under {
+    overflow: auto;
+    position: static;
+    border-bottom: 1px solid #ebebeb;
+    font-size: 0;
+    background-color: #fcfcfc;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .continer {
+    max-width: 1280px;
+    margin-top: 128px;
+  }
+  .link_under {
+    overflow: visible;
+    padding: 20px 0 19px;
+    font-size: 18px;
+    line-height: 21px;
+    white-space: normal;
+    letter-spacing: -0.07em;
+    display: flex;
+    justify-content: center;
+  }
+  .wrap_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      width: 180px;
+      height: 54px;
+      font-size: 18px;
+      line-height: 55px;
+      vertical-align: top;
+      text-align: center;
+      border: 1px solid #000;
+    }
+  }
 }

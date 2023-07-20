@@ -4,7 +4,6 @@ import "/src/styles/lelabo/font.scss";
 import "/src/styles/lelabo/reset.scss";
 import "/src/styles/lelabo/style.scss";
 import "/src/styles/lelabo/stylem.scss";
-import { colletion, logo, pr1 } from "../images/covernat";
 import { useState } from "react";
 
 export default function Component() {

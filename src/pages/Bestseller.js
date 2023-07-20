@@ -165,9 +165,6 @@ export default function Component() {
 
   return (
     <div className="page-container bestseller">
-      {/* <!-- favicon--> */}
-      {/* <link rel="shortcut icon" href={bsFavicon} /> */}
-      {/* <!-- 플러그인 연결 --> */}
       <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
