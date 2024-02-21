@@ -4,31 +4,7 @@ import "swiper/css";
 import "/src/styles/covernat/reset.scss";
 import "/src/styles/covernat/style.scss";
 import "/src/styles/covernat/font.scss";
-import {
-  colletion,
-  colletionMen,
-  colletionWomen,
-  foll01,
-  foll02,
-  like,
-  logo,
-  main1,
-  main2,
-  main3,
-  mem,
-  menLook,
-  search,
-  shopping,
-  ss001,
-  ss002,
-  ss003,
-  ss004,
-  sub1,
-  sub2,
-  sub3,
-  sub4,
-  womenLook,
-} from "../images/covernat";
+import { foll01, foll02, mem, menLook, ss001, ss002, ss003, ss004, sub1, sub2, sub3, sub4, womenLook } from "../images/covernat";
 import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
 
 import "swiper/css/navigation";

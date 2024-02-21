@@ -79,6 +79,11 @@ const BlogIndex = ({ data, location }) => {
             {"maran"}
           </Link>
         </li>
+        <li>
+          <Link to={"/NewPage"} itemProp="url">
+            {"new"}
+          </Link>
+        </li>
       </ol>
     </Layout>
   );
