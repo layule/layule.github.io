@@ -15,15 +15,7 @@ export default function BestsellerMainPage() {
     <div div className="page-container bestseller">
       <BestsellerNav></BestsellerNav>
       <BrowserView>
-        <Swiper
-          className="bestsellerSwiper"
-          loop={true}
-          modules={[Navigation, Pagination, A11y, Autoplay]}
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-        >
+        <Swiper className="bestsellerSwiper" loop={true} modules={[Navigation, Pagination, A11y, Autoplay]} slidesPerView={1} navigation pagination={{ clickable: true }}>
           <SwiperSlide>
             <div id="slideImgGrop" className="slideImg1">
               <div className="mainpageSlidInner">
@@ -93,7 +85,7 @@ export default function BestsellerMainPage() {
               <p className="sellerTextPoint">실제 셀러의 판매 금액입니다.</p>
             </div>
             <Swiper
-              className="bestsellerSwiper"
+              className="sellerSwiper"
               loop={true}
               modules={[Navigation, Pagination, A11y, Autoplay]}
               slidesPerView={3}
@@ -102,11 +94,56 @@ export default function BestsellerMainPage() {
               pagination={{ clickable: true }}
               scrollbar={{ draggable: true }}
             >
-              <SwiperSlide>Slide 1</SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <div className="swiperSlide slide1">
+                  <div className="sellerItemInner">
+                    <p className="itemTitle">블로거 ○○○ 셀러</p>
+                    <p className="subTitle">판매금액</p>
+                    <p className="price">45,320원</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <div className="swiperSlide slide2">
+                  <div className="sellerItemInner">
+                    <p className="itemTitle">블로거 ○○○ 셀러</p>
+                    <p className="subTitle">판매금액</p>
+                    <p className="price">45,320원</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <div className="swiperSlide slide3">
+                  <div className="sellerItemInner">
+                    <p className="itemTitle">블로거 ○○○ 셀러</p>
+                    <p className="subTitle">판매금액</p>
+                    <p className="price">45,320원</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <div className="swiperSlide slide4">
+                  <div className="sellerItemInner">
+                    <p className="itemTitle">블로거 ○○○ 셀러</p>
+                    <p className="subTitle">판매금액</p>
+                    <p className="price">45,320원</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <div className="swiperSlide slide5">
+                  <div className="sellerItemInner">
+                    <p className="itemTitle">블로거 ○○○ 셀러</p>
+                    <p className="subTitle">판매금액</p>
+                    <p className="price">45,320원</p>
+                  </div>
+                </div>
+              </SwiperSlide>
             </Swiper>
           </div>
         </section>
