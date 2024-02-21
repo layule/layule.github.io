@@ -95,7 +95,6 @@ export default function BestsellerMainPage() {
               scrollbar={{ draggable: true }}
             >
               <SwiperSlide>
-                {" "}
                 <div className="swiperSlide slide1">
                   <div className="sellerItemInner">
                     <p className="itemTitle">블로거 ○○○ 셀러</p>
@@ -105,7 +104,6 @@ export default function BestsellerMainPage() {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                {" "}
                 <div className="swiperSlide slide2">
                   <div className="sellerItemInner">
                     <p className="itemTitle">블로거 ○○○ 셀러</p>
@@ -115,7 +113,6 @@ export default function BestsellerMainPage() {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                {" "}
                 <div className="swiperSlide slide3">
                   <div className="sellerItemInner">
                     <p className="itemTitle">블로거 ○○○ 셀러</p>
@@ -125,7 +122,6 @@ export default function BestsellerMainPage() {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                {" "}
                 <div className="swiperSlide slide4">
                   <div className="sellerItemInner">
                     <p className="itemTitle">블로거 ○○○ 셀러</p>
@@ -135,7 +131,6 @@ export default function BestsellerMainPage() {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                {" "}
                 <div className="swiperSlide slide5">
                   <div className="sellerItemInner">
                     <p className="itemTitle">블로거 ○○○ 셀러</p>
