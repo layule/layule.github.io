@@ -1,8 +1,8 @@
 //import { isMobile } from "react-device-detect";
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BrowserView, MobileView } from "react-device-detect";
-import { A11y, Autoplay } from "swiper";
+import { A11y, Autoplay, Zoom } from "swiper";
 import "/src/styles/bestseller/font.scss";
 import "/src/styles/bestseller/New.scss";
 import "/src/styles/bestseller/reset.scss";
@@ -142,6 +142,7 @@ export default function BestsellerMainPage() {
             <br /> 꿈꾸는 셀러
           </p>
         </section>
+        <section className="AccodianSection"></section>
         <BestsellerFooter></BestsellerFooter>
       </BrowserView>
     </div>
