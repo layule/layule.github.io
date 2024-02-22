@@ -8,36 +8,28 @@
   .bestsellerbody {
     font-family: "Spoqa Han Sans Neo";
   }
-  nav {
+  .BestsellerNav {
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
-  }
-  nav #nav {
-    max-width: 1412px;
-    margin: 0 auto;
-    display: flex;
-    padding: 48px 0;
-  }
-  nav #nav li:not(:last-child) {
-    margin-right: 46px;
-  }
-  nav #nav a {
-    font: 16px/1.5 "Spoqa Han Sans Neo";
-    font-weight: bold;
-    color: #262626;
-  }
-  nav #nav .logo a {
-    display: block;
-    width: 126px;
-    height: 32px;
-    background: url("../../images/bestseller/bs_logo.svg") no-repeat center center/cover;
-    margin-right: 62px;
-    color: transparent;
-    text-indent: -999px;
-    overflow: hidden;
+    .menu {
+      display: flex;
+      align-items: center;
+      max-width: 1200px;
+      padding: 48px;
+    }
+    .menu-logo {
+      width: 126px;
+      height: 32px;
+      background: url("../../images/bestseller/bs_logo.svg") no-repeat center center/cover;
+    }
+    li {
+      margin-right: 48px;
+      font-weight: bold;
+      color: #262626;
+    }
   }
 
   main .section {

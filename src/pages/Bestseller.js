@@ -166,8 +166,8 @@ export default function Component() {
   return (
     <div className="page-container bestseller">
       <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
       <BestsellerNav></BestsellerNav>
       <body className="bestsellerbody">
         <main>
