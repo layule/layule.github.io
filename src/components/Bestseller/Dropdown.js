@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "/src/styles/bestseller/font.scss";
 import "/src/styles/bestseller/New.scss";
 
-const Dropdown = props => {
+export const Dropdown = props => {
   const [visibilityAnimation, setVisibilityAnimation] = React.useState(false);
   const [repeat, setRepeat] = React.useState(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (props.visibility) {
       clearTimeout(repeat);
       setRepeat(null);
