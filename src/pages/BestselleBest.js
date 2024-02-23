@@ -4,7 +4,7 @@ import "/src/styles/bestseller/style.scss";
 import "/src/styles/bestseller/stylem.scss";
 import BestsellerNav from "../components/Bestseller/BestsellerNav";
 import BestsellerFooter from "../components/Bestseller/BestsellerFooter";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 export default function BestsellerBest() {
   const [activeTab, setActiveTab] = useState(1);
