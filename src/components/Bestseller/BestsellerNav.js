@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 //import { isMobile } from "react-device-detect";
 import "/src/styles/bestseller/font.scss";
-import "/src/styles/bestseller/New.scss";
+import "/src/styles/bestseller/BestsellerStyle.scss";
 
 export default function BestsellerNav() {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);

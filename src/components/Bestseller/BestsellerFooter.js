@@ -1,10 +1,8 @@
 import * as React from "react";
-import * as jQuery from "jquery";
-import Swiper from "swiper";
 import { bsFavicon, sellerProfile1, sellerProfile2, sellerProfile3, sellerProfile4, sellerUi1, sellerUi2, sellerUi3, sellerUi4 } from "../../images/bestseller";
 import "/src/styles/bestseller/font.scss";
 import "/src/styles/bestseller/reset.scss";
-import "/src/styles/bestseller/style.scss";
+import "/src/styles/bestseller/BestsellerStyle.scss";
 import "/src/styles/bestseller/stylem.scss";
 
 export default function BestsellerFooter() {

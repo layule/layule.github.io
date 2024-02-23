@@ -1,17 +1,15 @@
+import * as React from "react";
+import "/src/styles/bestseller/font.scss";
+import "/src/styles/bestseller/reset.scss";
+import "/src/styles/bestseller/BestsellerStyle.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import React, { useState } from "react";
 import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import { A11y, Autoplay, Zoom } from "swiper";
 import { BestsellerNav } from "../components/Bestseller/BestsellerNav";
 import { BestsellerFooter } from "../components/Bestseller/BestsellerFooter";
-import "/src/styles/bestseller/font.scss";
-import "/src/styles/bestseller/New.scss";
-import "/src/styles/bestseller/reset.scss";
 import { sellerProfile1, sellerProfile2, sellerProfile3, sellerProfile4, sellerUi1, sellerUi2, sellerUi3, sellerUi4, bg_main, bg_main1 } from "../images/bestseller";
-import { Dropdown } from "../components/Bestseller/Dropdown";
 
 export const BestsellerMainPage = () => {
-  const [dropdownVisibility, setDropdownVisibility] = React.useState(false);
   return (
     <div div className="page-container bestseller">
       <BestsellerNav></BestsellerNav>
@@ -143,19 +141,7 @@ export const BestsellerMainPage = () => {
             <br /> 꿈꾸는 셀러
           </p>
         </section>
-        <section className="DropdownSection">
-          <div id="app">
-            <button onClick={e => setDropdownVisibility(!dropdownVisibility)}>{dropdownVisibility ? "Close" : "Open"}</button>
-            <Dropdown visibility={dropdownVisibility}>
-              <ul>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-                <li>item 4</li>
-              </ul>
-            </Dropdown>
-          </div>
-        </section>
+        <section className="DropdownSection"></section>
         <BestsellerFooter></BestsellerFooter>
       </BrowserView>
     </div>
