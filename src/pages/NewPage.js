@@ -142,7 +142,9 @@ export default function BestsellerMainPage() {
             <br /> 꿈꾸는 셀러
           </p>
         </section>
-        <section className="AccodianSection"></section>
+        <section className="DropdownSection">
+          <App></App>
+        </section>
         <BestsellerFooter></BestsellerFooter>
       </BrowserView>
     </div>

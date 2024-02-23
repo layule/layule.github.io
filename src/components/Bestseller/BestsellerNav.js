@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { isMobile } from "react-device-detect";
+//import { isMobile } from "react-device-detect";
 import "/src/styles/bestseller/font.scss";
 import "/src/styles/bestseller/New.scss";
 
