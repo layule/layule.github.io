@@ -381,4 +381,47 @@
     color: rgb(153, 153, 153);
     display: block;
   }
+
+  /* styles.css */
+
+  .card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .card.flipped .card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-front,
+  .card-back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .card-front {
+    background-color: #f0f0f0;
+  }
+
+  .card-back {
+    background-color: #c7ecee;
+    transform: rotateY(180deg);
+  }
 }

@@ -7,7 +7,7 @@ import { BrowserView, MobileView } from "react-device-detect";
 import { A11y, Autoplay } from "swiper";
 import BestsellerNav from "../components/Bestseller/BestsellerNav";
 import BestsellerFooter from "../components/Bestseller/BestsellerFooter";
-
+import Card from "../components/Bestseller/Card";
 export default function BestsellerMainPage() {
   return (
     <div div className="page-container bestseller">
@@ -145,6 +145,7 @@ export default function BestsellerMainPage() {
             스타일 셀러와
             <br /> 꿈꾸는 셀러
           </p>
+          <Card></Card>
         </section>
         <BestsellerFooter></BestsellerFooter>
       </BrowserView>
