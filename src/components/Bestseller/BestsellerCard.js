@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import "../styles/react/card.scss";
-import "../styles/react/font.scss";
-import "../styles/react/reset.scss";
-import { sellerProfile1, sellerProfile2, sellerProfile3, sellerProfile4, sellerUi1, sellerUi2, sellerUi3, sellerUi4 } from "../images/bestseller";
+import "/src/styles/react/font.scss";
+import "/src/styles/react/card.scss";
+import { sellerProfile1, sellerProfile2, sellerProfile3, sellerProfile4, sellerUi1, sellerUi2, sellerUi3, sellerUi4 } from "../../images/bestseller";
 
 const Card = () => {
   const [flippedIndex, setFlippedIndex] = useState(-1); // 상태를 하나의 index로 변경

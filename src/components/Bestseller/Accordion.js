@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../styles/react/Accordion.scss";
+import "../../styles/react/accordion.scss";
 
 export const Accordion = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(null);

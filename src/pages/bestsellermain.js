@@ -8,7 +8,6 @@ import { A11y, Autoplay } from "swiper";
 import BestsellerNav from "../components/Bestseller/BestsellerNav";
 import BestsellerFooter from "../components/Bestseller/BestsellerFooter";
 import { Accordion } from "../components/Bestseller/Accordion";
-import { Card } from "@mui/material";
 
 export const bestsellermain = () => {
   return (
@@ -141,7 +140,6 @@ export const bestsellermain = () => {
             스타일 셀러와
             <br /> 꿈꾸는 셀러
           </p>
-          <Card></Card>
         </section>
         <section className="reviewSection">
           <p className="sectionTitle">FAQ</p>
