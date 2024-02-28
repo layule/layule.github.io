@@ -1,0 +1,130 @@
+@charset "UTF-8";
+.page-container.bestseller {
+  footer {
+    //background: #ab96fd;
+    border-top: 1px solid rgb(247, 247, 247);
+  }
+
+  .fooerWrap {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 20px 0;
+  }
+
+  nav {
+    display: flex;
+    padding-bottom: 20px;
+    color: #262626;
+  }
+
+  .serviceCenter {
+    margin-right: 80px;
+    button {
+      display: block;
+      width: 140px;
+      height: 40px;
+      border: 1px solid rgb(226, 226, 226);
+      border-radius: 3px;
+      line-height: 39px;
+      text-align: center;
+      margin-right: 16px;
+      margin-bottom: 16px;
+      background-color: transparent;
+      color: #262626;
+    }
+  }
+
+  .centerTitle {
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 500;
+  }
+
+  .centernumber {
+    display: block;
+    font-size: 28px;
+    line-height: 40px;
+    display: flex;
+    margin: 16px 0;
+    font-weight: 600;
+  }
+
+  .centernumberFontStyle {
+    margin-left: 8px;
+    font-weight: normal;
+    font-size: 14px;
+  }
+
+  .footerMenuGrop {
+    margin-right: 40px;
+    font-size: 0.8em;
+    p {
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    li {
+      color: rgb(153, 153, 153);
+    }
+    li:not(:last-child) {
+      padding-bottom: 16px;
+    }
+  }
+
+  .App {
+    button {
+      display: block;
+      width: 140px;
+      height: 40px;
+      border: 1px solid rgb(226, 226, 226);
+      border-radius: 3px;
+      line-height: 39px;
+      text-align: center;
+      margin-right: 16px;
+      margin-bottom: 16px;
+      background-color: transparent;
+      color: #262626;
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
+  .footerInformation {
+    text-align: center;
+    line-height: 18px;
+    background: rgb(247, 247, 247);
+  }
+
+  .infoText {
+    padding-top: 20px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    color: rgb(153, 153, 153);
+  }
+
+  .prohibition,
+  .copyright {
+    font-size: 10px;
+    color: rgb(153, 153, 153);
+    display: block;
+  }
+
+  .reviewSection {
+    width: 100%;
+    max-width: 1412px;
+    padding: 100px 24px;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .sectionTitle {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 78px;
+  }
+}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 //import { isMobile } from "react-device-detect";
-import "/src/styles/bestseller/font.scss";
-import "/src/styles/bestseller/BestsellerStyle.scss";
+import "/src/styles/react/font.scss";
+import "/src/styles/react/nav.scss";
 
 export default function BestsellerNav() {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
@@ -22,10 +22,10 @@ export default function BestsellerNav() {
 
   return (
     <div className="page-container bestseller">
-      <header className="BestsellerNav">
+      <header className="bestsellerNav">
         <nav className={isMobileView ? "mobile-nav" : "desktop-nav"}>
           {isMobileView ? (
-            <div className="Bestseller-menu" onClick={handleMenuToggle}></div>
+            <div className="bestseller-menu" onClick={handleMenuToggle}></div>
           ) : (
             <ul className="menu">
               <li className="menu-logo"></li>

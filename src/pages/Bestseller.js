@@ -5,11 +5,11 @@ import { sellerProfile1, sellerProfile2, sellerProfile3, sellerProfile4, sellerU
 import "/src/styles/bestseller/font.scss";
 import "/src/styles/bestseller/reset.scss";
 import "/src/styles/bestseller/style.scss";
-// import "/src/styles/bestseller/stylem.scss";
+import "/src/styles/bestseller/stylem.scss";
 import BestsellerNav from "../components/Bestseller/BestsellerNav";
 import BestsellerFooter from "../components/Bestseller/BestsellerFooter";
 
-export default function Component() {
+export const Bestseller = () => {
   const scrollToGiveClass = () => {
     (function ($) {
       $.fn.scrollToGiveClass = function (options) {
@@ -563,35 +563,4 @@ export default function Component() {
       </body>
     </div>
   );
-}
-
-<section className="marketList">
-  <div className="marketListInner">
-    <div className="marketListInnergroup">
-      <div className="marketListInnergroupTitle">
-        <p>베스트셀러는</p>
-        <p className="marketListInnergroupTitlePoint">
-          다양한 셀러와
-          <br />
-          <span>잇</span> 마켓을 운영해요
-        </p>
-      </div>
-      <a href="#" className="marketListInnergroupTitleButton">
-        <span>1분컷 사용법</span>
-      </a>
-      <p className="sellerText">*it-마켓 : 베스트셀러만의 특가 판매 혜택</p>
-      <p className="sellerTextPoint">실제 셀러의 판매 금액입니다.</p>
-    </div>
-    <div className="seller_swiper">
-      <div className="sellerSlide">
-        <div className="sellerSlideImg1">
-          <div className="sellerItemInner">
-            <p className="title">블로거 ○○○ 셀러</p>
-            <p className="subtitle">판매금액</p>
-            <p className="price">58,320원</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>;
+};

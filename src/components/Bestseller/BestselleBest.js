@@ -2,8 +2,6 @@ import "/src/styles/bestseller/font.scss";
 import "/src/styles/bestseller/reset.scss";
 import "/src/styles/bestseller/style.scss";
 import "/src/styles/bestseller/stylem.scss";
-import BestsellerNav from "../components/Bestseller/BestsellerNav";
-import BestsellerFooter from "../components/Bestseller/BestsellerFooter";
 import React, { useState } from "react";
 
 export default function BestsellerBest() {
@@ -20,7 +18,6 @@ export default function BestsellerBest() {
 
   return (
     <div className="page-container bestseller">
-      <BestsellerNav></BestsellerNav>
       <div className="continer">
         <div className="bestsellerWrap">
           <div className="bestsellerhead">
@@ -359,7 +356,6 @@ export default function BestsellerBest() {
           </div>
         </div>
       </div>
-      <BestsellerFooter></BestsellerFooter>
     </div>
   );
 }

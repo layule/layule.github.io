@@ -9,39 +9,17 @@
     font-family: "Spoqa Han Sans Neo";
   }
 
-  .desktop-nav {
-    width: 100%;
-    max-width: 1200px;
-    position: absolute;
-    top: 0;
-    z-index: 10;
-    padding: 24px;
-    ul {
-      width: 100%;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      font-size: 1em;
-    }
-    li {
-      font-weight: 600;
-      margin-right: 48px;
-      cursor: pointer;
-    }
-    .menu-logo {
-      width: 140px;
-      height: 32px;
-      background: url("../../images/bestseller/bs_logo.svg") no-repeat center center;
-    }
-  }
-
-  //.mobile-nav {}
-
   section {
     width: 100%;
     height: 100vh;
     min-height: 820px;
     position: relative;
+  }
+  .sectionTitle {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 78px;
   }
 
   .swiper-button-prev:after,
@@ -51,13 +29,13 @@
     display: none;
   }
 
-  .BestsellerSwiper {
+  .bestsellerSwiper {
     width: 100%;
     height: 100vh;
     position: relative;
   }
 
-  #SlideImgGrop {
+  #slideImgGrop {
     display: flex;
     align-items: center;
     height: 100%;
@@ -70,7 +48,7 @@
     background: url("../../images/bestseller/bg_main1.jpeg") no-repeat center/cover;
   }
 
-  .PageSlidInner {
+  .pageSlidInner {
     width: 100%;
     max-width: 1200px;
     margin-left: 48px;
@@ -86,7 +64,7 @@
     }
   }
 
-  .PageSlidInner p span::after {
+  .pageSlidInner p span::after {
     content: "";
     display: block;
     width: 58px;
@@ -97,16 +75,16 @@
     right: 0;
   }
 
-  .ButtonArea {
+  .buttonArea {
     margin-top: 68px;
   }
 
-  .PartnerWrap {
+  .partnerWrap {
     font-size: 1em;
     margin-top: 2%;
   }
 
-  .SlideInButton {
+  .slideInButton {
     font-size: 1em;
     font-weight: 500;
     display: inline-block;
@@ -119,16 +97,16 @@
     transition: all 0.3s;
   }
 
-  .SlideInButton:hover {
+  .slideInButton:hover {
     background: #ab96fd;
   }
   // BestsellerMainPage end
 
-  .MarketList {
+  .marketList {
     background: url("../../images/bestseller/bg_gradient.jpeg");
   }
 
-  .MarketListInner {
+  .marketListInner {
     padding-right: calc((100% - 1358px) / 2);
     padding-left: calc((100% - 1358px) / 2);
     display: flex;
@@ -137,20 +115,20 @@
     height: 100%;
   }
 
-  .MarketListInnerGroup {
+  .marketListInnerGroup {
     margin-left: 0;
     margin-right: 0;
     overflow: hidden;
     position: relative;
   }
-  .MarketListInnerGroupTitle {
+  .marketListInnerGroupTitle {
     p {
       font-size: 2.5em;
       line-height: 1.4;
     }
   }
 
-  .MarketListInnerGroupTitlePoint {
+  .marketListInnerGroupTitlePoint {
     font-weight: 600;
     span {
       position: relative;
@@ -158,7 +136,7 @@
     }
   }
 
-  .MarketListInnerGroupTitlePoint span::after {
+  .marketListInnerGroupTitlePoint span::after {
     content: "";
     display: block;
     width: 20px;
@@ -169,7 +147,7 @@
     right: 0;
   }
 
-  .MarketListInnerGroupTitleButton {
+  .marketListInnerGroupTitleButton {
     display: inline-block;
     background: #262626;
     color: #fff;
@@ -186,7 +164,7 @@
     }
   }
 
-  .MarketListInnerGroupTitleButton span::after {
+  .marketListInnerGroupTitleButton span::after {
     content: "";
     display: block;
     width: 8px;
@@ -197,28 +175,28 @@
     right: 0;
   }
 
-  .SellerText {
+  .sellerText {
     margin-top: 28px;
     font-weight: 500;
     color: #9d9d9d;
     line-height: 1.3;
   }
 
-  .SellerTextPoint {
+  .sellerTextPoint {
     margin-top: 2px;
     color: #ab96fd;
   }
 
   // Maket List Grop
 
-  .SellerSwiper {
+  .sellerSwiper {
     width: calc(100% - 448px);
     margin-right: 0;
     margin-left: auto;
     overflow: hidden;
   }
 
-  .SwiperSlide {
+  .swiperSlide {
     width: 300px;
     height: 500px;
     display: flex;
@@ -226,29 +204,29 @@
     border-radius: 14px;
   }
 
-  .SellerItemInner {
+  .sellerItemInner {
     position: absolute;
     bottom: 0;
     background: #fff;
     width: 100%;
     padding: 32px;
   }
-  // font style
-  .ItemTitle {
+
+  .itemTitle {
     font-size: 19px;
     color: #9d9d9d;
     letter-spacing: -0.02em;
     margin-bottom: 15px;
   }
 
-  .SubTitle {
+  .subTitle {
     font-size: 16px;
     font-weight: bold;
     color: #ab96fd;
     margin-bottom: 4px;
   }
 
-  .Price {
+  .price {
     font-size: 32px;
     font-weight: bold;
   }
@@ -256,172 +234,16 @@
   .SellerSlideImg1 {
     background: url("../../images/bestseller/seller1.jpg") no-repeat center/cover;
   }
-  .SellerSlideImg2 {
+  .sellerSlideImg2 {
     background: url("../../images/bestseller/seller2.jpg") no-repeat center/cover;
   }
-  .SellerSlideImg3 {
+  .sellerSlideImg3 {
     background: url("../../images/bestseller/seller3.jpg") no-repeat center/cover;
   }
-  .SellerSlideImg4 {
+  .sellerSlideImg4 {
     background: url("../../images/bestseller/seller4.jpg") no-repeat center/cover;
   }
-  .SellerSlideImg5 {
+  .sellerSlideImg5 {
     background: url("../../images/bestseller/seller5.jpg") no-repeat center/cover;
-  }
-
-  footer {
-    //background: #ab96fd;
-    border-top: 1px solid rgb(247, 247, 247);
-  }
-
-  .FooerWrap {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1280px;
-    display: flex;
-    justify-content: center;
-    padding: 30px 0 20px 0;
-  }
-
-  nav {
-    display: flex;
-    padding-bottom: 20px;
-    color: #262626;
-  }
-
-  .ServiceCenter {
-    margin-right: 80px;
-    button {
-      display: block;
-      width: 140px;
-      height: 40px;
-      border: 1px solid rgb(226, 226, 226);
-      border-radius: 3px;
-      line-height: 39px;
-      text-align: center;
-      margin-right: 16px;
-      margin-bottom: 16px;
-      background-color: transparent;
-      color: #262626;
-    }
-  }
-
-  .CenterTitle {
-    font-size: 20px;
-    line-height: 29px;
-    font-weight: 500;
-  }
-
-  .Centernumber {
-    display: block;
-    font-size: 28px;
-    line-height: 40px;
-    display: flex;
-    margin: 16px 0;
-    font-weight: 600;
-  }
-
-  .CenternumberFontStyle {
-    margin-left: 8px;
-    font-weight: normal;
-    font-size: 14px;
-  }
-
-  .FooterMenuGrop {
-    margin-right: 40px;
-    font-size: 0.8em;
-    p {
-      font-weight: 600;
-      margin-bottom: 20px;
-    }
-    li {
-      color: rgb(153, 153, 153);
-    }
-    li:not(:last-child) {
-      padding-bottom: 16px;
-    }
-  }
-
-  .App {
-    button {
-      display: block;
-      width: 140px;
-      height: 40px;
-      border: 1px solid rgb(226, 226, 226);
-      border-radius: 3px;
-      line-height: 39px;
-      text-align: center;
-      margin-right: 16px;
-      margin-bottom: 16px;
-      background-color: transparent;
-      color: #262626;
-      img {
-        width: 15px;
-        height: 15px;
-      }
-    }
-  }
-
-  .FooterInformation {
-    text-align: center;
-    line-height: 18px;
-    background: rgb(247, 247, 247);
-  }
-
-  .InfoText {
-    padding-top: 20px;
-    font-size: 10px;
-    margin-bottom: 10px;
-    color: rgb(153, 153, 153);
-  }
-
-  .Prohibition,
-  .copyright {
-    font-size: 10px;
-    color: rgb(153, 153, 153);
-    display: block;
-  }
-
-  /* styles.css */
-
-  .card {
-    width: 200px;
-    height: 300px;
-    perspective: 1000px;
-    cursor: pointer;
-  }
-
-  .card-inner {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-
-  .card.flipped .card-inner {
-    transform: rotateY(180deg);
-  }
-
-  .card-front,
-  .card-back {
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  .card-front {
-    background-color: #f0f0f0;
-  }
-
-  .card-back {
-    background-color: #c7ecee;
-    transform: rotateY(180deg);
   }
 }

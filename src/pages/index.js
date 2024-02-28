@@ -80,7 +80,12 @@ const BlogIndex = ({ data, location }) => {
           </Link>
         </li>
         <li>
-          <Link to={"/react"} itemProp="url">
+          <Link to={"/bestsellermain"} itemProp="url">
+            {"new"}
+          </Link>
+        </li>
+        <li>
+          <Link to={"Card"} itemProp="url">
             {"new"}
           </Link>
         </li>

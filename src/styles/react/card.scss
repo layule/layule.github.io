@@ -1,0 +1,100 @@
+@charset "UTF-8";
+.cards {
+  max-width: 1412px;
+  padding: 100px 24px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  perspective: inherit;
+}
+
+.card {
+  width: calc(50% - 24px);
+  height: 622px;
+  border-radius: 14px;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  transition: 0.4s;
+  transform-style: preserve-3d;
+}
+
+.card:nth-child(2n) {
+  margin-left: 24px;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  background-color: #ab96fd;
+  border-radius: 28px;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.cardHead {
+  padding: 40px 44px 0px;
+}
+
+.cardTitle {
+  font-size: 1.5em;
+  font-weight: 650;
+  line-height: 1.4;
+}
+.cardProfile {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+  p {
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 20px;
+    margin-left: 10px;
+  }
+}
+
+.cardSub {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.cardSubTitle {
+  letter-spacing: -0.01em;
+  padding: 40px 44px 0px;
+  span {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+
+.comment {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.content {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.uiImg {
+  display: block;
+  max-width: 78%;
+  margin: 35px auto 0;
+}
