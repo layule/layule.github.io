@@ -3,7 +3,7 @@ import "/src/styles/react/font.scss";
 import "/src/styles/react/card.scss";
 import { sellerProfile1, sellerProfile2, sellerProfile3, sellerProfile4, sellerUi1, sellerUi2, sellerUi3, sellerUi4 } from "../../images/bestseller";
 
-const Card = () => {
+export const BestsellerCard = () => {
   const [flippedIndex, setFlippedIndex] = useState(-1); // 상태를 하나의 index로 변경
 
   const cardContents = [
@@ -109,4 +109,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default BestsellerCard;
