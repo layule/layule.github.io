@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+.page-container.bestseller {
+  .accordion-index {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .accordion-item {
+    width: 48%;
+    padding: 35px 0;
+    border-bottom: 1px solid #c1c1c1;
+  }
+
+  .accordion-title {
+    width: 100%;
+    font-size: 1.15em;
+    font-weight: 550;
+    padding: 0 50px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    cursor: pointer;
+    span {
+      line-height: 1;
+      font-weight: 600;
+      font-size: 2em;
+      color: #ab96fd;
+      margin-top: -7.5px;
+      margin-right: 16px;
+    }
+  }
+
+  .accordion-content {
+    display: none;
+    overflow: hidden;
+    padding: 15px 58px;
+    line-height: 1.8;
+    color: #9d9d9d;
+    font-size: 1em;
+  }
+
+  .accordion-item.active .accordion-content {
+    display: block;
+  }
+}

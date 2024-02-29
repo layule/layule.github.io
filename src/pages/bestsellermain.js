@@ -7,8 +7,8 @@ import { BrowserView, MobileView } from "react-device-detect";
 import { A11y, Autoplay } from "swiper";
 import BestsellerNav from "../components/Bestseller/BestsellerNav";
 import BestsellerFooter from "../components/Bestseller/BestsellerFooter";
-import { Accordion } from "../components/Bestseller/Accordion";
 import { BestsellerCard } from "../components/Bestseller/BestsellerCard";
+import { A } from "../components/Bestseller/A";
 
 export const bestsellermain = () => {
   return (
@@ -145,7 +145,9 @@ export const bestsellermain = () => {
         </section>
         <section className="reviewSection">
           <p className="sectionTitle">FAQ</p>
-          <Accordion></Accordion>
+          <div className="faq-width">
+            <A></A>
+          </div>
         </section>
         <BestsellerFooter></BestsellerFooter>
       </BrowserView>
