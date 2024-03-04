@@ -2,18 +2,19 @@ import React, { useState, useEffect } from "react";
 //import { isMobile } from "react-device-detect";
 import "/src/styles/react/font.scss";
 import "/src/styles/react/nav.scss";
+import { isBrowser } from "../../module";
 
 export const BestsellerNav = () => {
-  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
+  const [isMobileView, setIsMobileView] = useState(isBrowser() ? window.innerWidth <= 768 : false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobileView(window.innerWidth <= 768);
+      setIsMobileView(isBrowser() ? window.innerWidth <= 768 : false);
     };
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    isBrowser() && window.addEventListener("resize", handleResize);
+    return () => isBrowser() && window.removeEventListener("resize", handleResize);
   }, []);
 
   const handleMenuToggle = () => {
