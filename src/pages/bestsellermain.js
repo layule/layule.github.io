@@ -85,55 +85,7 @@ export default function BestSellerMain() {
               <p className="sellerTextPoint">실제 셀러의 판매 금액입니다.</p>
             </div>
 
-            <div className="sellerSwiper">
-              <Swiper loop={true} modules={[A11y, Autoplay]} slidesPerView={3} spaceBetween={1} autoplay={{ delay: 1000, disableOnInteraction: false }}>
-                <SwiperSlide>
-                  <div className="swiperSlide SellerSlideImg1">
-                    <div className="sellerItemInner">
-                      <p className="itemTitle">인스타 ○○○ 셀러</p>
-                      <p className="subTitle">판매금액</p>
-                      <p className="price">45,320원</p>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="swiperSlide sellerSlideImg2">
-                    <div className="sellerItemInner">
-                      <p className="itemTitle">인스타 ○○○ 셀러</p>
-                      <p className="subTitle">판매금액</p>
-                      <p className="price">45,320원</p>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="swiperSlide sellerSlideImg3">
-                    <div className="sellerItemInner">
-                      <p className="itemTitle">인스타 ○○○ 셀러</p>
-                      <p className="subTitle">판매금액</p>
-                      <p className="price">45,320원</p>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="swiperSlide sellerSlideImg4">
-                    <div className="sellerItemInner">
-                      <p className="itemTitle">인스타 ○○○ 셀러</p>
-                      <p className="subTitle">판매금액</p>
-                      <p className="price">45,320원</p>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="swiperSlide sellerSlideImg5">
-                    <div className="sellerItemInner">
-                      <p className="itemTitle">인스타 ○○○ 셀러</p>
-                      <p className="subTitle">판매금액</p>
-                      <p className="price">45,320원</p>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              </Swiper>
-            </div>
+            <div className="sellerSwiper"></div>
           </div>
         </section>
         <section className="reviewSection">
