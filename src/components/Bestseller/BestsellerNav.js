@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-//import { isMobile } from "react-device-detect";
 import "/src/styles/react/font.scss";
 import "/src/styles/react/nav.scss";
 import { isBrowser } from "../../module";
