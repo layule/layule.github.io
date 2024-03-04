@@ -9,7 +9,7 @@ import "/src/styles/bestseller/stylem.scss";
 import BestsellerNav from "../components/Bestseller/BestsellerNav";
 import BestsellerFooter from "../components/Bestseller/BestsellerFooter";
 
-export const Bestseller = () => {
+export default function Bestseller() {
   const scrollToGiveClass = () => {
     (function ($) {
       $.fn.scrollToGiveClass = function (options) {
@@ -563,4 +563,4 @@ export const Bestseller = () => {
       </body>
     </div>
   );
-};
+}
