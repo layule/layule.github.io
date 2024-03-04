@@ -6,8 +6,8 @@ import "/src/styles/bestseller/font.scss";
 import "/src/styles/bestseller/reset.scss";
 import "/src/styles/bestseller/style.scss";
 import "/src/styles/bestseller/stylem.scss";
-import { BestsellerNav } from "../components/Bestseller/BestSellerNav";
-import { BestsellerFooter } from "../components/Bestseller/BestSellerFooter";
+import { BestSellerNav, BestsellerNav } from "../components/Bestseller/BestSellerNav";
+import { BestSellerFooter, BestsellerFooter } from "../components/Bestseller/BestSellerFooter";
 
 export default function Bestseller() {
   const scrollToGiveClass = () => {
@@ -168,7 +168,7 @@ export default function Bestseller() {
       <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-      <BestsellerNav></BestsellerNav>
+      <BestSellerNav></BestSellerNav>
       <body className="bestsellerbody">
         <main>
           <section id="main_slide" className="section swiper">
@@ -559,7 +559,7 @@ export default function Bestseller() {
           </section>
           {/* <!--//#faq--> */}
         </main>
-        <BestsellerFooter></BestsellerFooter>
+        <BestSellerFooter></BestSellerFooter>
       </body>
     </div>
   );
