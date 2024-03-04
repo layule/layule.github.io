@@ -5,15 +5,10 @@ import "/src/styles/react/style.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BrowserView } from "react-device-detect";
 import { A11y, Autoplay } from "swiper";
-import { BestSellerNav } from "../components/Bestseller/BestSellerNav";
-import { BestSellerCard } from "../components/Bestseller/BestSellerCard";
-import { BestSellerAccodion } from "../components/Bestseller/BestSellerAccodion";
-import { BestSellerFooter } from "../components/Bestseller/BestSellerFooter";
 
 export default function BestSellerMain() {
   return (
     <div div className="page-container bestseller">
-      <BestSellerNav></BestSellerNav>
       <BrowserView>
         <Swiper className="bestsellerSwiper" loop={true} modules={[A11y, Autoplay]} slidesPerView={1} autoplay={{ delay: 2000, disableOnInteraction: false }}>
           <SwiperSlide>
@@ -93,15 +88,11 @@ export default function BestSellerMain() {
             스타일 셀러와
             <br /> 꿈꾸는 셀러
           </p>
-          <BestSellerCard></BestSellerCard>
         </section>
         <section className="reviewSection">
           <p className="sectionTitle">FAQ</p>
-          <div className="faq-width">
-            <BestSellerAccodion></BestSellerAccodion>
-          </div>
+          <div className="faq-width"></div>
         </section>
-        <BestSellerFooter></BestSellerFooter>
       </BrowserView>
     </div>
   );

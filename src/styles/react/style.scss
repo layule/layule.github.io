@@ -190,4 +190,11 @@
     margin-top: 2px;
     color: #ab96fd;
   }
+
+  .sellerSwiper {
+    width: calc(100% - 448px);
+    margin-right: 0;
+    margin-left: auto;
+    overflow: hidden;
+  }
 }

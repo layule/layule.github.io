@@ -1,12 +1,5 @@
 @charset "UTF-8";
 
-.sellerSwiper {
-  width: calc(100% - 448px);
-  margin-right: 0;
-  margin-left: auto;
-  overflow: hidden;
-}
-
 .swiperSlide {
   width: 300px;
   height: 500px;
@@ -42,7 +35,7 @@
   font-weight: bold;
 }
 
-.SellerSlideImg1 {
+.sellerSlideImg1 {
   background: url("../../images/bestseller/seller1.jpg") no-repeat center/cover;
 }
 .sellerSlideImg2 {

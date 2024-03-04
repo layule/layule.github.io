@@ -1,7 +1,7 @@
 import * as React from "react";
 import "/src/styles/react/font.scss";
 import "/src/styles/react/reset.scss";
-import "/src/styles/react/footer.scss";
+import "../../styles/react/footer.scss";
 import { appstore, googleplay } from "../../images/bestseller";
 
 export const BestSellerFooter = () => {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "/src/styles/react/font.scss";
-import "/src/styles/react/card.scss";
+import "../../styles/react/card.scss";
 import { sellerProfile1, sellerProfile2, sellerProfile3, sellerProfile4, sellerUi1, sellerUi2, sellerUi3, sellerUi4 } from "../../images/bestseller";
 
 export const BestSellerCard = () => {
@@ -108,5 +108,3 @@ export const BestSellerCard = () => {
     </div>
   );
 };
-
-export default BestsellerCard;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "/src/styles/react/font.scss";
-import "/src/styles/react/nav.scss";
+import "../../styles/react/nav.scss";
 import { isBrowser } from "../../module";
 
 export const BestSellerNav = () => {
