@@ -1,7 +1,7 @@
 import React from "react";
 import "/src/styles/react/font.scss";
 import "/src/styles/react/reset.scss";
-import "/src/styles/react/style.scss";
+import "/src/styles/react/itemswiper.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Autoplay } from "swiper";
 

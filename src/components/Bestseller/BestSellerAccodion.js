@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "/src/styles/react/font.scss";
-import "/src/styles/react/A.scss";
+import "/src/styles/react/accordion.scss";
 
 export const BestSellerAccodion = () => {
   const faq = [
@@ -66,5 +66,3 @@ export const BestSellerAccodion = () => {
     </ul>
   );
 };
-
-export default A;

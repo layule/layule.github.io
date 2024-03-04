@@ -5,15 +5,15 @@ import "/src/styles/react/style.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BrowserView } from "react-device-detect";
 import { A11y, Autoplay } from "swiper";
-import { BestsellerNav } from "../components/Bestseller/BestSellerNav";
-import { BestsellerFooter } from "../components/Bestseller/BestSellerFooter";
+import { BestSellerNav } from "../components/Bestseller/BestSellerNav";
 import { BestSellerCard } from "../components/Bestseller/BestSellerCard";
 import { BestSellerAccodion } from "../components/Bestseller/BestSellerAccodion";
+import { BestSellerFooter } from "../components/Bestseller/BestSellerFooter";
 
 export default function BestSellerMain() {
   return (
     <div div className="page-container bestseller">
-      <BestsellerNav></BestsellerNav>
+      <BestSellerNav></BestSellerNav>
       <BrowserView>
         <Swiper className="bestsellerSwiper" loop={true} modules={[A11y, Autoplay]} slidesPerView={1} autoplay={{ delay: 2000, disableOnInteraction: false }}>
           <SwiperSlide>
@@ -101,7 +101,7 @@ export default function BestSellerMain() {
             <BestSellerAccodion></BestSellerAccodion>
           </div>
         </section>
-        <BestsellerFooter></BestsellerFooter>
+        <BestSellerFooter></BestSellerFooter>
       </BrowserView>
     </div>
   );
