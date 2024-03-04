@@ -55,16 +55,6 @@ const BlogIndex = ({ data, location }) => {
         })} */}
         <div className="por"></div>
         <li>
-          <Link to={"/Bestseller"} itemProp="url">
-            {"Best Seller"}
-          </Link>
-        </li>
-        <li>
-          <Link to={"/purelife"} itemProp="url">
-            {"Pure life"}
-          </Link>
-        </li>
-        <li>
           <Link to={"/lelabo"} itemProp="url">
             {"lelabo"}
           </Link>
