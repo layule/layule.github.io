@@ -37,13 +37,13 @@ export const BestSellerNav = () => {
             </ul>
           )}
         </nav>
-        {isMobileView && menuOpen && (
+        {/* {isMobileView && menuOpen && (
           <div className="mobile-menu">
             <span></span>
             <span></span>
             <span></span>
           </div>
-        )}
+        )} */}
       </header>
     </div>
   );

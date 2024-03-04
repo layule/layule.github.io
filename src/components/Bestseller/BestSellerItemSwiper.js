@@ -9,7 +9,7 @@ export const BestSellerItemSwiper = () => {
   return (
     <Swiper loop={true} modules={[A11y, Autoplay]} slidesPerView={3} spaceBetween={1} autoplay={{ delay: 1000, disableOnInteraction: false }}>
       <SwiperSlide>
-        <div className="swiperSlide SellerSlideImg1">
+        <div className="swiperSlide sellerSlideImg1">
           <div className="sellerItemInner">
             <p className="itemTitle">인스타 ○○○ 셀러</p>
             <p className="subTitle">판매금액</p>
