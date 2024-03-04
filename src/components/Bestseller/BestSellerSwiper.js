@@ -1,11 +1,11 @@
 import React from "react";
 import "/src/styles/react/font.scss";
 import "/src/styles/react/reset.scss";
-import "../../styles/react/swiper.scss";
+import "/src/styles/react/swiper.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Autoplay } from "swiper";
 
-export const BestSellerSwiper = () => {
+const BestSellerSwiper = () => {
   return (
     <Swiper loop={true} modules={[A11y, Autoplay]} slidesPerView={3} spaceBetween={1} autoplay={{ delay: 1000, disableOnInteraction: false }}>
       <SwiperSlide>
@@ -56,3 +56,4 @@ export const BestSellerSwiper = () => {
     </Swiper>
   );
 };
+export default BestSellerSwiper;

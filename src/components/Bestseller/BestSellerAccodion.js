@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "/src/styles/react/font.scss";
 import "/src/styles/react/accordion.scss";
 
-export const BestSellerAccodion = () => {
+const BestSellerAccodion = () => {
   const faq = [
     {
       title: "진행 프로세스가 궁금합니다.",
@@ -66,3 +66,5 @@ export const BestSellerAccodion = () => {
     </ul>
   );
 };
+
+export default BestSellerAccodion;
