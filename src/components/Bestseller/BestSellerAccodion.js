@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "/src/styles/react/font.scss";
 import "/src/styles/react/A.scss";
 
-export const A = () => {
+export const BestSellerAccodion = () => {
   const faq = [
     {
       title: "진행 프로세스가 궁금합니다.",

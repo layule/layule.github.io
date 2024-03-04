@@ -5,10 +5,10 @@ import "/src/styles/react/style.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BrowserView } from "react-device-detect";
 import { A11y, Autoplay } from "swiper";
-import { BestsellerNav } from "../components/Bestseller/BestsellerNav";
-import { BestsellerFooter } from "../components/Bestseller/BestsellerFooter";
-import { BestsellerCard } from "../components/Bestseller/BestsellerCard";
-import { A } from "../components/Bestseller/A";
+import { BestsellerNav } from "../components/Bestseller/BestSellerNav";
+import { BestsellerFooter } from "../components/Bestseller/BestSellerFooter";
+import { BestSellerCard } from "../components/Bestseller/BestSellerCard";
+import { BestSellerAccodion } from "../components/Bestseller/BestSellerAccodion";
 
 export default function BestSellerMain() {
   return (
@@ -93,12 +93,12 @@ export default function BestSellerMain() {
             스타일 셀러와
             <br /> 꿈꾸는 셀러
           </p>
-          <BestsellerCard></BestsellerCard>
+          <BestSellerCard></BestSellerCard>
         </section>
         <section className="reviewSection">
           <p className="sectionTitle">FAQ</p>
           <div className="faq-width">
-            <A></A>
+            <BestSellerAccodion></BestSellerAccodion>
           </div>
         </section>
         <BestsellerFooter></BestsellerFooter>

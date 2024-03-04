@@ -3,7 +3,7 @@ import "/src/styles/react/font.scss";
 import "/src/styles/react/nav.scss";
 import { isBrowser } from "../../module";
 
-export const BestsellerNav = () => {
+export const BestSellerNav = () => {
   const [isMobileView, setIsMobileView] = useState(isBrowser() ? window.innerWidth <= 768 : false);
   const [menuOpen, setMenuOpen] = useState(false);
 

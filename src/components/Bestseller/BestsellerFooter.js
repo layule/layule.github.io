@@ -4,7 +4,7 @@ import "/src/styles/react/reset.scss";
 import "/src/styles/react/footer.scss";
 import { appstore, googleplay } from "../../images/bestseller";
 
-export const BestsellerFooter = () => {
+export const BestSellerFooter = () => {
   return (
     <footer>
       <div className="fooerWrap">
