@@ -5,8 +5,8 @@ import "/src/styles/react/style.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BrowserView } from "react-device-detect";
 import { A11y, Autoplay } from "swiper";
-import BestsellerNav from "../components/Bestseller/BestsellerNav";
-import BestsellerFooter from "../components/Bestseller/BestsellerFooter";
+import { BestsellerNav } from "../components/Bestseller/BestsellerNav";
+import { BestsellerFooter } from "../components/Bestseller/BestsellerFooter";
 import { BestsellerCard } from "../components/Bestseller/BestsellerCard";
 import { A } from "../components/Bestseller/A";
 

@@ -3,7 +3,8 @@ import "/src/styles/react/font.scss";
 import "/src/styles/react/reset.scss";
 import "/src/styles/react/footer.scss";
 import { appstore, googleplay } from "../../images/bestseller";
-export default function BestsellerFooter() {
+
+export const BestsellerFooter = () => {
   return (
     <footer>
       <div className="fooerWrap">
@@ -78,4 +79,4 @@ export default function BestsellerFooter() {
       </div>
     </footer>
   );
-}
+};

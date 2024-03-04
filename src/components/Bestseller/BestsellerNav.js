@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import "/src/styles/react/font.scss";
 import "/src/styles/react/nav.scss";
 
-export default function BestsellerNav() {
+export const BestsellerNav = () => {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -47,4 +47,4 @@ export default function BestsellerNav() {
       </header>
     </div>
   );
-}
+};

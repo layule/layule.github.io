@@ -6,8 +6,8 @@ import "/src/styles/bestseller/font.scss";
 import "/src/styles/bestseller/reset.scss";
 import "/src/styles/bestseller/style.scss";
 import "/src/styles/bestseller/stylem.scss";
-import BestsellerNav from "../components/Bestseller/BestsellerNav";
-import BestsellerFooter from "../components/Bestseller/BestsellerFooter";
+import { BestsellerNav } from "../components/Bestseller/BestsellerNav";
+import { BestsellerFooter } from "../components/Bestseller/BestsellerFooter";
 
 export default function Bestseller() {
   const scrollToGiveClass = () => {
