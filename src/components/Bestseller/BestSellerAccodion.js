@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "/src/styles/react/font.scss";
-import "../../styles/react/accordion.scss";
+import "/src/styles/react/accordion.scss";
 
 export const BestSellerAccodion = () => {
   const faq = [
