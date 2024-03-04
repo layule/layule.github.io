@@ -3,7 +3,7 @@ import "/src/styles/react/font.scss";
 import "/src/styles/react/reset.scss";
 import "/src/styles/react/style.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { BrowserView, MobileView } from "react-device-detect";
+import { BrowserView } from "react-device-detect";
 import { A11y, Autoplay } from "swiper";
 import BestsellerNav from "../components/Bestseller/BestsellerNav";
 import BestsellerFooter from "../components/Bestseller/BestsellerFooter";
