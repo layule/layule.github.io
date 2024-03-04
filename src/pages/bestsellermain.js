@@ -10,7 +10,7 @@ import BestsellerFooter from "../components/Bestseller/BestsellerFooter";
 import { BestsellerCard } from "../components/Bestseller/BestsellerCard";
 import { A } from "../components/Bestseller/A";
 
-export default function bestsellermain() {
+export default function BestSellerMain() {
   return (
     <div div className="page-container bestseller">
       <BestsellerNav></BestsellerNav>
