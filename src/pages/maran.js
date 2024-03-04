@@ -5,10 +5,6 @@ import "/src/styles/maran/reset.scss";
 import "/src/styles/maran/style.scss";
 import "/src/styles/maran/stylem.scss";
 import "/src/styles/maran/font.scss";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
 import { logo, maranFw, maranSm, maranSp } from "../images/maran";
 import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
 
