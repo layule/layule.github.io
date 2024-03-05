@@ -67,3 +67,5 @@ export const Accodion = () => {
     </ul>
   );
 };
+
+export default Accodion;

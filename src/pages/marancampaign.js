@@ -1,9 +1,9 @@
-import * as React from "react";
-import MaranNavogation from "../components/maran/MaranNavigation";
-import MaranFooter from "../components/maran/MaranFooter";
-import { c01, c02, c03, c05, c06, c07, c08, c09, c10, c11, c12, c13, c15, c16, c17, c18, c19, c20, c21, c22, c23, c24, c25, c26 } from "../images/maran";
+import React from "react";
+import { MaranNavogation } from "../components/maran/MaranNavigation";
+import { MaranFooter } from "../components/maran/MaranFooter";
+import { c01, c02, c03, c05, c06, c07, c08, c09, c10, c11, c12, c13, c15, c16, c17, c18, c19, c20, c21, c23, c24, c25, c26 } from "../images/maran";
 
-export default function App() {
+export default function MaranCampaign() {
   return (
     <div className="page-container maran">
       <MaranNavogation />

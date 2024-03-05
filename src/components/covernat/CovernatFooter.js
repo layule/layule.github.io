@@ -1,6 +1,6 @@
-import * as React from "react";
+import React from "react";
 
-export default function CovernatFooter() {
+export const CovernatFooter = () => {
   return (
     <div className="page-container covernat">
       <footer>
@@ -14,7 +14,7 @@ export default function CovernatFooter() {
                   </div>
                   <ul className="accordion-content">
                     <li>
-                      <a href="#" target="_blank">
+                      <a href="#" target="_blank" rel="noopener noreferrer">
                         ABOUT
                       </a>
                     </li>
@@ -59,27 +59,27 @@ export default function CovernatFooter() {
                   </div>
                   <ul className="accordion-content">
                     <li>
-                      <a href="https://www.instagram.com/covernat_/" target="_blank">
+                      <a href="https://www.instagram.com/covernat_/" target="_blank" rel="noopener noreferrer">
                         INSTAGRAM
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.facebook.com/atcovernat" target="_blank">
+                      <a href="https://www.facebook.com/atcovernat" target="_blank" rel="noopener noreferrer">
                         FACEBOOK
                       </a>
                     </li>
                     <li>
-                      <a href="https://blog.naver.com/atcovernat" target="_blank">
+                      <a href="https://blog.naver.com/atcovernat" target="_blank" rel="noopener noreferrer">
                         BLOG
                       </a>
                     </li>
                     <li>
-                      <a href="http://pf.kakao.com/_jLDxcxl" target="_blank">
+                      <a href="http://pf.kakao.com/_jLDxcxl" target="_blank" rel="noopener noreferrer">
                         KAKAOTALK
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.youtube.com/@covernat766" target="_blank">
+                      <a href="https://www.youtube.com/@covernat766" target="_blank" rel="noopener noreferrer">
                         YOUTUBE
                       </a>
                     </li>
@@ -136,4 +136,4 @@ export default function CovernatFooter() {
       </footer>
     </div>
   );
-}
+};

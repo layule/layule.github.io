@@ -1,12 +1,13 @@
-import * as React from "react";
+import React from "react";
 import { like, logo, search, shopping } from "../../images/covernat";
-export default function CovernatNav() {
+
+export const CovernatNav = () => {
   return (
     <div className="page-container covernat">
       <header className="covernatHeader">
         <div className="covernatPointInner">
           <a href="#">
-            <img className="logo_cover" src={logo} />
+            <img className="logo_cover" src={logo} alt="covernatlogo" />
           </a>
           <div className="covernatTopMenu">
             <ul className="TopMenu">
@@ -217,7 +218,7 @@ export default function CovernatNav() {
                         </ul>
                       </li>
                       <li>
-                        <a href="#">신발</a>{" "}
+                        <a href="#">신발</a>
                         <ul className="product_cover">
                           <li>
                             <a href="#">스니커즈</a>
@@ -289,17 +290,17 @@ export default function CovernatNav() {
             <ul className="covernatIcon">
               <li>
                 <a href="#">
-                  <img src={like}></img>
+                  <img src={like} alt="navmenu" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src={shopping}></img>
+                  <img src={shopping} alt="navmenu" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src={search}></img>
+                  <img src={search} alt="navmenu" />
                 </a>
               </li>
             </ul>
@@ -308,4 +309,6 @@ export default function CovernatNav() {
       </header>
     </div>
   );
-}
+};
+
+export default CovernatNav;

@@ -4,10 +4,16 @@ import "/src/styles/react/reset.scss";
 import "/src/styles/react/style.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Autoplay } from "swiper";
+import Nav from "../components/Bestseller/Nav";
+import Footer from "../components/Bestseller/Footer";
+import Accodion from "../components/Bestseller/Accodion";
+import Card from "../components/Bestseller/Card";
+import Slide from "../components/Bestseller/Slide";
 
 export default function BestSellerMain() {
   return (
     <div div className="page-container bestseller">
+      <Nav></Nav>
       <Swiper className="bestsellerSwiper" loop={true} modules={[A11y, Autoplay]} slidesPerView={1} autoplay={{ delay: 2000, disableOnInteraction: false }}>
         <SwiperSlide>
           <div id="slideImgGrop" className="slideImg1">
@@ -77,8 +83,9 @@ export default function BestSellerMain() {
             <p className="sellerText">*it-마켓 : 베스트셀러만의 특가 판매 혜택</p>
             <p className="sellerTextPoint">실제 셀러의 판매 금액입니다.</p>
           </div>
-
-          <div className="sellerSwiper"></div>
+          <div className="sellerSwiper">
+            <Slide></Slide>
+          </div>
         </div>
       </section>
       <section className="reviewSection">
@@ -86,11 +93,13 @@ export default function BestSellerMain() {
           스타일 셀러와
           <br /> 꿈꾸는 셀러
         </p>
+        <Card></Card>
       </section>
       <section className="reviewSection">
         <p className="sectionTitle">FAQ</p>
-        <div className="faq-width"></div>
+        <Accodion></Accodion>
       </section>
+      <Footer></Footer>
     </div>
   );
 }

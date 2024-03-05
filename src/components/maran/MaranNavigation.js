@@ -1,9 +1,10 @@
-import * as React from "react";
+import React from "react";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import { logo } from "../../images/maran";
-export default function MaranNavogation() {
+
+export const MaranNavogation = () => {
   const [age, setAge] = React.useState(10);
 
   const handleChange = event => {
@@ -14,15 +15,15 @@ export default function MaranNavogation() {
       <nav className="mav_size">
         <ul className="lag_line">
           <li>
-            <a href="/maranabout">About</a>
-          </li>
-          <li>
-            <a href="/maran">
-              <img src={logo} />
-            </a>
+            <a href="#">About</a>
           </li>
           <li>
             <a href="#">
+              <img src={logo} alt="maranlogo" />
+            </a>
+          </li>
+          <li>
+            <a>
               <div>
                 <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
                   <Select labelId="demo-simple-select-standard-label" id="demo-simple-select-standard" value={age} onChange={handleChange} label="Age">
@@ -37,16 +38,18 @@ export default function MaranNavogation() {
           </li>
         </ul>
       </nav>
-      <div className="bot_me">
+      <div className="#">
         <ul>
           <li>
-            <a href="/maranlog">Archive</a>
+            <a href="#">Archive</a>
           </li>
           <li>
-            <a href="/marancampaign">Campaign</a>
+            <a href="#">Campaign</a>
           </li>
         </ul>
       </div>
     </div>
   );
-}
+};
+
+export default MaranNavogation;

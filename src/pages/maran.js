@@ -1,23 +1,18 @@
-import * as React from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 import "/src/styles/maran/reset.scss";
 import "/src/styles/maran/style.scss";
 import "/src/styles/maran/stylem.scss";
 import "/src/styles/maran/font.scss";
-import { logo, maranFw, maranSm, maranSp } from "../images/maran";
+import { maranFw, maranSm, maranSp } from "../images/maran";
 import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
+import { MaranNavogation } from "../components/maran/MaranNavigation";
+import { MaranFooter } from "../components/maran/MaranFooter";
 
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import MaranNavogation from "../components/maran/MaranNavigation";
-import MaranFooter from "../components/maran/MaranFooter";
-
-export default function App() {
+export default function Maran() {
   return (
     <div className="page-container maran">
-      <MaranNavogation />
+      <MaranNavogation></MaranNavogation>
 
       <Swiper
         className="maranSwiper"
@@ -31,23 +26,23 @@ export default function App() {
         onSlideChange={() => console.log("뿌에에에엑?????")}
       >
         <SwiperSlide>
-          <a href="#">
-            <img src={maranSp}></img>
+          <a>
+            <img src={maranSp} alt="maran img" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="#">
-            <img src={maranSm}></img>
+          <a>
+            <img src={maranSm} alt="maran img" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="#">
-            <img src={maranFw}></img>
+          <a>
+            <img src={maranFw} alt="maran img" />
           </a>
         </SwiperSlide>
       </Swiper>
 
-      <MaranFooter />
+      <MaranFooter></MaranFooter>
     </div>
   );
 }

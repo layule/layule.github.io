@@ -1,11 +1,12 @@
-import * as React from "react";
+import React from "react";
 import "/src/styles/covernat/reset.scss";
 import "/src/styles/covernat/style.scss";
 import "/src/styles/covernat/font.scss";
-import CovernatNav from "../components/covernat/CovernatNav";
-import CovernatFooter from "../components/covernat/CovernatFooter";
 import { logo } from "../images/covernat";
-export default function covernetmen() {
+import { CovernatNav } from "../components/covernat/CovernatNav";
+import { CovernatFooter } from "../components/covernat/CovernatFooter";
+
+export default function CovernetMen() {
   return (
     <div className="page-container covernat">
       <CovernatNav></CovernatNav>
@@ -57,7 +58,7 @@ export default function covernetmen() {
         <div className="reativ item">
           <div className="relative space">
             <div className="relative aspect">
-              <img src={logo}></img>
+              <img src={logo} alt="covernatlogo" />
             </div>
           </div>
           <div className="mt-2">
@@ -79,7 +80,7 @@ export default function covernetmen() {
         <div className="reativ item">
           <div className="relative space">
             <div className="relative aspect">
-              <img src={logo}></img>
+              <img src={logo} alt="covernatlogo" />
             </div>
           </div>
           <div className="mt-2">
@@ -101,7 +102,7 @@ export default function covernetmen() {
         <div className="reativ item">
           <div className="relative space">
             <div className="relative aspect">
-              <img src={logo}></img>
+              <img src={logo} alt="covernatlogo" />
             </div>
           </div>
           <div className="mt-2">
@@ -123,7 +124,7 @@ export default function covernetmen() {
         <div className="reativ item">
           <div className="relative space">
             <div className="relative aspect">
-              <img src={logo}></img>
+              <img src={logo} alt="covernatlogo" />
             </div>
           </div>
           <div className="mt-2">
@@ -145,7 +146,7 @@ export default function covernetmen() {
         <div className="reativ item">
           <div className="relative space">
             <div className="relative aspect">
-              <img src={logo}></img>
+              <img src={logo} alt="covernatlogo" />
             </div>
           </div>
           <div className="mt-2">
@@ -167,7 +168,7 @@ export default function covernetmen() {
         <div className="reativ item">
           <div className="relative space">
             <div className="relative aspect">
-              <img src={logo}></img>
+              <img src={logo} alt="covernatlogo" />
             </div>
           </div>
           <div className="mt-2">
@@ -189,7 +190,7 @@ export default function covernetmen() {
         <div className="reativ item">
           <div className="relative space">
             <div className="relative aspect">
-              <img src={logo}></img>
+              <img src={logo} alt="covernatlogo" />
             </div>
           </div>
           <div className="mt-2">
@@ -211,7 +212,7 @@ export default function covernetmen() {
         <div className="reativ item">
           <div className="relative space">
             <div className="relative aspect">
-              <img src={logo}></img>
+              <img src={logo} alt="covernatlogo" />
             </div>
           </div>
           <div className="mt-2">
@@ -233,7 +234,7 @@ export default function covernetmen() {
         <div className="reativ item">
           <div className="relative space">
             <div className="relative aspect">
-              <img src={logo}></img>
+              <img src={logo} alt="covernatlogo" />
             </div>
           </div>
           <div className="mt-2">
@@ -255,7 +256,7 @@ export default function covernetmen() {
         <div className="reativ item">
           <div className="relative space">
             <div className="relative aspect">
-              <img src={logo}></img>
+              <img src={logo} alt="covernatlogo" />
             </div>
           </div>
           <div className="mt-2">
@@ -277,7 +278,7 @@ export default function covernetmen() {
         <div className="reativ item">
           <div className="relative space">
             <div className="relative aspect">
-              <img src={logo}></img>
+              <img src={logo} alt="covernatlogo" />
             </div>
           </div>
           <div className="mt-2">
@@ -299,7 +300,7 @@ export default function covernetmen() {
         <div className="reativ item">
           <div className="relative space">
             <div className="relative aspect">
-              <img src={logo}></img>
+              <img src={logo} alt="covernatlogo" />
             </div>
           </div>
           <div className="mt-2">
@@ -321,7 +322,7 @@ export default function covernetmen() {
         <div className="reativ item">
           <div className="relative space">
             <div className="relative aspect">
-              <img src={logo}></img>
+              <img src={logo} alt="covernatlogo" />
             </div>
           </div>
           <div className="mt-2">
@@ -343,7 +344,7 @@ export default function covernetmen() {
         <div className="reativ item">
           <div className="relative space">
             <div className="relative aspect">
-              <img src={logo}></img>
+              <img src={logo} alt="covernatlogo" />
             </div>
           </div>
           <div className="mt-2">

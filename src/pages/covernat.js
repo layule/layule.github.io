@@ -1,19 +1,14 @@
-import * as React from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
 import "/src/styles/covernat/reset.scss";
 import "/src/styles/covernat/style.scss";
 import "/src/styles/covernat/font.scss";
 import { foll01, foll02, mem, menLook, ss001, ss002, ss003, ss004, sub1, sub2, sub3, sub4, womenLook } from "../images/covernat";
-import { A11y, Autoplay, Navigation, Pagination, Scrollbar } from "swiper";
+import { CovernatNav } from "../components/covernat/CovernatNav";
+import { CovernatFooter } from "../components/covernat/CovernatFooter";
 
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import CovernatNav from "../components/covernat/CovernatNav";
-import CovernatFooter from "../components/covernat/CovernatFooter";
-
-export default function App() {
+export default function Covernat() {
   return (
     <div className="page-container covernat">
       <CovernatNav></CovernatNav>

@@ -1,5 +1,5 @@
-import * as React from "react";
-import { ONE, bag, bar, btnmenu, candles, classic, gift, ico, ka, logoA, logoLabo, se } from "../images/lelabo";
+import React from "react";
+import { ONE, bag, bar, btnmenu, candles, classic, gift, ico, se } from "../images/lelabo";
 import "/src/styles/lelabo/font.scss";
 import "/src/styles/lelabo/reset.scss";
 import "/src/styles/lelabo/style.scss";

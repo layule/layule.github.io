@@ -1,5 +1,5 @@
-import * as React from "react";
-export default function MaranFooter({ isAbsolute = true }) {
+import React from "react";
+export const MaranFooter = ({ isAbsolute = true }) => {
   return (
     <footer style={{ ...(isAbsolute ? { position: "absolute", bottom: 0 } : { marginTop: 96 }) }}>
       <div className="fot_n">
@@ -7,4 +7,5 @@ export default function MaranFooter({ isAbsolute = true }) {
       </div>
     </footer>
   );
-}
+};
+export default MaranFooter;
