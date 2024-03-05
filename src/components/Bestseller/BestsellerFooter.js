@@ -1,8 +1,7 @@
 import * as React from "react";
 import "/src/styles/react/font.scss";
 import "/src/styles/react/reset.scss";
-import "../../styles/react/footer.scss";
-import { appstore, googleplay } from "../../images/bestseller";
+import "/src/styles/react/footer.scss";
 
 export const BestSellerFooter = () => {
   return (
@@ -53,15 +52,9 @@ export const BestSellerFooter = () => {
           </div>
           <div className="App">
             <button>
-              <span>
-                <img src={googleplay} />
-                Google play
-              </span>
+              <span>Google play</span>
             </button>
-            <button>
-              <img src={appstore} />
-              App Store
-            </button>
+            <button>App Store</button>
           </div>
         </nav>
       </div>
