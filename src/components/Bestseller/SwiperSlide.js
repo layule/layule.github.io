@@ -5,7 +5,7 @@ import "/src/styles/react/swiper.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Autoplay } from "swiper";
 
-export const BestSellerSwiperSlide = () => {
+export const SwiperSlide = () => {
   return (
     <Swiper loop={true} modules={[A11y, Autoplay]} slidesPerView={3} spaceBetween={1} autoplay={{ delay: 1000, disableOnInteraction: false }}>
       <SwiperSlide>

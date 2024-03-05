@@ -3,7 +3,7 @@ import "/src/styles/react/font.scss";
 import "/src/styles/react/reset.scss";
 import "/src/styles/react/footer.scss";
 
-export const BestSellerFooter = () => {
+export const Footer = () => {
   return (
     <footer>
       <div className="fooerWrap">

@@ -3,7 +3,7 @@ import "/src/styles/react/font.scss";
 import "/src/styles/react/reset.scss";
 import "/src/styles/react/nav.scss";
 
-export const BestSellerNav = () => {
+export const Nav = () => {
   return (
     <header className="bestsellerNav">
       <nav>
