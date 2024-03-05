@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .page-container.bestseller {
-  .desktop-nav {
+  .bestsellerNav {
     width: 100%;
     max-width: 1200px;
     position: absolute;
@@ -25,6 +25,4 @@
       background: url("../../images/bestseller/bs_logo.svg") no-repeat center center;
     }
   }
-
-  //.mobile-nav {}
 }

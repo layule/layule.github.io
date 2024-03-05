@@ -4,7 +4,7 @@ import "/src/styles/react/reset.scss";
 import "/src/styles/react/card.scss";
 import { sellerProfile1, sellerProfile2, sellerProfile3, sellerProfile4, sellerUi1, sellerUi2, sellerUi3, sellerUi4 } from "../../images/bestseller";
 
-export const Card = () => {
+export const BestSellerCard = () => {
   const isFlippedIndex = ({ index = -1 } = {}) => flippedIndex === index;
   const [flippedIndex, setFlippedIndex] = useState(-1); // 상태를 하나의 index로 변경
 
@@ -103,11 +103,11 @@ export const Card = () => {
     <div className="cards">
       {cardContents.map((content, index) => (
         <div key={index} className={`card ${isFlippedIndex({ index }) ? "flipped" : ""}`} onClick={() => handleToggle(index)}>
-          <div className={isFlippedIndex({ index }) ? "back" : "front"}>{isFlippedIndex({ index }) ? content.back : content.front}</div>x
+          <div className={isFlippedIndex({ index }) ? "back" : "front"}>{isFlippedIndex({ index }) ? content.back : content.front}</div>
         </div>
       ))}
     </div>
   );
 };
 
-export default Card;
+export default BestSellerCard;

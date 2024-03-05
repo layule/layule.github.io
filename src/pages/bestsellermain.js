@@ -4,16 +4,15 @@ import "/src/styles/react/reset.scss";
 import "/src/styles/react/style.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Autoplay } from "swiper";
-import Nav from "../components/Bestseller/Nav";
-import Footer from "../components/Bestseller/Footer";
-import Accodion from "../components/Bestseller/Accodion";
-import Card from "../components/Bestseller/Card";
-import Slide from "../components/Bestseller/Slide";
+import { BestSellerNav } from "../components/Bestseller/BestSellerNav";
+import { BestSellerFooter } from "../components/Bestseller/BestSellerFooter";
+import { BestSellerCard } from "../components/Bestseller/BestSellerCard";
+import { BestSellerFaq } from "../components/Bestseller/BestSellerfaq";
 
 export default function BestSellerMain() {
   return (
     <div div className="page-container bestseller">
-      <Nav></Nav>
+      <BestSellerNav></BestSellerNav>
       <Swiper className="bestsellerSwiper" loop={true} modules={[A11y, Autoplay]} slidesPerView={1} autoplay={{ delay: 2000, disableOnInteraction: false }}>
         <SwiperSlide>
           <div id="slideImgGrop" className="slideImg1">
@@ -66,7 +65,7 @@ export default function BestSellerMain() {
           </div>
         </SwiperSlide>
       </Swiper>
-      <section className="marketList">
+      <section className="marketList section">
         <div className="marketListInner">
           <div className="marketListInnerGroup">
             <div className="marketListInnerGroupTitle">
@@ -84,22 +83,68 @@ export default function BestSellerMain() {
             <p className="sellerTextPoint">실제 셀러의 판매 금액입니다.</p>
           </div>
           <div className="sellerSwiper">
-            <Slide></Slide>
+            <Swiper loop={true} modules={[A11y, Autoplay]} slidesPerView={3} spaceBetween={1} autoplay={{ delay: 1000, disableOnInteraction: false }}>
+              <SwiperSlide>
+                <div className="swiperSlide sellerSlideImg1">
+                  <div className="productDetails">
+                    <p className="productName">인스타 ○○○ 셀러</p>
+                    <p className="productSubTitle">판매금액</p>
+                    <p className="productPrice">45,320원</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="swiperSlide sellerSlideImg2">
+                  <div className="productDetails">
+                    <p className="productName">인스타 ○○○ 셀러</p>
+                    <p className="productSubTitle">판매금액</p>
+                    <p className="productPrice">45,320원</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="swiperSlide sellerSlideImg3">
+                  <div className="productDetails">
+                    <p className="productName">인스타 ○○○ 셀러</p>
+                    <p className="productSubTitle">판매금액</p>
+                    <p className="productPrice">45,320원</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="swiperSlide sellerSlideImg4">
+                  <div className="productDetails">
+                    <p className="productName">인스타 ○○○ 셀러</p>
+                    <p className="productSubTitle">판매금액</p>
+                    <p className="productPrice">45,320원</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="swiperSlide sellerSlideImg5">
+                  <div className="productDetails">
+                    <p className="productName">인스타 ○○○ 셀러</p>
+                    <p className="productSubTitle">판매금액</p>
+                    <p className="productPrice">45,320원</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </section>
-      <section className="reviewSection">
-        <p className="sectionTitle">
+      <section className="review section">
+        <p className="title">
           스타일 셀러와
           <br /> 꿈꾸는 셀러
         </p>
-        <Card></Card>
+        <BestSellerCard></BestSellerCard>
       </section>
-      <section className="reviewSection">
-        <p className="sectionTitle">FAQ</p>
-        <Accodion></Accodion>
+      <section className="faq section">
+        <p className="title">FAQ</p>
+        <BestSellerFaq></BestSellerFaq>
       </section>
-      <Footer></Footer>
+      <BestSellerFooter></BestSellerFooter>
     </div>
   );
 }

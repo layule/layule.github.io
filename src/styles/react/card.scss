@@ -19,6 +19,9 @@
     position: relative;
     transition: 0.4s;
     transform-style: preserve-3d;
+    #text {
+      font-size: 0;
+    }
   }
 
   .card:nth-child(2n) {
