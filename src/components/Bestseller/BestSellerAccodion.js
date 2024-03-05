@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "/src/styles/react/font.scss";
+import "/src/styles/react/reset.scss";
 import "/src/styles/react/accodion.scss";
 
 export const BestSellerAccodion = () => {
