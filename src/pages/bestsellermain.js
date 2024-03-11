@@ -13,7 +13,7 @@ export default function BestSellerMain() {
   return (
     <div div className="page-container bestseller">
       <BestSellerNav></BestSellerNav>
-      <Swiper className="bestsellerSwiper" loop={true} modules={[A11y, Autoplay]} slidesPerView={1} autoplay={{ delay: 2000, disableOnInteraction: false }}>
+      <Swiper className="bestsellerSwiper section" loop={true} modules={[A11y, Autoplay]} slidesPerView={1} autoplay={{ delay: 2000, disableOnInteraction: false }}>
         <SwiperSlide>
           <div id="slideImgGrop" className="slideImg1">
             <div className="pageSlidInner">
@@ -133,14 +133,14 @@ export default function BestSellerMain() {
           </div>
         </div>
       </section>
-      <section className="review section">
+      <section className="review">
         <p className="title">
           스타일 셀러와
           <br /> 꿈꾸는 셀러
         </p>
         <BestSellerCard></BestSellerCard>
       </section>
-      <section className="faq section">
+      <section className="faq">
         <p className="title">FAQ</p>
         <BestSellerFaq></BestSellerFaq>
       </section>

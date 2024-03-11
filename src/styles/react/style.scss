@@ -9,13 +9,6 @@
     font-family: "Spoqa Han Sans Neo";
   }
 
-  .section {
-    width: 100%;
-    height: 100vh;
-    min-height: 820px;
-    position: relative;
-  }
-
   .title {
     font-size: 48px;
     font-weight: 700;
@@ -30,16 +23,20 @@
     display: none;
   }
 
-  .bestsellerSwiper {
+  .section {
     width: 100%;
     height: 100vh;
     position: relative;
+    min-height: 820px;
   }
 
   #slideImgGrop {
-    display: flex;
-    align-items: center;
+    width: 100%;
     height: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .slideImg1 {
@@ -51,8 +48,9 @@
 
   .pageSlidInner {
     width: 100%;
-    max-width: 1200px;
-    margin-left: 48px;
+    max-width: 1412px;
+    margin: 0 auto;
+    padding: 0 24px;
     p {
       font-size: 3em;
       font-weight: 600;
@@ -101,18 +99,21 @@
   .slideInButton:hover {
     background: #ab96fd;
   }
-  // BestsellerMainPage end
 
   .marketList {
-    background: url("../../images/bestseller/bg_gradient.jpeg");
+    background: url("../../images/bestseller/bg_gradient.jpeg") no-repeat center/cover;
   }
 
   .marketListInner {
-    padding-right: calc((100% - 1358px) / 2);
     padding-left: calc((100% - 1358px) / 2);
     display: flex;
-    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
+    max-width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     height: 100%;
   }
 
@@ -123,9 +124,10 @@
     position: relative;
   }
   .marketListInnerGroupTitle {
+    margin-bottom: 120px;
     p {
       font-size: 2.5em;
-      line-height: 1.4;
+      line-height: 1.25;
     }
   }
 
@@ -189,18 +191,24 @@
   }
 
   .sellerSwiper {
-    width: calc(100% - 448px);
+    width: calc(100% - (382px + 66px));
     margin-right: 0;
     margin-left: auto;
+    position: relative;
     overflow: hidden;
+    padding-bottom: 40px;
   }
 
   .swiperSlide {
-    width: 300px;
+    width: 322px;
     height: 500px;
     display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
     position: relative;
     border-radius: 14px;
+    overflow: hidden;
   }
 
   .productDetails {
@@ -246,10 +254,17 @@
     background: url("../../images/bestseller/seller5.jpg") no-repeat center/cover;
   }
 
+  .review {
+    height: auto;
+    max-width: 1412px;
+    padding: 100px 24px;
+    margin: 0 auto;
+  }
+
   .faq {
     max-width: 1412px;
     margin: 0 auto;
-    padding: 100px 24px 190px;
+    padding: 100px 24px 150px;
     letter-spacing: -0.01em;
   }
 }
